@@ -15,4 +15,12 @@
     return view('welcome');
 });*/
 
+//Frontend
 Route::get('/','FrontendController@getIndex');
+Route::get('index','FrontendController@getIndex');
+Route::get('shop','FrontendController@getShop');
+Route::get('about','FrontendController@getAbout');
+Route::get('solutions','FrontendController@getSolutions');
+Route::get('news','FrontendController@getNews');
+Route::get('projects','FrontendController@getProjects');
+Route::get('contact','FrontendController@getContact');

@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index.html"><img src="images/header/logo-2.png" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="{{url('index')}}"><img src="images/header/logo-2.png" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute.html" class="submit">requet a quote</a></div>
@@ -104,22 +104,16 @@
                   </div>
                   <div class="nav-t-footer">
                     <ul class="nav">
-                      <li class="has-t-submenu"><a href="index.html">Home</a>
-                        <ul class="submenu">
-                          <li><a href="index-2.html">Home Two</a></li>
-                          <li><a href="index-3.html">Home Three</a></li>
-                          <li><a href="index-4.html">Home Four</a></li>
-                          <li><a href="index-5.html">Home Five</a></li>
-                        </ul>
+                      <li class="has-t-submenu"><a href="index">Inicio</a>
                       </li>
-                      <li class="has-t-submenu"><a href="about.html">about us</a>
+                      <li class="has-t-submenu"><a href="about">Nosotros</a>
                         <ul class="submenu">
                           <li><a href="team.html">Our Team</a></li>
                           <li><a href="testimonials.html">Testimonials</a></li>
                           <li><a href="faq.html">Faq</a></li>
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="solutions.html">solutions</a>
+                      <li class="has-t-submenu"><a href="solutions">Soluciones</a>
                         <ul class="submenu">
                           <li><a href="meterial.html">meterial engineering</a></li>
                           <li><a href="agricultural.html">agricultural processing</a></li>
@@ -130,7 +124,7 @@
                           <li><a href="alternate.html">alternate energy</a></li>
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="projects.html">Projects</a>
+                      <li class="has-t-submenu"><a href="projects">Proyectos</a>
                         <ul class="submenu">
                           <li><a href="classic.html">classic</a></li>
                           <li><a href="fullscreen.html">fullscreen</a></li>
@@ -138,19 +132,19 @@
                           <li><a href="projects-details.html">Projects Details</a></li>
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="news.html">News</a>
+                      <li class="has-t-submenu"><a href="news">Noticias</a>
                         <ul class="submenu">
                           <li><a href="news-details.html">News Details</a></li>
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="shop.html">Shop</a>
+                      <li class="has-t-submenu"><a href="shop">Tienda</a>
                         <ul class="submenu">
                           <li><a href="product.html">Product Details</a></li>
                           <li><a href="cart.html">Cart Page</a></li>
                           <li><a href="checkout.html">Checkout Page</a></li>
                         </ul>
                       </li>
-                      <li><a href="contact.html">contact us</a></li>
+                      <li><a href="contact">contactanos</a></li>
                     </ul>
                     <div class="mobile-link"><a href="request-qoute.html" class="submit">requet a quote</a>
                       <div class="widget-t widget-t-search">
@@ -409,7 +403,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
-            <div class="req-button text-right"><a href="contact.html" class="submit">Contact Us <i class="fa fa-arrow-right"></i></a></div>
+            <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactanos <i class="fa fa-arrow-right"></i></a></div>
           </div>
         </div>
       </div>
@@ -635,7 +629,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="indurial-solution-text text-center">
-              <h2>If  You Need Any Industrial Solution ... We Are Available For You</h2><span class="contactus-button2 text-center"><a href="contact.html" class="submit">Contact Us </a></span>
+              <h2>If  You Need Any Industrial Solution ... We Are Available For You</h2><span class="contactus-button2 text-center"><a href="{{url('contact')}}" class="submit">Contact Us </a></span>
             </div>
           </div>
         </div>
@@ -672,7 +666,7 @@
             <h4 class="widget_title">Quick Links</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="about.html">- About Us</a></li>
+                <li><a href="about">- Nosotros</a></li>
                 <li><a href="#">- Career</a></li>
                 <li><a href="#">- Get Quote</a></li>
                 <li><a href="news.html">- News</a></li>
