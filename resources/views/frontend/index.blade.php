@@ -129,7 +129,7 @@
                           <li><a href="classic">classic</a></li>
                           <li><a href="fullscreen">fullscreen</a></li>
                           <li><a href="lightbox">lightbox</a></li>
-                          <li><a href="projects-details">Projects Details</a></li>
+                          <li><a href="projects-details">Detalle proyectos</a></li>
                         </ul>
                       </li>
                       <li class="has-t-submenu"><a href="news">Noticias</a>
