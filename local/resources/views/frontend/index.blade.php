@@ -47,10 +47,9 @@
         <div class="container">
           <div class="row wel-band-bg">
             <div class="col-md-6 pull-left col col-sm-12">
-              <p>Welcome to Leader in Industrial Solution <span>since 2005</span></p>
+              <p>VEAGN © 2016 | Todos los derechos reservados.</p>
             </div>
             <div class="col-md-6 pull-right text-right col-sm-12">
-              <p>Global Certificate: <span>ISO 9001:2016</span></p>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@
           <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
-              <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
+              <div class="req-button text-right"><a href="request-qoute" class="submit">Contactar</a></div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
                   <ul class="nav">
@@ -78,7 +77,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Pointer"></i></a></div>
                         <div class="media-body">
-                          <p>Calle 2 de febrero N°3405-A <br><br>Col. Hogares de Nuevo México<br><span>Zapopan, Jalisco, México 45120</span></p>
+                          <p>Calle 2 de <br><span>Zapopan, </span></p>
                         </div>
                       </div>
                     </li>
@@ -183,37 +182,35 @@
     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider full_width ver_new_1_slider">
       <!-- Wrapper for slides-->
       <div role="listbox" class="carousel-inner">
-        <div style="background-image:url(public/frontend/images/slider/homepage/5.jpg);" class="item active">
+        <div style="background-image:url(http://www.veagn.com/photos/1400/2.png);" class="item active">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-top">
-                <div class="content text-left pull-right">
-                  <h1 data-animation="animated fadeInLeft" class="bnrfnt40">Leader in Power and<br>Automotion Technologies</h1>
-                  <p data-animation="animated fadeInRight" class="pln_he">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim.</p><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">learn more</a><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn">our sevices</a>
+                <div class="content text-left pull-right" >
+                  <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">El Mejor Diseño para el servicio de agua potable domestico e Industrial.</h1>
+         
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div style="background-image:url(public/frontend/images/slider/homepage/1.jpg);" class="item">
+        <div style="background-image:url(http://www.veagn.com/photos/1400/1.png);" class="item">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-top">
                 <div class="content text-left pull-right">
-                  <h1 data-animation="animated fadeInLeft" class="bnrfnt40">Oil and lubricant<br>for your daily need</h1>
-                  <p data-animation="animated fadeInRight" class="pln_he">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim.</p><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">learn more</a><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn">our sevices</a>
+                  <h1 data-animation="animated fadeInLeft"  style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">Innovador mecanismo anti moroso que permite Bloquear o Limitar el suministro de agua sin necesidad de dañar la toma domiciliaria.</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div style="background-image:url(public/frontend/images/slider/homepage/2.jpg);" class="item">
+        <div style="background-image:url(http://www.veagn.com/photos/1400/3.png);" class="item">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-top">
                 <div class="content text-left pull-right">
-                  <h1 data-animation="animated fadeInUp" class="bnrfnt40">We are the Largest Independent<br>manufacturer Company</h1>
-                  <p data-animation="animated fadeInDown" class="pln_he">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim.</p><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">learn more</a><a data-animation="animated fadeInUp" href="about_us" class="view-all hvr-bounce-to-right slide_learn_btn btn">our sevices</a>
+                  <h1 data-animation="animated fadeInUp" class="bnrfnt40" style="margin-top: 300px;background:rgba(0,0,0,0.5);">Permite atrapar y alojar pequeños sedimentos existentes en el agua , mediante la camara “Y”.</h1>
                 </div>
               </div>
             </div>
