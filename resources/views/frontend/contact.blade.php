@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   
-<!-- Mirrored from demos.pixelatethemes.com/industrial/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- reponsive meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Industrial || Responsive BootStrap HTML 5 Template</title>
+    <title>VEAGN || Contactanos</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
     <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
@@ -59,10 +59,10 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="{{url('index')}}"><img src="images/header/logo-2.png" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
-              <div class="req-button text-right"><a href="request-qoute.html" class="submit">requet a quote</a></div>
+              <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
                   <ul class="nav">
@@ -70,7 +70,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Phone2"></i></a></div>
                         <div class="media-body">
-                          <p>+ (1800) 456 7890<br><span><a href="mailto:info@industrial.com">info@industrial.com</a></span></p>
+                          <p>(01) 3336 6377 26/36<br><span><a href="mailto:contacto@veagn.com">contacto@veagn.com</a></span></p>
                         </div>
                       </div>
                     </li>
@@ -78,7 +78,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Pointer"></i></a></div>
                         <div class="media-body">
-                          <p>13005 Greenville Avenue<br><span>California, TX 70240</span></p>
+                          <p>Calle 2 de febrero N°3405-A <br><br>Col. Hogares de Nuevo México<br><span>Zapopan, Jalisco, México 45120</span></p>
                         </div>
                       </div>
                     </li>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -108,45 +108,45 @@
                       </li>
                       <li class="has-t-submenu"><a href="about">Nosotros</a>
                         <ul class="submenu">
-                          <li><a href="team.html">Our Team</a></li>
-                          <li><a href="testimonials.html">Testimonials</a></li>
-                          <li><a href="faq.html">Faq</a></li>
+                          <li><a href="team">Nuestro equipo</a></li>
+                          <li><a href="testimonials">Opiniones</a></li>
+                          <li><a href="faq">Faq</a></li>
                         </ul>
                       </li>
                       <li class="has-t-submenu"><a href="solutions">Soluciones</a>
                         <ul class="submenu">
-                          <li><a href="meterial.html">meterial engineering</a></li>
-                          <li><a href="agricultural.html">agricultural processing</a></li>
-                          <li><a href="mechanical.html">Mechanical engineering</a></li>
-                          <li><a href="chemical.html">chemical research</a></li>
-                          <li><a href="power.html">power and energy</a></li>
-                          <li><a href="oil.html">Oil and lubricant</a></li>
-                          <li><a href="alternate.html">alternate energy</a></li>
+                          <li><a href="meterial">meterial engineering</a></li>
+                          <li><a href="agricultural">agricultural processing</a></li>
+                          <li><a href="mechanical">Mechanical engineering</a></li>
+                          <li><a href="chemical">chemical research</a></li>
+                          <li><a href="power">power and energy</a></li>
+                          <li><a href="oil">Oil and lubricant</a></li>
+                          <li><a href="alternate">alternate energy</a></li>
                         </ul>
                       </li>
                       <li class="has-t-submenu"><a href="projects">Proyectos</a>
                         <ul class="submenu">
-                          <li><a href="classic.html">classic</a></li>
-                          <li><a href="fullscreen.html">fullscreen</a></li>
-                          <li><a href="lightbox.html">lightbox</a></li>
-                          <li><a href="projects-details.html">Projects Details</a></li>
+                          <li><a href="classic">classic</a></li>
+                          <li><a href="fullscreen">fullscreen</a></li>
+                          <li><a href="lightbox">lightbox</a></li>
+                          <li><a href="projects-details">Projects Details</a></li>
                         </ul>
                       </li>
                       <li class="has-t-submenu"><a href="news">Noticias</a>
                         <ul class="submenu">
-                          <li><a href="news-details.html">News Details</a></li>
+                          <li><a href="news-details">News Details</a></li>
                         </ul>
                       </li>
                       <li class="has-t-submenu"><a href="shop">Tienda</a>
                         <ul class="submenu">
-                          <li><a href="product.html">Product Details</a></li>
-                          <li><a href="cart.html">Cart Page</a></li>
-                          <li><a href="checkout.html">Checkout Page</a></li>
+                          <li><a href="product">Detalle Producto</a></li>
+                          <li><a href="cart">Cart Page</a></li>
+                          <li><a href="checkout">Checkout Page</a></li>
                         </ul>
                       </li>
                       <li><a href="contact">contactanos</a></li>
                     </ul>
-                    <div class="mobile-link"><a href="request-qoute.html" class="submit">requet a quote</a>
+                    <div class="mobile-link"><a href="request-qoute" class="submit">requet a quote</a>
                       <div class="widget-t widget-t-search">
                         <div class="widget-t-inner">
                           <form action="#" method="get" class="search-form">
@@ -166,7 +166,7 @@
                   <div class="widget-t-inner">
                     <form action="#" method="get" class="search-form">
                       <div class="input-group">
-                        <input type="search" placeholder="Search" class="form-control"><span class="input-group-addon">
+                        <input type="search" placeholder="buscar" class="form-control"><span class="input-group-addon">
                           <button type="submit"><i class="icon icon-Search"></i></button></span>
                       </div>
                     </form>
@@ -255,7 +255,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="indurial-solution-text text-center">
-              <h2>If  You Need Any Industrial Solution ... We Are Available For You</h2><span class="contactus-button2 text-center"><a href="contact.html" class="submit">Contact Us </a></span>
+              <h2>If  You Need Any Industrial Solution ... We Are Available For You</h2><span class="contactus-button2 text-center"><a href="contact" class="submit">Contact Us </a></span>
             </div>
           </div>
         </div>
@@ -265,8 +265,8 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="images/header/f-logo2.png" alt=""></a>
-            <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about.html">Read More <i class="fa fa-angle-double-right"></i></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+            <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
@@ -279,12 +279,12 @@
             <h4 class="widget_title">Our Solutions</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="meterial.html">- Metal Industry</a></li>
-                <li><a href="agricultural.html">- Agricultural Engineering</a></li>
-                <li><a href="mechanical.html">- Alternative Energy</a></li>
-                <li><a href="chemical.html">- chemical research</a></li>
-                <li><a href="power.html">- power and energy</a></li>
-                <li><a href="oil.html">- Oil and lubricant</a></li>
+                <li><a href="meterial">- Metal Industry</a></li>
+                <li><a href="agricultural">- Agricultural Engineering</a></li>
+                <li><a href="mechanical">- Alternative Energy</a></li>
+                <li><a href="chemical">- chemical research</a></li>
+                <li><a href="power">- power and energy</a></li>
+                <li><a href="oil">- Oil and lubricant</a></li>
               </ul>
             </div>
           </div>
@@ -292,11 +292,11 @@
             <h4 class="widget_title">Quick Links</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="about.html">- About Us</a></li>
+                <li><a href="about">- About Us</a></li>
                 <li><a href="#">- Career</a></li>
                 <li><a href="#">- Get Quote</a></li>
-                <li><a href="news.html">- News</a></li>
-                <li><a href="faq.html">- Faq</a></li>
+                <li><a href="news">- News</a></li>
+                <li><a href="faq">- Faq</a></li>
               </ul>
             </div>
           </div>
@@ -366,5 +366,5 @@
     <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
   </body>
 
-<!-- Mirrored from demos.pixelatethemes.com/industrial/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 </html>

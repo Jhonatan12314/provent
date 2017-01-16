@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   
-<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:29 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- reponsive meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VEAGN || Tienda</title>
+    <title>VEAGN || Equipo</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
     <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
@@ -182,202 +182,58 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>Shop Page</h2>
+        <h2>Projects</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index"><i class="fa fa-home"></i> Home</a></li>
-          <li><span>Shop Page</span></li>
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><span>Oil Plant Project</span></li>
         </ul>
       </div>
     </section>
-    <!-- News Page-->
-    <section class="core-projects sectpad shop-page">
+    <!-- Projects  Details-->
+    <section class="core-projects sectpad">
       <div class="container clearfix">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 pull-left">
-            <div>
-              <!-- Search-->
-              <div class="widget-search-blog">
-                <div class="row widget-inner">
-                  <form action="#" method="get" class="search-form">
-                    <div class="input-group">
-                      <input type="search" placeholder="Enter Search keywords" class="form-control"><span class="input-group-addon">
-                        <button type="submit"><i class="icon icon-Search"></i></button></span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="single-sidebar-widget">
-                <div class="sec-title">
-                  <h2><span>Categories</span></h2>
-                </div>
-                <div class="categories">
-                  <ul>
-                    <li><a href="#">Chemistry of Petrolium Filteration</a></li>
-                    <li><a href="#">Alluminium Strength Depends</a></li>
-                    <li><a href="#">Solar Panel Working Process</a></li>
-                    <li><a href="#">Advanced Materials Innovation</a></li>
-                    <li><a href="#">Metal Manufacturing Process</a></li>
-                    <li><a href="#">Construction and Architecture</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="single-sidebar-widget">
-                <div class="sec-title">
-                  <h2><span>Best Seller</span></h2>
-                </div>
-                <div class="popular-post best-seller">
-                  <ul>
-                    <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item1.jpg" alt="Awesome Image"></a></div>
-                      <div class="content"><a href="#">
-                          <h4>INdustrial tools</h4></a>
-                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
-                      </div>
-                    </li>
-                    <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item2.jpg" alt="Awesome Image"></a></div>
-                      <div class="content"><a href="#">
-                          <h4>INdustrial tools</h4></a>
-                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
-                      </div>
-                    </li>
-                    <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item3.jpg" alt="Awesome Image"></a></div>
-                      <div class="content"><a href="#">
-                          <h4>INdustrial tools</h4></a>
-                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="single-sidebar-widget">
-                <div class="sec-title">
-                  <h2><span>Text widget</span></h2>
-                </div>
-                <div class="text-box">
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch itecto beatae vitae dict eaque ipsa quae.</p>
-                </div>
-              </div>
-              <div class="single-sidebar-widget">
-                <div class="sec-title">
-                  <h2><span>Tag clouds</span></h2>
-                </div>
-                <div class="tag-cloud">
-                  <ul>
-                    <li><a href="#">Warehouse</a></li>
-                    <li><a href="#">Ocean frieght</a></li>
-                    <li><a href="#">logistic</a></li>
-                    <li><a href="#">land transport</a></li>
-                    <li><a href="#">cost shipment</a></li>
-                    <li><a href="#">Air frieght</a></li>
-                  </ul>
-                </div>
-              </div>
+        <div class="pro-det-img"><img src="images/projects/pro-de-img1.jpg" alt=""></div>
+        <div class="pro-content clearfix">
+          <h1>Oil Plant Project</h1>
+          <h4>Project Desciption</h4>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+        </div>
+        <div class="projects_hours clearfix">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Project Starting Date<span>12.01.2016</span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Project End<span>In Progress</span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Category<span>Resarch</span></p>
             </div>
           </div>
-          <div class="col-md-8 col-sm-12 pull-right">
-            <!-- News-->
-            <div class="section_header color">
-              <h2>featured Products</h2>
+        </div>
+        <div class="project-con clearfix">
+          <h2>Agricauture Process</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project-scop clearfix">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 pro-img"><img src="images/projects/pro-de-img2.jpg" alt=""></div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+              <h3>Work Scope</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="scope-item">
+                <li>Financial Responsibility to Our Clients</li>
+                <li>Superior Quality and Craftsmanship</li>
+                <li>Quality and Value to the Projects We Deliver</li>
+                <li>Highest Standards in Cost Control</li>
+              </ul>
             </div>
-            <div class="row shop-item-wrapper">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/1.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/2.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/3.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/4.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/5.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/6.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section_header color mt30">
-              <h2>featured Products</h2>
-            </div>
-            <div class="row shop-item-wrapper">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/1.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/2.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/3.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="page-navigation text-left">
-              <li><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -398,7 +254,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -425,7 +281,7 @@
             <h4 class="widget_title">Quick Links</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="about">- Nosotros</a></li>
+                <li><a href="about">- About Us</a></li>
                 <li><a href="#">- Career</a></li>
                 <li><a href="#">- Get Quote</a></li>
                 <li><a href="news">- News</a></li>
@@ -465,7 +321,8 @@
         </div>
       </div>
     </section>
-<script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+    <!--script src="js/jquery-1.12.2.min.js"></script-->
+    <script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
     <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
@@ -498,5 +355,5 @@
     <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
   </body>
 
-<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:36 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 </html>
