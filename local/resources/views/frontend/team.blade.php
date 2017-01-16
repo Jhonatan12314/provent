@@ -10,29 +10,29 @@
     <title>VEAGN || Equipo</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
-    <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
     <!-- animate css-->
     <!--link rel="stylesheet" href="css/animate.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/animate.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/animate.min.css')}}" type="text/css" media="all" />
     <!-- owl-carousel-->
 
     <!--link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/settings.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/layers.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/navigation.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
     <!-- Main Css-->
     <!--link rel="stylesheet" href="css/style.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/style.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/style.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="css/responsive.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/responsive.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
-    <link rel='icon' type="image/png" sizes="16x16" href="{{url('frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -182,98 +182,135 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>Projects</h2>
+        <h2>Our Team</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
           <li><a href="index">Home</a></li>
-          <li><span>Projects</span></li>
+          <li><span>Our Team</span></li>
         </ul>
       </div>
     </section>
-    <!-- Project  Page-->
+    <!-- Single Service Page-->
     <section class="core-projects sectpad">
       <div class="container clearfix">
-        <h1>our core Projects</h1>
+        <h1>Our company experts</h1>
         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
       </div>
     </section>
-    <!-- Projects-->
-    <section class="project-post-area sectpad">
+    <!-- Team-->
+    <section class="team-pad team-area">
       <div class="container clearfix">
-        <div class="project-post">
+        <div class="our-team-page">
           <div class="row">
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img4.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/1.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img5.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/2.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img6.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/3.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/4.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="project-post">
+        <div class="our-team-page">
           <div class="row">
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img7.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/1.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img8.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/2.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img9.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/3.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="project-post">
-          <div class="row">
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img10.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img11.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img12.jpg" alt="" class="zoom_img_effect">
-                <div class="info-text">
-                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
-                </div>
+            <div class="col-sm-6 col-md-3 team">
+              <div class="team-images row m0"><img src="public/frontend/images/team/4.png" alt=""></div>
+              <ul class="nav social-icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+              <div class="team-content"><a href="#">
+                  <h4>John Martin</h4></a>
+                <p>Machine Engineer</p>
               </div>
             </div>
           </div>
@@ -296,7 +333,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -364,37 +401,37 @@
       </div>
     </section>
     <!--script src="js/jquery-1.12.2.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
     <!--script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- Revolution Slider-->
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <!--script src="js/jquery.form.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.form.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.form.js')}}"></script>
     <!--script src="js/jquery.validate.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.validate.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.validate.min.js')}}"></script>
     <!--script src="js/contact.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/contact.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/contact.js')}}"></script>
     <!-- owl carousel-->
     <!--script src="vendors/owlcarousel/owl.carousel.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
     <!--script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTI1BZJKFCeJ8g9O01CMZ4QvVCfdPYkrE"></script>
     <!--script src="js/gmaps.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/gmaps.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/gmaps.min.js')}}"></script>
     <!--script src="js/imagelightbox.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/imagelightbox.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
   </body>
 
 <!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->

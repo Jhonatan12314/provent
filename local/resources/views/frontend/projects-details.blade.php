@@ -10,29 +10,29 @@
     <title>VEAGN || Equipo</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
-    <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
     <!-- animate css-->
     <!--link rel="stylesheet" href="css/animate.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/animate.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/animate.min.css')}}" type="text/css" media="all" />
     <!-- owl-carousel-->
 
     <!--link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/settings.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/layers.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/navigation.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
     <!-- Main Css-->
     <!--link rel="stylesheet" href="css/style.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/style.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/style.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="css/responsive.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/responsive.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
-    <link rel='icon' type="image/png" sizes="16x16" href="{{url('frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -182,76 +182,57 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>Testimonials</h2>
+        <h2>Projects</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index">Home</a></li>
-          <li><span>Testimonials</span></li>
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><span>Oil Plant Project</span></li>
         </ul>
       </div>
     </section>
-    <!-- Project  Page-->
-    <section class="core-projects sectpad-t">
+    <!-- Projects  Details-->
+    <section class="core-projects sectpad">
       <div class="container clearfix">
-        <h1>What our client says</h1>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div>
-    </section>
-    <!-- Testimonials clients-->
-    <section class="testimonial-parea">
-      <div class="container clearfix">
-        <div class="row">
-          <div class="col-lg-12 testimonial-col-p">
-            <div class="media testimonial-p">
-              <div class="media-left"><a href="#"><img src="frontend/images/testimonial/10.jpg" alt=""></a></div>
-              <div class="media-body">
-                <h3>Industrial Indutries and Engineering Firm</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiadipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est, qui dolorem ipsum</p><a href="#">-  Michale John (CEO & Founder)</a>
-                <h6><span><img src="frontend/images/testimonial/sign.jpg" alt=""></span></h6>
-              </div>
+        <div class="pro-det-img"><img src="images/projects/pro-de-img1.jpg" alt=""></div>
+        <div class="pro-content clearfix">
+          <h1>Oil Plant Project</h1>
+          <h4>Project Desciption</h4>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+        </div>
+        <div class="projects_hours clearfix">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Project Starting Date<span>12.01.2016</span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Project End<span>In Progress</span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <p>Category<span>Resarch</span></p>
             </div>
           </div>
-          <div class="col-lg-12 testimonial-col-p">
-            <div class="media testimonial-p">
-              <div class="media-left"><a href="#"><img src="frontend/images/testimonial/11.jpg" alt=""></a></div>
-              <div class="media-body">
-                <h3>Industrial Indutries and Engineering Firm</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiadipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est, qui dolorem ipsum</p><a href="#">-  Michale John (CEO & Founder)</a>
-                <h6><span><img src="frontend/images/testimonial/sign.jpg" alt=""></span></h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 testimonial-col-p">
-            <div class="media testimonial-p">
-              <div class="media-left"><a href="#"><img src="frontend/images/testimonial/9.jpg" alt=""></a></div>
-              <div class="media-body">
-                <h3>Industrial Indutries and Engineering Firm</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiadipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est, qui dolorem ipsum</p><a href="#">-  Michale John (CEO & Founder)</a>
-                <h6><span><img src="frontend/images/testimonial/sign.jpg" alt=""></span></h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 testimonial-col-p">
-            <div class="media testimonial-p">
-              <div class="media-left"><a href="#"><img src="frontend/images/testimonial/12.jpg" alt=""></a></div>
-              <div class="media-body">
-                <h3>Industrial Indutries and Engineering Firm</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiadipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est, qui dolorem ipsum</p><a href="#">-  Michale John (CEO & Founder)</a>
-                <h6><span><img src="frontend/images/testimonial/sign.jpg" alt=""></span></h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 testimonial-col-p">
-            <div class="media testimonial-p">
-              <div class="media-left"><a href="#"><img src="frontend/images/testimonial/13.jpg" alt=""></a></div>
-              <div class="media-body">
-                <h3>Industrial Indutries and Engineering Firm</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiadipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est, qui dolorem ipsum</p><a href="#">-  Michale John (CEO & Founder)</a>
-                <h6><span><img src="frontend/images/testimonial/sign.jpg" alt=""></span></h6>
-              </div>
+        </div>
+        <div class="project-con clearfix">
+          <h2>Agricauture Process</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project-scop clearfix">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 pro-img"><img src="images/projects/pro-de-img2.jpg" alt=""></div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+              <h3>Work Scope</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="scope-item">
+                <li>Financial Responsibility to Our Clients</li>
+                <li>Superior Quality and Craftsmanship</li>
+                <li>Quality and Value to the Projects We Deliver</li>
+                <li>Highest Standards in Cost Control</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -273,7 +254,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -341,37 +322,37 @@
       </div>
     </section>
     <!--script src="js/jquery-1.12.2.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
     <!--script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- Revolution Slider-->
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <!--script src="js/jquery.form.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.form.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.form.js')}}"></script>
     <!--script src="js/jquery.validate.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.validate.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.validate.min.js')}}"></script>
     <!--script src="js/contact.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/contact.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/contact.js')}}"></script>
     <!-- owl carousel-->
     <!--script src="vendors/owlcarousel/owl.carousel.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
     <!--script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTI1BZJKFCeJ8g9O01CMZ4QvVCfdPYkrE"></script>
     <!--script src="js/gmaps.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/gmaps.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/gmaps.min.js')}}"></script>
     <!--script src="js/imagelightbox.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/imagelightbox.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
   </body>
 
 <!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->

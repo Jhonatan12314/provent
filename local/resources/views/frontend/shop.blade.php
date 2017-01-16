@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
   
-<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:29 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- reponsive meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VEAGN || Equipo</title>
+    <title>VEAGN || Tienda</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
-    <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
     <!-- animate css-->
     <!--link rel="stylesheet" href="css/animate.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/animate.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/animate.min.css')}}" type="text/css" media="all" />
     <!-- owl-carousel-->
 
     <!--link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/settings.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/layers.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/navigation.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
     <!-- Main Css-->
     <!--link rel="stylesheet" href="css/style.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/style.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/style.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="css/responsive.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/responsive.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
-    <link rel='icon' type="image/png" sizes="16x16" href="{{url('frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -182,22 +182,22 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>News Details</h2>
+        <h2>Shop Page</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index">Home</a></li>
-          <li><span>News Details</span></li>
+          <li><a href="index"><i class="fa fa-home"></i> Home</a></li>
+          <li><span>Shop Page</span></li>
         </ul>
       </div>
     </section>
-    <!-- News Details Page-->
-    <section class="core-projects sectpad">
+    <!-- News Page-->
+    <section class="core-projects sectpad shop-page">
       <div class="container clearfix">
         <div class="row">
-          <div class="col-md-4 col-sm-12 pull-left news">
+          <div class="col-md-4 col-sm-12 pull-left">
             <div>
               <!-- Search-->
               <div class="widget-search-blog">
@@ -227,29 +227,29 @@
               </div>
               <div class="single-sidebar-widget">
                 <div class="sec-title">
-                  <h2><span>Popular Posts</span></h2>
+                  <h2><span>Best Seller</span></h2>
                 </div>
-                <div class="popular-post">
+                <div class="popular-post best-seller">
                   <ul>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/news/popular-post1.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item1.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
-                          <h4>Duisau irure dolor</h4></a>
-                        <p>in reprehenderit in volup tate velit esse cillum</p><span>02 Dec</span>
+                          <h4>INdustrial tools</h4></a>
+                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
                       </div>
                     </li>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/news/popular-post2.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item2.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
-                          <h4>Duisau irure dolor</h4></a>
-                        <p>in reprehenderit in volup tate velit esse cillum</p><span>02 Dec</span>
+                          <h4>INdustrial tools</h4></a>
+                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
                       </div>
                     </li>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/news/popular-post3.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item3.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
-                          <h4>Duisau irure dolor</h4></a>
-                        <p>in reprehenderit in volup tate velit esse cillum</p><span>02 Dec</span>
+                          <h4>INdustrial tools</h4></a>
+                        <p>$68.99</p><a href="product" class="read-more">More Info</a>
                       </div>
                     </li>
                   </ul>
@@ -282,129 +282,106 @@
           </div>
           <div class="col-md-8 col-sm-12 pull-right">
             <!-- News-->
-            <div class="single-post-wrapper news news-details">
-              <!-- News 1-->
-              <article class="single-blog-post img-cap-effect">
-                <div class="img-box"><a href="blog-details"><img src="frontend/images/news/1.jpg" alt="" class="img-responsive"></a></div>
-                <div class="meta-info">
-                  <div class="content-box">
-                    <ul class="post-links">
-                      <li><a href="#"><i class="fa fa-user"></i> By:  Michale John</a></li>
-                      <li><a href="#"><i class="fa fa-tag"></i> Delivery across country</a></li>
-                      <li><a href="#"><i class="fa fa-comments-o"></i> Comments: 8</a></li>
-                    </ul>
+            <div class="section_header color">
+              <h2>featured Products</h2>
+            </div>
+            <div class="row shop-item-wrapper">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/1.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
                   </div>
                 </div>
-                <h6>05 March 2016</h6>
-                <h3>Cost for Industrial craftmanship</h3>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid etx ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid etx ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                <ul class="nav post-list">
-                  <li>Dolor sit amet, consectetur</li>
-                  <li>Sdipiscing elit,</li>
-                  <li>Seddo eiusmod tempor</li>
-                  <li>Incididunt ut labore et</li>
-                  <li>Dolor sit amet, consectetur</li>
-                  <li>Sdipiscing elit,</li>
-                  <li>Seddo eiusmod tempor</li>
-                  <li>Incididunt ut labore et</li>
-                </ul>
-                <h3>Two Column texts</h3>
-                <div class="row">
-                  <div class="col-sm-6 info">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem ape riam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                  </div>
-                  <div class="col-sm-6 info">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem ape riam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                  </div>
-                </div><br>
-                <blockquote>
-                  <p>Ut enim ad minima veniam, quis nostrum exercitatio nem ullam corporis suscipit labori osam, nisi ut aliqu id ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                  <footer><a href="#">Michale John</a></footer>
-                </blockquote>
-                <p><b>Here is main text</b> quis nostrud exercitation ullamco laboris nisi here is itealic text ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <a href="#">here is link text</a> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </article>
-              <!-- Comments-->
-              <div class="news-comments">
-                <h3 class="comments_count">Comments (5)</h3>
-                <div class="comments">
-                  <div class="media comment">
-                    <div class="media-left"><img src="frontend/images/news/coments1.jpg" alt=""></div>
-                    <div class="media-body">
-                      <h5 class="commenter-name">Merry John</h5>
-                      <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
-                      <ul class="date-reply nav">
-                        <li><a href="#">Dec 09 2015</a></li>
-                        <li><a href="#">reply</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- Comment-->
-                  <div class="media comment comment-bg">
-                    <div class="media-left"><img src="frontend/images/news/coments3.jpg" alt=""></div>
-                    <div class="media-body">
-                      <h5 class="commenter-name">Merry John</h5>
-                      <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
-                      <ul class="date-reply nav">
-                        <li><a href="#">Dec 09 2015</a></li>
-                        <li><a href="#">reply</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- Comment-->
-                  <div class="media comment">
-                    <div class="media-left"><img src="frontend/images/news/coments1.jpg" alt=""></div>
-                    <div class="media-body">
-                      <h5 class="commenter-name">Merry John</h5>
-                      <ul class="date-reply nav">
-                        <li><a href="#">Dec 09 2015</a></li>
-                        <li><a href="#">reply</a></li>
-                      </ul>
-                      <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
-                      <div class="media comment reply">
-                        <div class="media-left"><img src="frontend/images/news/coments2.jpg" alt=""></div>
-                        <div class="media-body">
-                          <h5 class="commenter-name">Merry John</h5>
-                          <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat.</p>
-                          <ul class="date-reply nav">
-                            <li><a href="#">Dec 09 2015</a></li>
-                            <li><a href="#">reply</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <!-- Comment-->
-                    </div>
-                  </div>
-                  <!-- Comment-->
-                  <div class="media comment comment-bg">
-                    <div class="media-left"><img src="frontend/images/news/coments2.jpg" alt=""></div>
-                    <div class="media-body">
-                      <h5 class="commenter-name">Merry John</h5>
-                      <p>Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pari atur. Excepteur sint occaecat cupidatat non proid pent.</p>
-                      <ul class="date-reply nav">
-                        <li><a href="#">Dec 09 2015</a></li>
-                        <li><a href="#">reply</a></li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/2.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
                   </div>
                 </div>
-                <!-- Leave a Comment-->
-                <div class="leave-comments">
-                  <h3 class="leave-comment-title">Leave a Comment</h3>
-                  <form action="#" method="post" class="comment_form row m0">
-                    <input type="text" placeholder="Enter your name" class="form-control">
-                    <input type="email" placeholder="Enter your email address" class="form-control">
-                    <textarea placeholder="Wrtie message" class="form-control"></textarea>
-                    <button type="submit" class="btn btn-primary submit">Submit now <i class="fa fa-arrow-right"></i></button>
-                  </form>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/3.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/4.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/5.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/6.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="section_header color mt30">
+              <h2>featured Products</h2>
+            </div>
+            <div class="row shop-item-wrapper">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/1.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/2.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                  <div class="img-box"><img src="public/frontend/images/shop/3.jpg" alt="Awesome Image"></div>
+                  <div class="content"><a href="product">
+                      <h3>Industrial Tools</h3></a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="page-navigation text-left">
+              <li><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Indurial Solution-->
     <section class="indurial-t-solution indurial-solution indpad anim-5-all indurial-t-solution3">
       <div class="container clearfix">
@@ -421,7 +398,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -448,7 +425,7 @@
             <h4 class="widget_title">Quick Links</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="about">- About Us</a></li>
+                <li><a href="about">- Nosotros</a></li>
                 <li><a href="#">- Career</a></li>
                 <li><a href="#">- Get Quote</a></li>
                 <li><a href="news">- News</a></li>
@@ -488,39 +465,38 @@
         </div>
       </div>
     </section>
-    <!--script src="js/jquery-1.12.2.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+<script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
     <!--script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- Revolution Slider-->
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <!--script src="js/jquery.form.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.form.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.form.js')}}"></script>
     <!--script src="js/jquery.validate.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.validate.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.validate.min.js')}}"></script>
     <!--script src="js/contact.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/contact.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/contact.js')}}"></script>
     <!-- owl carousel-->
     <!--script src="vendors/owlcarousel/owl.carousel.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
     <!--script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTI1BZJKFCeJ8g9O01CMZ4QvVCfdPYkrE"></script>
     <!--script src="js/gmaps.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/gmaps.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/gmaps.min.js')}}"></script>
     <!--script src="js/imagelightbox.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/imagelightbox.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
   </body>
 
-<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:36 GMT -->
 </html>

@@ -10,29 +10,29 @@
     <title>VEAGN || Equipo</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
-    <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
     <!-- animate css-->
     <!--link rel="stylesheet" href="css/animate.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/animate.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/animate.min.css')}}" type="text/css" media="all" />
     <!-- owl-carousel-->
 
     <!--link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/settings.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/layers.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/navigation.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
     <!-- Main Css-->
     <!--link rel="stylesheet" href="css/style.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/style.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/style.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="css/responsive.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/responsive.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
-    <link rel='icon' type="image/png" sizes="16x16" href="{{url('frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -180,7 +180,7 @@
       <!-- Main Navigation-->
     </header>
     <!-- Inner Header-->
-     <section class="inner-banner2 clearfix">
+    <section class="inner-banner2 clearfix">
       <div class="container clearfix">
         <h2>Projects</h2>
       </div>
@@ -206,48 +206,75 @@
         <div class="project-post">
           <div class="row">
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img4.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img4.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img4.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img5.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img5.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img5.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img6.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img6.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="project-post">
-          <div class="row">
-            <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img7.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img7.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-            </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img8.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img8.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-            </div>
-            <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img9.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img9.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img6.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="project-post">
           <div class="row">
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img10.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img10.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img7.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img11.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img11.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img8.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4 project-post-info">
-              <div class="img-holder"><a href="images/projects/pro-img12.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                  <div class="project-post-image image_hover"><img src="frontend/images/projects/pro-img12.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img9.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-post">
+          <div class="row">
+            <div class="col-sm-4 project-post-info">
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img10.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 project-post-info">
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img11.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 project-post-info">
+              <div class="project-post-image image_hover"><img src="public/frontend/images/projects/pro-img12.jpg" alt="" class="zoom_img_effect">
+                <div class="info-text">
+                  <h4>Oil Plant Project</h4><a href="projects-details">View Details</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +296,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -337,37 +364,37 @@
       </div>
     </section>
     <!--script src="js/jquery-1.12.2.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
     <!--script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- Revolution Slider-->
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <!--script src="js/jquery.form.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.form.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.form.js')}}"></script>
     <!--script src="js/jquery.validate.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.validate.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.validate.min.js')}}"></script>
     <!--script src="js/contact.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/contact.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/contact.js')}}"></script>
     <!-- owl carousel-->
     <!--script src="vendors/owlcarousel/owl.carousel.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
     <!--script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTI1BZJKFCeJ8g9O01CMZ4QvVCfdPYkrE"></script>
     <!--script src="js/gmaps.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/gmaps.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/gmaps.min.js')}}"></script>
     <!--script src="js/imagelightbox.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/imagelightbox.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
   </body>
 
 <!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->

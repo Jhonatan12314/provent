@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
   
-<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:29 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- reponsive meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VEAGN || Tienda</title>
+    <title>VEAGN || Equipo</title>
     <!-- Bootstrap-->
     <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
-    <link rel='stylesheet' href="{{url('frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/bootstrap.min.css')}}" type="text/css" media="all" />
     <!-- animate css-->
     <!--link rel="stylesheet" href="css/animate.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/animate.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/animate.min.css')}}" type="text/css" media="all" />
     <!-- owl-carousel-->
 
     <!--link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/owlcarousel/owl.carousel.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/settings.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/settings.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/layers.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/layers.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/revolution/css/navigation.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/revolution/css/navigation.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="vendors/jquery-ui-1.11.4/jquery-ui.min.css"-->
-    <link rel='stylesheet' href="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.css')}}" type="text/css" media="all" />
     <!-- Main Css-->
     <!--link rel="stylesheet" href="css/style.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/style.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/style.css')}}" type="text/css" media="all" />
     <!--link rel="stylesheet" href="css/responsive.css"-->
-    <link rel='stylesheet' href="{{url('frontend/css/responsive.css')}}" type="text/css" media="all" />
+    <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
-    <link rel='icon' type="image/png" sizes="16x16" href="{{url('frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -59,7 +59,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="request-qoute" class="submit">requet a quote</a></div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -182,14 +182,14 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>Shop Page</h2>
+        <h2>Product Details</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index"><i class="fa fa-home"></i> Home</a></li>
-          <li><span>Shop Page</span></li>
+          <li><a href="index">Home</a></li>
+          <li><span>Product Details</span></li>
         </ul>
       </div>
     </section>
@@ -232,21 +232,21 @@
                 <div class="popular-post best-seller">
                   <ul>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item1.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item1.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
                           <h4>INdustrial tools</h4></a>
                         <p>$68.99</p><a href="product" class="read-more">More Info</a>
                       </div>
                     </li>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item2.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item2.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
                           <h4>INdustrial tools</h4></a>
                         <p>$68.99</p><a href="product" class="read-more">More Info</a>
                       </div>
                     </li>
                     <li class="img-cap-effect">
-                      <div class="img-box"><a href="news-details"><img src="frontend/images/shop/popular-item3.jpg" alt="Awesome Image"></a></div>
+                      <div class="img-box"><a href="news-details"><img src="public/frontend/images/shop/popular-item3.jpg" alt="Awesome Image"></a></div>
                       <div class="content"><a href="#">
                           <h4>INdustrial tools</h4></a>
                         <p>$68.99</p><a href="product" class="read-more">More Info</a>
@@ -282,93 +282,72 @@
           </div>
           <div class="col-md-8 col-sm-12 pull-right">
             <!-- News-->
-            <div class="section_header color">
-              <h2>featured Products</h2>
+            <div class="product-details-content">
+              <div class="img-box"><img src="public/frontend/images/shop/single-product.jpg" alt=""></div>
+              <div class="content-box">
+                <div class="title">
+                  <h3>Industrial Machine</h3>
+                </div>
+                <div class="content-text">
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequ untur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <p class="price">Price : <span>$24.5</span></p>
+                <p class="quantity">Quantity : 
+                  <input type="number" value="1">
+                </p><a href="#" class="cart-btn">Add to cart</a>
+              </div>
             </div>
-            <div class="row shop-item-wrapper">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/1.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
+            <div class="product-tab-box">
+              <div class="tab-title-box">
+                <ul>
+                  <li data-tab-name="software" class="active"><a href="#des" aria-controls="des" role="tab" data-toggle="tab">Descripton</a></li>
+                  <li data-tab-name="software"><a href="#speci" aria-controls="speci" role="tab" data-toggle="tab">Specification</a></li>
+                  <li data-tab-name="software"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Review (0)</a></li>
+                </ul>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/2.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
+              <div class="tab-content">
+                <div id="des" class="single-tab-content tab-pane fade in active">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/3.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
+                <div id="speci" class="single-tab-content tab-pane fade">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/4.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/5.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/6.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
+                <div id="review" class="single-tab-content tab-pane fade">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
               </div>
             </div>
             <div class="section_header color mt30">
-              <h2>featured Products</h2>
+              <h2>Related Products</h2>
             </div>
             <div class="row shop-item-wrapper">
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/1.jpg" alt="Awesome Image"></div>
+                  <div class="img-box"><img src="public/frontend/images/shop/1.jpg" alt="Awesome Image"></div>
                   <div class="content"><a href="product">
                       <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="#" class="thm-btn">Add To Cart</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/2.jpg" alt="Awesome Image"></div>
+                  <div class="img-box"><img src="public/frontend/images/shop/2.jpg" alt="Awesome Image"></div>
                   <div class="content"><a href="product">
                       <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="#" class="thm-btn">Add To Cart</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
-                  <div class="img-box"><img src="frontend/images/shop/3.jpg" alt="Awesome Image"></div>
+                  <div class="img-box"><img src="public/frontend/images/shop/3.jpg" alt="Awesome Image"></div>
                   <div class="content"><a href="product">
                       <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="#" class="thm-btn">Add To Cart</a>
                   </div>
                 </div>
               </div>
@@ -398,7 +377,7 @@
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
-          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="frontend/images/header/f-logo2.png" alt=""></a>
+          <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -425,7 +404,7 @@
             <h4 class="widget_title">Quick Links</h4>
             <div class="widget-contact-list row m0">
               <ul>
-                <li><a href="about">- Nosotros</a></li>
+                <li><a href="about">- About Us</a></li>
                 <li><a href="#">- Career</a></li>
                 <li><a href="#">- Get Quote</a></li>
                 <li><a href="news">- News</a></li>
@@ -465,38 +444,39 @@
         </div>
       </div>
     </section>
-<script type='text/javascript' src="{{url('frontend/js/jquery-1.12.2.min.js')}}"></script>
+    <!--script src="js/jquery-1.12.2.min.js"></script-->
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
     <!--script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- Revolution Slider-->
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
     <!--script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <!--script src="js/jquery.form.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.form.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.form.js')}}"></script>
     <!--script src="js/jquery.validate.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/jquery.validate.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery.validate.min.js')}}"></script>
     <!--script src="js/contact.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/contact.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/contact.js')}}"></script>
     <!-- owl carousel-->
     <!--script src="vendors/owlcarousel/owl.carousel.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/owlcarousel/owl.carousel.min.js')}}"></script>
     <!--script src="vendors/jquery-ui-1.11.4/jquery-ui.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/vendors/jquery-ui-1.11.4/jquery-ui.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTI1BZJKFCeJ8g9O01CMZ4QvVCfdPYkrE"></script>
     <!--script src="js/gmaps.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/gmaps.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/gmaps.min.js')}}"></script>
     <!--script src="js/imagelightbox.min.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/imagelightbox.min.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
-    <script type='text/javascript' src="{{url('frontend/js/theme.js')}}"></script>
+    <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
   </body>
 
-<!-- Mirrored from demos.pixelatethemes.com/industrial/shop by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:36 GMT -->
+<!-- Mirrored from demos.pixelatethemes.com/industrial/contact by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 22:15:37 GMT -->
 </html>
