@@ -77,7 +77,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Pointer"></i></a></div>
                         <div class="media-body">
-                          <p>Calle 2 de <br><span>Zapopan, </span></p>
+                          <p>Calle 2 de febrero N°3405-A<br><br>Hogares de Nuevo México<br><span>C.P. 45120, Zapopan, Jalisco, México</span></p>
                         </div>
                       </div>
                     </li>
@@ -93,7 +93,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="public/frontend/images/logo-mobile.png" alt=""></div>
+              <div class="logo"><img src="public/frontend/images//header/logo.png" height="40" width="150" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -145,18 +145,6 @@
                       </li>
                       <li><a href="contact">contactanos</a></li>
                     </ul>
-                    <div class="mobile-link"><a href="request-qoute" class="submit">requet a quote</a>
-                      <div class="widget-t widget-t-search">
-                        <div class="widget-t-inner">
-                          <form action="#" method="get" class="search-form">
-                            <div class="input-group">
-                              <input type="search" placeholder="Search" class="form-control"><span class="input-group-addon">
-                                <button type="submit"><i class="icon icon-Search"></i></button></span>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -477,41 +465,10 @@
       </div>
     </section>
     <!-- Our Projects-->
-    <section class="our-galler-htwo clearfix sectpad">
-      <div class="container clearfix">
-        <div class="section_header3 section_header2 common">
-          <h2>Our Projects</h2>
-        </div>
-      </div>
-      <div class="fullwidth-silder">
-        <div class="fullwidth-slider">
-          <div class="item">
-            <div class="img-holder"><a href="images/our-projects/1.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                <div class="project-post-image image_hover"><img src="public/frontend/images/our-projects/1.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-          </div>
-          <div class="item">
-            <div class="img-holder"><a href="images/our-projects/2.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                <div class="project-post-image image_hover"><img src="public/frontend/images/our-projects/2.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-          </div>
-          <div class="item">
-            <div class="img-holder"><a href="images/our-projects/3.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                <div class="project-post-image image_hover"><img src="public/frontend/images/our-projects/3.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-          </div>
-          <div class="item">
-            <div class="img-holder"><a href="images/our-projects/4.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                <div class="project-post-image image_hover"><img src="public/frontend/images/our-projects/4.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-          </div>
-          <div class="item">
-            <div class="img-holder"><a href="images/our-projects/5.jpg" class="tt-gallery-1 lightbox"><span class="tt-gallery-1-overlay"></span>
-                <div class="project-post-image image_hover"><img src="public/frontend/images/our-projects/5.jpg" alt="Oil Plant Project" class="zoom_img_effect"><span class="tt-gallery-1-caption"><span class="tt-gallery-1-caption-table"><span class="tt-gallery-1-caption-inner"><span class="tt-gallery-1-search"><i class="fa fa-search"></i></span></span></span></span></div></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Lattest news-->
     <div class="container clearfix sectpad-sec">
       <div class="section_header2 common">
-        <h2>Latest news</h2>
+        <h2>Últimas noticias</h2>
       </div>
       <div class="row event-pad">
         <div class="col-md-4 col-sm-4 col-xs-12">
@@ -563,7 +520,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 our-t-client">
           <div class="section_header2 common">
-            <h2>our clients</h2>
+            <h2>Clientes</h2>
           </div>
           <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit. Red quia numquam eius modi.</p>
           <ul>
@@ -579,7 +536,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="section_header2 common">
-            <h2>Get in touch</h2>
+            <h2>Contacto</h2>
           </div>
           <div class="get-t-touch">
             <div class="get-t-touch-inner input_form service-request-form">
