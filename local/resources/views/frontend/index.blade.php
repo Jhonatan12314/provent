@@ -60,7 +60,7 @@ s0.parentNode.insertBefore(s1,s0);
         <div class="container">
           <div class="row wel-band-bg">
             <div class="col-md-6 pull-left col col-sm-12">
-              <p>VEAGN © 2016 | Todos los derechos reservados.</p>
+              <p>VEAGN © 2017 | Todos los derechos reservados.</p>
             </div>
             <div class="col-md-6 pull-right text-right col-sm-12">
             </div>
@@ -125,7 +125,7 @@ s0.parentNode.insertBefore(s1,s0);
                           <li><a href="faq">Faq</a></li>
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="solutions">Soluciones</a>
+                      <li class="has-t-submenu"><a href="solutions">Productos</a>
                         <ul class="submenu">
                           <li><a href="meterial">meterial engineering</a></li>
                           <li><a href="agricultural">agricultural processing</a></li>
@@ -237,46 +237,47 @@ s0.parentNode.insertBefore(s1,s0);
         <div class="row">
           <div class="col-sm-4 service-info">
             <div class="item"><a href="agricultural" class="post-image view image_hover">			<img src="public/frontend/images/services/ser-img1.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="agricultural">
-                <h4>mechanical engineering</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="mechanical">Read more</a></h6>
+                <h4>Medidor Clase B</h4></a>
+              <p align="justify">Este medidor de agua modelo MJGREEN, ha sido diseñado para el servicio de agua potable doméstico e Industrial. Su sólido y robusto diseño le permiten operar en los sistemas más adversos, también está pre-equipado con la tecnología AMR Ready, para emisión de pulsos para lectura remota. Clase Metrológica B. Presión de trabajo de hasta 12 bar.</p>
+              <h6><a href="mechanical">Leer m&aacute;s</a></h6>
             </div>
           </div>
           <div class="col-sm-4 service-info">
             <div class="item"><a href="agricultural" class="post-image view image_hover"><img src="public/frontend/images/services/ser-img2.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="agricultural">
-                <h4>Agricultural Processing</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="agricultural">Read more</a></h6>
+                <h4>Medidor Clase C</h4></a>
+              <p align="justify">Este medidor de agua con modelo MJGREEN, ha sido diseñado para el servicio de agua potable. Su sólido y robusto diseño le permiten operar en los sistemas más adversos, también está Pre-equipado con la tecnología AMR Ready, para emisión de pulsos para lectura remota. Clase Metrológica C. Presión de trabajo de hasta 12 bar.</p>
+              <h6><a href="agricultural">Leer m&aacute;s</a></h6>
             </div>
           </div>
           <div class="col-sm-4 service-info">
             <div class="item"><a href="oil" class="post-image view image_hover">		<img src="public/frontend/images/services/ser-img3.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="oil">
-                <h4>Oils and Lubricants</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="oil">Read more</a></h6>
+                <h4>Medidor Chorro Único</h4></a>
+              <p align="justify
+              ">El medidor de Chorro Único de velocidad funciona bajo el principio de movimiento del agua sobre una turbina encapsulada con entrada de un chorro único que incide sobre esta haciéndola girar, este movimiento de la turbina se transmite al registro mediante una transmisión magnética que mide el volumen de agua que se está consumiendo.</p>
+              <h6><a href="oil">Leer m&aacute;s</a></h6>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4 service-info">
             <div class="item"><a href="power" class="post-image view image_hover"><img src="public/frontend/images/services/ser-img4.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="power">
-                <h4>power and engery</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="power">Read more</a></h6>
+                <h4>Válvula Antifraude</h4></a>
+              <p align="justify">El sistema Antifraude Multi-Lock es un innovador mecanismo anti moroso que permite bloquear o limitar el suministro de agua sin necesidad de dañar la toma domiciliaria, además funciona como llave de paso para el usuario.</p>
+              <h6><a href="power">Leer m&aacute;s</a></h6>
             </div>
           </div>
           <div class="col-sm-4 service-info">
             <div class="item"><a href="chemical" class="post-image view image_hover"><img src="public/frontend/images/services/ser-img5.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="chemical">
-                <h4>chemical research</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="chemical">Read more</a></h6>
+                <h4>Válvula Check</h4></a>
+              <p align="justify">Esta válvula es adecuada para todo tipo de fontanería doméstica y comercial, en general con todos los fluidos no corrosivos.</p>
+              <h6><a href="chemical">Leer m&aacute;s</a></h6>
             </div>
           </div>
           <div class="col-sm-4 service-info">
             <div class="item"><a href="meterial" class="post-image view image_hover"><img src="public/frontend/images/services/ser-img6.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="meterial">
-                <h4>Meterial engineering</h4></a>
-              <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-              <h6><a href="meterial">Read more</a></h6>
+                <h4>Válvula ON /OFF</h4></a>
+              <p align="justify">Es un equipo de tecnología y materiales modernos 100% reciclables que protegen el medio ambiente. Evita la sub-medición que no se factura por bajos flujos de agua. Elimina el desperdicio de agua por las fallas por altas presiones de líneas nocturnas de la típica válvula de flotador. Además permite el llenado del depósito con un cierre al 100% sin escurrimientos o rebases, reabre al 100% cuándo el depósito baja su nivel de agua del 8% al 15% dependiendo de su tamaño, sin importar el tiempo.</p>
+              <h6><a href="meterial">Leer m&aacute;s</a></h6>
             </div>
           </div>
         </div>
@@ -596,7 +597,7 @@ s0.parentNode.insertBefore(s1,s0);
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="indurial-solution-text text-center">
-              <h2>If  You Need Any Industrial Solution ... We Are Available For You</h2><span class="contactus-button2 text-center"><a href="{{url('contact')}}" class="submit">Contact Us </a></span>
+              <h2>Si necesitas m&aacute;s informaci&oacute;n y soluciones... cont&aacute;ctanos</h2><span class="contactus-button2 text-center"><a href="{{url('contact')}}" class="submit">Cont&aacute;ctanos </a></span>
             </div>
           </div>
         </div>
@@ -607,7 +608,8 @@ s0.parentNode.insertBefore(s1,s0);
       <div class="container clearfix">
         <div class="row">
           <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
-            <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim.</p><a href="about">Read More <i class="fa fa-angle-double-right"></i></a>
+            <p>Somos una empresa Jalisciense que Actualmente fabricamos nuestros productos con los estándares más altos de calidad, incorporando materiales 100 % reciclables al fin de su vida útil, así como con los índices más bajos de material nocivo para el consumo humano.</p>
+            <a href="about">Leer m&aacute;s <i class="fa fa-angle-double-right"></i></a>
             <ul class="nav">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
@@ -617,7 +619,7 @@ s0.parentNode.insertBefore(s1,s0);
             </ul>
           </div>
           <div class="widget widget-links col-md-3 col-sm-6">
-            <h4 class="widget_title">Our Solutions</h4>
+            <h4 class="widget_title">Nuestros Productos</h4>
             <div class="widget-contact-list row m0">
               <ul>
                 <li><a href="meterial">- Metal Industry</a></li>
@@ -630,32 +632,32 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
           </div>
           <div class="widget widget-links col-md-3 col-sm-6">
-            <h4 class="widget_title">Quick Links</h4>
+            <h4 class="widget_title">Atajos</h4>
             <div class="widget-contact-list row m0">
               <ul>
                 <li><a href="about">- Nosotros</a></li>
-                <li><a href="#">- Career</a></li>
-                <li><a href="#">- Get Quote</a></li>
-                <li><a href="news">- News</a></li>
+                <li><a href="#">- Trayectoria</a></li>
+                <li><a href="#">- Obtener cotizaci&oaaacute;n</a></li>
+                <li><a href="news">- Noticias</a></li>
                 <li><a href="faq">- Faq</a></li>
               </ul>
             </div>
           </div>
           <div class="widget widget-contact col-md-3 col-sm-6">
-            <h4 class="widget_title">Get in Touch</h4>
+            <h4 class="widget_title">Mantente en contacto</h4>
             <div class="widget-contact-list row m0">
               <ul>
                 <li><i class="fa fa-map-marker"></i>
-                  <div class="fleft location_address">Lorance 542B, Tailstoi Town 5248 MT, Wordwide Country</div>
+                  <div class="fleft location_address">Calle 2 de febrero N°3405-A, Hogares de Nuevo México, C.P. 45120, Zapopan, Jalisco, México</div>
                 </li>
                 <li><i class="fa fa-phone"></i>
-                  <div class="fleft contact_no"><a href="#">01865 524 8503</a></div>
+                  <div class="fleft contact_no"><a href="#">(01) 3336 6377 26/36</a></div>
                 </li>
                 <li><i class="fa fa-envelope-o"></i>
-                  <div class="fleft contact_mail"><a href="mailto:info@woodworkshop.com">info@woodworkshop.com</a></div>
+                  <div class="fleft contact_mail"><a href="mailto:contacto@veagn.com">contacto@veagn.com</a></div>
                 </li>
                 <li><i class="icon icon-Timer"></i>
-                  <div class="fleft service_time">Mon - Sat : 9am to 6pm</div>
+                  <div class="fleft service_time">Lun - Sab : 9am a 6pm</div>
                 </li>
               </ul>
             </div>
@@ -666,10 +668,10 @@ s0.parentNode.insertBefore(s1,s0);
     <section class="footer-t-bottom footer-bottom footer-bottom3">
       <div class="container clearfix">
         <div class="pull-left fo-txt">
-          <p>Copyright © Industiral 2016.. All rights reserved.</p>
+          <p>Copyright © VEAGN 2017. Todos los derechos reservados.</p>
         </div>
         <div class="pull-right fo-txt">
-          <p>Created by: <a href="http://themeforest.net/user/designarc">DesignArc</a></p>
+          <p>Created by: <a href="http://indexceed.com">Indexceed</a></p>
         </div>
       </div>
     </section>
