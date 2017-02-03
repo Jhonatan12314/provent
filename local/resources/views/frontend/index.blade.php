@@ -526,7 +526,7 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- product solutions-->
     <section class="our-sol-wrapper clearfix">
       <div class="container clearfix">
-        <p>We provide innovative <span>product solutions</span> for sustainable progress. Our professional team works to increase productivity and cost effectiveness on the market.</p>
+        <p>Somos una empresa preocupada por la <span> ecología </span>y el bienestar humano y nuestros productos están diseñados para ser Amigables con el entorno. Usamos <span>Tecnología</span> Verde, tecnología que evita los tóxicos al humano y la contaminación.</p>
       </div>
     </section>
     <!-- our clients & Get in touch-->
@@ -610,15 +610,8 @@ s0.parentNode.insertBefore(s1,s0);
           <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="public/frontend/images/header/f-logo2.png" alt=""></a>
             <p>Somos una empresa Jalisciense que Actualmente fabricamos nuestros productos con los estándares más altos de calidad, incorporando materiales 100 % reciclables al fin de su vida útil, así como con los índices más bajos de material nocivo para el consumo humano.</p>
             <a href="about">Leer m&aacute;s <i class="fa fa-angle-double-right"></i></a>
-            <ul class="nav">
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-              <li><a href="#"><i class="fa fa-skype"></i></a></li>
-              <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-            </ul>
           </div>
-          <div class="widget widget-links col-md-3 col-sm-6">
+          <!--div class="widget widget-links col-md-3 col-sm-6">
             <h4 class="widget_title">Nuestros Productos</h4>
             <div class="widget-contact-list row m0">
               <ul>
@@ -630,17 +623,16 @@ s0.parentNode.insertBefore(s1,s0);
                 <li><a href="oil">- Oil and lubricant</a></li>
               </ul>
             </div>
-          </div>
+          </div-->
           <div class="widget widget-links col-md-3 col-sm-6">
-            <h4 class="widget_title">Atajos</h4>
+            <h4 class="widget_title">Redes Sociales</h4>
             <div class="widget-contact-list row m0">
-              <ul>
-                <li><a href="about">- Nosotros</a></li>
-                <li><a href="#">- Trayectoria</a></li>
-                <li><a href="#">- Obtener cotizaci&oaaacute;n</a></li>
-                <li><a href="news">- Noticias</a></li>
-                <li><a href="faq">- Faq</a></li>
-              </ul>
+            <ul>
+              <li><a href="https://www.facebook.com/veagnmx/"><i class="fa fa-facebook-square"></i></a></li>            
+              <li><a href="https://twitter.com/VEAGN"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCCymAI0GmKYOEwzUp2kkQ4w"><i class="fa fa-youtube-square"></i></a></li>
+              <li><a href="https://es.pinterest.com/Veagn16/"><i class="fa fa-pinterest-square"></i></a></li>
+            </ul>
             </div>
           </div>
           <div class="widget widget-contact col-md-3 col-sm-6">
