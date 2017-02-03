@@ -236,7 +236,7 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
         <div class="row">
           <div class="col-sm-4 service-info">
-            <div class="item"><a href="agricultural" class="post-image view image_hover">			<img src="public/frontend/images/services/ser-img1.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="agricultural">
+            <div class="item"><a href="agricultural" class="post-image view image_hover">     <img src="public/frontend/images/services/ser-img1.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="agricultural">
                 <h4>Medidor Clase B</h4></a>
               <p align="justify">Este medidor de agua modelo MJGREEN, ha sido diseñado para el servicio de agua potable doméstico e Industrial. Su sólido y robusto diseño le permiten operar en los sistemas más adversos, también está pre-equipado con la tecnología AMR Ready, para emisión de pulsos para lectura remota. Clase Metrológica B. Presión de trabajo de hasta 12 bar.</p>
               <h6><a href="mechanical">Leer m&aacute;s</a></h6>
@@ -250,7 +250,7 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
           </div>
           <div class="col-sm-4 service-info">
-            <div class="item"><a href="oil" class="post-image view image_hover">		<img src="public/frontend/images/services/ser-img3.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="oil">
+            <div class="item"><a href="oil" class="post-image view image_hover">    <img src="public/frontend/images/services/ser-img3.jpg" alt="" class="img-responsive zoom_img_effect"></a><a href="oil">
                 <h4>Medidor Chorro Único</h4></a>
               <p align="justify
               ">El medidor de Chorro Único de velocidad funciona bajo el principio de movimiento del agua sobre una turbina encapsulada con entrada de un chorro único que incide sobre esta haciéndola girar, este movimiento de la turbina se transmite al registro mediante una transmisión magnética que mide el volumen de agua que se está consumiendo.</p>
@@ -305,7 +305,7 @@ s0.parentNode.insertBefore(s1,s0);
           <h2>A hight level Quality Control in compliance with National and In International regulations and standards</h2>
           <p>
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consect petur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur.	
+            velit esse cillum dolore eu fugiat nulla pariatur.  
           </p>
         </div>
         <div class="vision-wrapper text-center">
