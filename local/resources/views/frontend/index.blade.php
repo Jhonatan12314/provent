@@ -416,18 +416,4 @@
         </div>
       </div>
     </div>
-    <!-- Indurial Solution-->
-    <section class="indurial-t-solution indurial-solution indpad anim-5-all indurial-t-solution3">
-      <div class="container clearfix">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="indurial-solution-text text-center">
-              <h2>Si necesitas m&aacute;s informaci&oacute;n y soluciones... cont&aacute;ctanos</h2><span class="contactus-button2 text-center"><a href="{{url('contact')}}" class="submit">Cont&aacute;ctanos </a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Indurial Solution-->
-
 @endsection
