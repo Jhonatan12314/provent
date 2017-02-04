@@ -7,14 +7,14 @@
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
-        <h2>Projects</h2>
+        <h2>Proyectos</h2>
       </div>
     </section>
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index">Home</a></li>
-          <li><span>Projects</span></li>
+          <li><a href="index">Inicio</a></li>
+          <li><span>Proyectos</span></li>
         </ul>
       </div>
     </section>
