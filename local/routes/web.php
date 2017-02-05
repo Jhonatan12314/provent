@@ -43,3 +43,9 @@ Route::get('chemical','FrontendController@getChemical');
 Route::get('power','FrontendController@getPower');
 Route::get('oil','FrontendController@getOil');
 Route::get('alternate','FrontendController@getAlternate');
+
+//admin
+
+Route::get('/admin','UserController@getlogin');
+Route::post('/admin','UserController@login');
+Route::get('logout','UserController@logout');
