@@ -4,42 +4,84 @@
 
 @section('content')
 
-<main id="content">
-    <div id="page-content">
-        <div class="row section-header">
-            <h4 class="page-title">Bienvenido</h4>
-        </div>
-        <div class=" row content-container general">
-            <div class="col s12 m3">
-                <a href="{{url('admin/news')}}">
-                    <div class="card grey darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title"><i class="zmdi zmdi-globe-alt"></i> NEWS</span>
+ <div class="wrapper">
+        <div class="main-panel">
+                  <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                            <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                            <i class="material-icons visible-on-sidebar-mini">view_list</i>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> Bienvenido </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+             
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="orange">
+                                    <i class="material-icons">store</i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">Productos</p>
+                                    <h3 class="card-title">184</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                      Total de productos registrados
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="rose">
+                                    <i class="material-icons">equalizer</i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">Visitas</p>
+                                    <h3 class="card-title">75.521</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        Total de visitas a la página
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="green">
+                                    <i class="material-icons">person</i>
+                                </div>
+                                <div class="card-content">
+                                    <p class="category">Clientes</p>
+                                    <h3 class="card-title">150</h3>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        Clientes registrados al newlester
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col s12 m3">
-            <a href="{{url('admin/films')}}">
-                <div class="card grey darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title"><i class="zmdi zmdi-movie"></i> FILMS</span>
-                    </div>
                 </div>
-                </a>
-            </div>
-            <div class="col s12 m3">
-            <a href="{{url('admin/gallery')}}">
-                <div class="card grey darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title"><i class="zmdi zmdi-camera"></i> GALLERY</span>
-                    </div>
-                </div>
-                </a>
             </div>
         </div>
     </div>
-</main>
 
 
 @endsection

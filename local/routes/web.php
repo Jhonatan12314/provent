@@ -46,6 +46,15 @@ Route::get('alternate','FrontendController@getAlternate');
 
 //admin
 
-Route::get('/admin','UserController@getlogin');
-Route::post('/admin','UserController@login');
+
+
+Route::group(['prefix' => 'admin'], function () {
+
+Route::get('/','UserController@getlogin');
+Route::get('dashboard','UserController@dashboard');
+Route::get('categorias','CategoriasController@getIndex');
+Route::get('categorias/create','CategoriasController@getCreate');
+
 Route::get('logout','UserController@logout');
+
+});

@@ -44,7 +44,6 @@
         @include('frontend.menu')
         @yield('content')
         @include('frontend.footer')
-   
   </body>
    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <!--script src="js/bootstrap.min.js"></script-->
