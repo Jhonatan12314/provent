@@ -58,6 +58,8 @@ Route::get('productos','ProductosController@getIndex');
 Route::get('productos/create','ProductosController@getCreate');
 Route::get('clientes','ClientesController@getIndex');
 Route::get('clientes/create','ClientesController@getCreate');
+Route::get('noticias','NoticiasController@getIndex');
+Route::get('noticias/create','NoticiasController@getCreate');
 Route::get('slider','SliderController@getIndex');
 Route::get('slider/create','SliderController@getCreate');
 Route::get('configuracion','ConfiguracionController@getIndex');

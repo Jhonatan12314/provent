@@ -59,6 +59,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{url('admin/noticias')}}">
+                            <i class="material-icons">insert_comment</i>
+                            <p>Noticias</p>
+                        </a>
+                    </li>                    
+                    <li>
                         <a href="{{url('admin/slider')}}">
                             <i class="material-icons">image</i>
                             <p>Slider</p>

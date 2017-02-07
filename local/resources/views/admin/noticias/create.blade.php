@@ -21,7 +21,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Slider </a>
+                        <a class="navbar-brand" href="#"> Noticias </a>
                     </div>
                 </div>
             </nav>
@@ -32,22 +32,22 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar slider</h4>
+                                    <h4 class="card-title">Agregar/Editar Noticia</h4>
                                     <form method="#" action="#">
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Titulo</label>
-                                            <input type="text" class="form-control" id="imagen">
+                                            <input type="text" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label" id="desc1">Imagen</label>
-                                            <input type="password" class="form-control">
-                                        <span class="material-input"></span></div>
+                                            <label class="control-label">Imagen</label>
+                                            <input type="text" class="form-control">
+                                        <span class="material-input"></span></div>                                        
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label" id="desc1">Descripción</label>
-                                            <input type="password" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                                                       
+                                            <label class="control-label">Descripción</label>
+                                            <input type="text" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
-                                         <a href="{{url('admin/slider')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                         <a href="{{url('admin/noticias')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
                                 </div>
                                 <!-- end content-->
