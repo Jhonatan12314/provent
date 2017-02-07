@@ -21,7 +21,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Categorías </a>
+                        <a class="navbar-brand" href="#"> Slider </a>
                     </div>
                 </div>
             </nav>
@@ -31,13 +31,13 @@
                     <div class="row">
                      <div class="col-md-12">
                      <div align="right">
-                       <a href="{{url('admin/categorias/create')}}" class="btn btn-fill btn-rose">Agregar</a>
+                       <a href="{{url('admin/slider/create')}}" class="btn btn-fill btn-rose">Agregar</a>
                        </div>
                             <div class="card">
 
                               
                                 <div class="card-content">
-                                    <h4 class="card-title">Listado de categorías</h4>
+                                    <h4 class="card-title">Listado de slider</h4>
                                     <div class="toolbar">
                                         <!--        Here you can write extra buttons/actions for the toolbar              -->
                                     </div>

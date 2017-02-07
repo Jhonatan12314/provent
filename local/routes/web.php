@@ -54,6 +54,14 @@ Route::get('/','UserController@getlogin');
 Route::get('dashboard','UserController@dashboard');
 Route::get('categorias','CategoriasController@getIndex');
 Route::get('categorias/create','CategoriasController@getCreate');
+Route::get('productos','ProductosController@getIndex');
+Route::get('productos/create','ProductosController@getCreate');
+Route::get('clientes','ClientesController@getIndex');
+Route::get('clientes/create','ClientesController@getCreate');
+Route::get('slider','SliderController@getIndex');
+Route::get('slider/create','SliderController@getCreate');
+Route::get('configuracion','ConfiguracionController@getIndex');
+Route::get('configuracion/create','ConfiguracionController@getCreate');
 
 Route::get('logout','UserController@logout');
 

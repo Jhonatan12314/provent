@@ -21,7 +21,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Categorías </a>
+                        <a class="navbar-brand" href="#"> Productos </a>
                     </div>
                 </div>
             </nav>
@@ -32,10 +32,10 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar categoría</h4>
+                                    <h4 class="card-title">Agregar/Editar producto</h4>
                                     <form method="#" action="#">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre de la categoría</label>
+                                            <label class="control-label">Nombre del producto</label>
                                             <input type="email" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
@@ -43,7 +43,7 @@
                                             <input type="password" class="form-control">
                                         <span class="material-input"></span></div>
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
-                                         <a href="{{url('admin/categorias')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                         <a href="{{url('admin/productos')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
                                 </div>
                                 <!-- end content-->

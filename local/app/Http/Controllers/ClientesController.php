@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use App\Producto;
 
-class UserController extends Controller
+class ClientesController extends Controller
 {
 
     /**
@@ -18,12 +18,12 @@ class UserController extends Controller
      */
     public function getIndex()
     {
-       
+       return view('admin/clientes/index');
     }
 
     public function getCreate(Request $request)
     {
-
+        return view('admin/clientes/create');
 
     }
 
@@ -35,7 +35,7 @@ class UserController extends Controller
 
     public function getUdate(Request $request)
     {
-
+        return view('admin/clientes/create');
 
     }
 

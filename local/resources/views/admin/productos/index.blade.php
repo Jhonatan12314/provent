@@ -21,7 +21,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Categorías </a>
+                        <a class="navbar-brand" href="#"> Productos </a>
                     </div>
                 </div>
             </nav>
@@ -31,13 +31,13 @@
                     <div class="row">
                      <div class="col-md-12">
                      <div align="right">
-                       <a href="{{url('admin/categorias/create')}}" class="btn btn-fill btn-rose">Agregar</a>
+                       <a href="{{url('admin/productos/create')}}" class="btn btn-fill btn-rose">Agregar</a>
                        </div>
                             <div class="card">
 
                               
                                 <div class="card-content">
-                                    <h4 class="card-title">Listado de categorías</h4>
+                                    <h4 class="card-title">Listado de productos</h4>
                                     <div class="toolbar">
                                         <!--        Here you can write extra buttons/actions for the toolbar              -->
                                     </div>
@@ -45,9 +45,9 @@
                                         <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Position</th>
-                                                    <th>Office</th>
+                                                    <th>Nombre</th>
+                                                    <th>Descripción</th>
+                                                    <th>Precio</th>
                                                     <th>Age</th>
                                                     <th>Date</th>
                                                     <th class="disabled-sorting text-right">Actions</th>

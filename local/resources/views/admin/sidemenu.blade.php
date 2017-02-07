@@ -46,26 +46,26 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#componentsExamples">
+                        <a href="{{url('admin/productos')}}">
                         <i class="material-icons">store</i>
                             
                             <p>Productos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#formsExamples">
+                        <a href="{{url('admin/clientes')}}">
                             <i class="material-icons">person</i>
                             <p>Clientes</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#formsExamples">
+                        <a href="{{url('admin/slider')}}">
                             <i class="material-icons">image</i>
                             <p>Slider</p>
                         </a>
                     </li>
                     <li>
-                        <a  href="#tablesExamples">
+                        <a  href="{{url('admin/configuracion')}}">
                         <i class="material-icons">settings_applications</i>
                             <p>Configuración</p>
                         </a>

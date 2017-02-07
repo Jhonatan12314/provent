@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use App\Producto;
 
-class UserController extends Controller
+class SliderController extends Controller
 {
 
     /**
@@ -18,13 +18,13 @@ class UserController extends Controller
      */
     public function getIndex()
     {
-       
+       return view('admin/slider/index');
     }
 
     public function getCreate(Request $request)
     {
 
-
+        return view('admin/slider/create');
     }
 
     public function create(Request $request)
@@ -36,7 +36,7 @@ class UserController extends Controller
     public function getUdate(Request $request)
     {
 
-
+        return view('admin/slider/create');
     }
 
     public function update(Request $request)
