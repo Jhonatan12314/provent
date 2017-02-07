@@ -45,20 +45,20 @@
                                         <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Position</th>
-                                                    <th>Office</th>
-                                                    <th>Age</th>
+                                                    <th>Nombre</th>
+                                                    <th>Estado</th>
+                                                    <th>Teléfono</th>
+                                                    <th>Email</th>
                                                     <th>Date</th>
                                                     <th class="disabled-sorting text-right">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tfoot>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Position</th>
-                                                    <th>Office</th>
-                                                    <th>Age</th>
+                                                    <th>Nombre</th>
+                                                    <th>Estado</th>
+                                                    <th>Teléfono</th>
+                                                    <th>Email</th>
                                                     <th>Start date</th>
                                                     <th class="text-right">Actions</th>
                                                 </tr>

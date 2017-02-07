@@ -35,13 +35,29 @@
                                     <h4 class="card-title">Agregar/Editar slider</h4>
                                     <form method="#" action="#">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre del slider</label>
-                                            <input type="email" class="form-control">
+                                            <label class="control-label">Slider 1</label>
+                                            <input type="text" class="form-control" id="imagen">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
+                                            <label class="control-label" id="desc1">Descripción</label>
                                             <input type="password" class="form-control">
                                         <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Slider 2</label>
+                                            <input type="text" class="form-control" id="imagen2">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label" id="desc2">Descripción</label>
+                                            <input type="password" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Slider 3</label>
+                                            <input type="text" class="form-control" id="imagen3">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label" id="desc3">Descripción</label>
+                                            <input type="password" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/slider')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>

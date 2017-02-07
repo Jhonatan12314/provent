@@ -36,12 +36,20 @@
                                     <form method="#" action="#">
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Nombre del clente</label>
-                                            <input type="email" class="form-control">
+                                            <input type="text" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
+                                            <label class="control-label">Estado</label>
+                                            <input type="text" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Teléfono</label>
                                             <input type="password" class="form-control">
                                         <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Email</label>
+                                            <input type="email" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/clientes')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
