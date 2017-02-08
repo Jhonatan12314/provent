@@ -32,31 +32,109 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar producto</h4>
-                                    <form method="#" action="#">
+
+                                @if(isset($producto))
+                                 <h4 class="card-title">Editar producto</h4>
+                                    <form method="post" action="{{url('admin/productos/update')}}">
+                                     {{ csrf_field() }}
+                                     <input type="hidden" name="id" value="{{$producto->id}}">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Categoría</label>
-                                            <input type="text" class="form-control">
-                                        <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre del producto</label>
-                                            <input type="text" class="form-control">
+                                            <label>Nombre del producto</label>
+                                            <input type="text" name="nombre" value="{{$producto->nombre}}" class="form-control">
                                         <span class="material-input"></span></div>                                        
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <input type="text" class="form-control">
+                                            <label>Descripción</label>
+                                            <textarea  class="form-control" name="descripcion">{{$producto->descripcion}}</textarea>
                                         <span class="material-input"></span></div>
+
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Precio</label>
-                                            <input type="number" class="form-control">
+                                            <label >Categoría</label>
+                                            <select class="selectpicker" data-style="btn btn-info btn-round" title="Categoria" data-size="7" name="categoria">
+                                            <option disabled selected>Seleccione</option>
+                                            @foreach($categorias as $categoria)
+                                            @if($categoria->id==$producto->idcategoria)
+                                            <option value="{{$categoria->id}}" selected>{{$categoria->nombre}}</option>
+                                            @else
+                                            <option value="{{$categoria->id}}">{{$categoria->nombre}}</option>
+                                            @endif
+                                            
+                                            @endforeach
+                                            </select>
+                                            
                                         <span class="material-input"></span></div>
+
+
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Imagen</label>
-                                            <input type="text" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                
+                                            <label >Precio</label>
+                                            <input type="text" value="{{$producto->precio}}" name="precio" class="form-control">
+                                        <span class="material-input"></span></div>
+                                         <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>                                                                           
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/productos')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+                                @else
+                                    <h4 class="card-title">Agregar producto</h4>
+                                    <form method="post" action="{{url('admin/productos/create')}}">
+                                     {{ csrf_field() }}
+                                        
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Nombre del producto</label>
+                                            <input type="text" name="nombre" class="form-control">
+                                        <span class="material-input"></span></div>                                        
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Descripción</label>
+                                            <textarea  class="form-control" name="descripcion"></textarea>
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label >Categoría</label>
+                                            <select class="selectpicker" data-style="btn btn-info btn-round" title="Categoria" data-size="7" name="categoria">
+                                            <option disabled selected>Seleccione</option>
+                                            @foreach($categorias as $categoria)
+                                            <option value="{{$categoria->id}}">{{$categoria->nombre}}</option>
+                                            @endforeach
+                                            </select>
+                                            
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Precio</label>
+                                            <input type="number" name="precio" class="form-control">
+                                        <span class="material-input"></span></div>
+                                         <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>                                                                           
+                                        <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                         <a href="{{url('admin/productos')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                    </form>
+                                @endif
+
                                 </div>
                                 <!-- end content-->
                             </div>

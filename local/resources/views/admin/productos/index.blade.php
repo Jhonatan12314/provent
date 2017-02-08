@@ -45,49 +45,28 @@
                                         <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                             <thead>
                                                 <tr>
+                                                    <th>ID</th>
                                                     <th>Nombre</th>
                                                     <th>Descripción</th>
                                                     <th>Precio</th>
-                                                    <th>Age</th>
-                                                    <th>Date</th>
+                                                    <th>Categoria</th>
                                                     <th class="disabled-sorting text-right">Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Position</th>
-                                                    <th>Office</th>
-                                                    <th>Age</th>
-                                                    <th>Start date</th>
-                                                    <th class="text-right">Actions</th>
-                                                </tr>
-                                            </tfoot>
                                             <tbody>
-                                                <tr>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                                                    <td>2011/04/25</td>
+                                            @foreach($productos as $producto)
+                                                 <tr>
+                                                    <td>{{$producto->id}}</td>
+                                                    <td>{{$producto->nombre}}</td>
+                                                    <td>{{$producto->descripcion}}</td>
+                                                    <td>{{$producto->precio}}</td>
+                                                    <td>{{$producto->getCategoria->nombre}}</td>
                                                     <td class="text-right">
-                                                        <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
-                                                        <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
-                                                        <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        <a href="{{url('admin/productos/update')}}/{{$producto->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
+                                                        <a href="{{url('admin/productos/delete')}}/{{$producto->id}}" onClick="confirm('¿Esta seguro que desea eliminar el producto?')" class="btn btn-simple btn-danger btn-icon"><i class="material-icons">close</i></a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td class="text-right">
-                                                        <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
-                                                        <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
-                                                        <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
-                                                    </td>
-                                                </tr>
+                                            @endforeach
                                             </tbody>
                                         </table>
                                     </div>
