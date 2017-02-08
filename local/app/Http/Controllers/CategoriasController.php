@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-use App\Producto;
+use App\Categoria;
 
 class CategoriasController extends Controller
 {
@@ -18,7 +18,8 @@ class CategoriasController extends Controller
      */
     public function getIndex()
     {
-       return view('admin/categorias/index');
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('admin/categorias/index')->with('categorias',$categorias);
     }
 
     public function getCreate(Request $request)
@@ -28,25 +29,41 @@ class CategoriasController extends Controller
 
     public function create(Request $request)
     {
-
+        $categoria=new Categoria;
+        $categoria->nombre=$request->nombre;
+        $categoria->descripcion=$request->nombre;
+        $categoria->save();
+        return redirect('admin/categorias');
 
     }
 
-    public function getUdate(Request $request)
+    public function getUpdate($id)
     {
-        return view('admin/categorias/create');
+        $categoria=Categoria::find($id);
+        return view('admin/categorias/create')->with('categoria',$categoria);
     }
 
     public function update(Request $request)
     {
-
-
+        $categoria=Categoria::find($request->id);
+        $categoria->nombre=$request->nombre;
+        $categoria->descripcion=$request->nombre;
+        $categoria->save();
+        return redirect('admin/categorias');
     }
 
-    public function delete(Request $request)
+    public function delete($id)
     {
-
-
+        $categoria=Categoria::find($id);
+        if($categoria)
+        {
+            $categoria->deleted=1;
+            $categoria->save();
+            return redirect('admin/categorias');
+        }else{
+            return redirect('admin/categorias');
+        }
+        
     }
 
 

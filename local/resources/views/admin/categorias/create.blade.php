@@ -32,19 +32,38 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar categoría</h4>
-                                    <form method="#" action="#">
+                                    @if(isset($categoria))
+                                    <h4 class="card-title">Editar categoría</h4>
+                                    <form method="post" action="{{url('admin/categorias/update')}}">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="id" value="{{$categoria->id}}">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre de la categoría</label>
-                                            <input type="email" class="form-control">
+                                            <label>Nombre de la categoría</label>
+                                            <input type="text" name="nombre" value="{{$categoria->nombre}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <input type="password" class="form-control">
+                                            <label>Descripción</label>
+                                            <input type="text" name="descripcion" value="{{$categoria->descripcion}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/categorias')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+                                    @else
+                                    <h4 class="card-title">Agregar categoría</h4>
+                                    <form method="post" action="{{url('admin/categorias/create')}}">
+                                    {{ csrf_field() }}
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Nombre de la categoría</label>
+                                            <input type="text" name="nombre" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Descripción</label>
+                                            <input type="text" name="descripcion" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                         <a href="{{url('admin/categorias')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                    </form>
+                                    @endif
                                 </div>
                                 <!-- end content-->
                             </div>

@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2017 a las 05:53:23
--- Versión del servidor: 10.1.16-MariaDB
--- Versión de PHP: 5.6.24
+-- Tiempo de generación: 08-02-2017 a las 20:48:23
+-- Versión del servidor: 10.1.19-MariaDB
+-- Versión de PHP: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,22 +19,21 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `veagn`
 --
-CREATE DATABASE IF NOT EXISTS `veagn` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `veagn`;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `categoria`
+-- Estructura de tabla para la tabla `categorias`
 --
 
-CREATE TABLE `categoria` (
-  `idcategoria` int(11) NOT NULL,
-  `categoria` varchar(200) NOT NULL,
-  `descripcion` varchar(200) DEFAULT NULL,
+CREATE TABLE `categorias` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `descripcion` varchar(250) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -44,56 +43,14 @@ CREATE TABLE `categoria` (
 
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(500) NOT NULL,
-  `estado` varchar(500) NOT NULL,
-  `telefono` varchar(500) NOT NULL,
-  `email` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `configuracion`
---
-
-CREATE TABLE `configuracion` (
-  `id` int(11) NOT NULL,
-  `direccion` varchar(500) DEFAULT NULL,
-  `email` varchar(500) DEFAULT NULL,
-  `telefono` varchar(500) DEFAULT NULL,
-  `descripcion` varchar(2000) DEFAULT NULL,
-  `vision` varchar(2000) DEFAULT NULL,
-  `mision` varchar(2000) DEFAULT NULL,
-  `valores` varchar(2000) DEFAULT NULL,
-  `objetivos` varchar(2000) DEFAULT NULL,
-  `logo` varchar(200) NOT NULL,
-  `ico` varchar(200) NOT NULL,
-  `imagenes` varchar(200) NOT NULL,
-  `facebook` varchar(500) NOT NULL,
-  `twitter` varchar(500) NOT NULL,
-  `pinterest` varchar(500) NOT NULL,
-  `youtube` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `login`
---
-
-CREATE TABLE `login` (
-  `idusuario` int(11) NOT NULL,
-  `usuario` varchar(500) DEFAULT NULL,
-  `password` varchar(200) NOT NULL,
-  `email` varchar(500) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `login`
---
-
-INSERT INTO `login` (`idusuario`, `usuario`, `password`, `email`) VALUES
-(1, 'admin', 'admin', 'admin@prueba.com');
+  `nombre` varchar(300) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `correo` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `empresa` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `telefono` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -103,71 +60,56 @@ INSERT INTO `login` (`idusuario`, `usuario`, `password`, `email`) VALUES
 
 CREATE TABLE `noticias` (
   `id` int(11) NOT NULL,
-  `titulo` varchar(200) NOT NULL,
-  `imagen` varchar(200) NOT NULL,
-  `descripcion` varchar(2000) NOT NULL,
+  `titulo` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `descripcion` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `imagen` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `producto`
+-- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE `producto` (
-  `idcategoria` int(11) NOT NULL,
-  `prodcuto` varchar(200) NOT NULL,
-  `descripcion` varchar(2000) NOT NULL,
-  `precio` varchar(200) NOT NULL,
-  `imagen` varchar(200) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `slider`
---
-
-CREATE TABLE `slider` (
+CREATE TABLE `productos` (
   `id` int(11) NOT NULL,
-  `titulo` varchar(500) NOT NULL,
-  `imagen` varchar(500) NOT NULL,
-  `descripcion` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nombre` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `descripcion` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `precio` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `imagen` varchar(600) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `idcategoria` int(11) NOT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `sliders`
 --
 
-CREATE TABLE `usuarios` (
-  `idusuario` int(11) NOT NULL,
-  `tipo` int(11) NOT NULL,
+CREATE TABLE `sliders` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `imagen` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`idusuario`, `tipo`, `created_at`, `updated_at`) VALUES
-(1, 1, '2017-02-05 06:51:45', '0000-00-00 00:00:00');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `categoria`
+-- Indices de la tabla `categorias`
 --
-ALTER TABLE `categoria`
-  ADD PRIMARY KEY (`idcategoria`);
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `clientes`
@@ -176,54 +118,36 @@ ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `configuracion`
---
-ALTER TABLE `configuracion`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`idusuario`);
-
---
 -- Indices de la tabla `noticias`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `producto`
+-- Indices de la tabla `productos`
 --
-ALTER TABLE `producto`
-  ADD PRIMARY KEY (`idcategoria`);
-
---
--- Indices de la tabla `slider`
---
-ALTER TABLE `slider`
+ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `sliders`
 --
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`idusuario`);
+ALTER TABLE `sliders`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
+-- AUTO_INCREMENT de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT de la tabla `configuracion`
---
-ALTER TABLE `configuracion`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `noticias`
@@ -231,32 +155,15 @@ ALTER TABLE `configuracion`
 ALTER TABLE `noticias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `slider`
+-- AUTO_INCREMENT de la tabla `productos`
 --
-ALTER TABLE `slider`
+ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- Restricciones para tablas volcadas
+-- AUTO_INCREMENT de la tabla `sliders`
 --
-
---
--- Filtros para la tabla `categoria`
---
-ALTER TABLE `categoria`
-  ADD CONSTRAINT `categoria_ibfk_1` FOREIGN KEY (`idcategoria`) REFERENCES `producto` (`idcategoria`) ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `producto`
---
-ALTER TABLE `producto`
-  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`idcategoria`) REFERENCES `categoria` (`idcategoria`) ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`idusuario`) REFERENCES `login` (`idusuario`);
-
+ALTER TABLE `sliders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
