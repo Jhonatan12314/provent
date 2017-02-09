@@ -5,31 +5,39 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 
+use App\Configuracion;
+use App\Categoria;
+
 class FrontendController extends Controller
 {
     public function getIndex(){
-
-    	return view('frontend/index');
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
  public function getContact(){
+     $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
 
-    	return view('frontend/contact');
+    	return view('frontend/contact')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getShop(){
 
     	return view('frontend/shop');
 }
 public function getAbout(){
-
-    	return view('frontend/about');
+        $configuracion=Configuracion::first();
+         $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/about')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getNews(){
 
     	return view('frontend/news');
 }
 public function getSolutions(){
-
-    	return view('frontend/solutions');
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getProjects(){
 

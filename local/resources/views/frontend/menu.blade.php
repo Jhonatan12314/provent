@@ -62,44 +62,18 @@
                     <ul class="nav">
                       <li class="has-t-submenu"><a href="index">Inicio</a>
                       </li>
-                      <li class="has-t-submenu"><a href="about">Nosotros</a>
-                        <ul class="submenu">
-                          <li><a href="team">Nuestro equipo</a></li>
-                          <li><a href="testimonials">Opiniones</a></li>
-                          <li><a href="faq">Faq</a></li>
-                        </ul>
-                      </li>
+                      <li ><a href="about">Nosotros</a></li>
                       <li class="has-t-submenu"><a href="solutions">Productos</a>
+                     
                         <ul class="submenu">
-                          <li><a href="meterial">meterial engineering</a></li>
-                          <li><a href="agricultural">agricultural processing</a></li>
-                          <li><a href="mechanical">Mechanical engineering</a></li>
-                          <li><a href="chemical">chemical research</a></li>
-                          <li><a href="power">power and energy</a></li>
-                          <li><a href="oil">Oil and lubricant</a></li>
-                          <li><a href="alternate">alternate energy</a></li>
+                        @foreach($categorias as $categoria)
+                        <li><a href="{{url('categorias')}}/{{$categoria->id}}">{{$categoria->nombre}}</a></li>
+                        @endforeach
                         </ul>
                       </li>
-                      <li class="has-t-submenu"><a href="projects">Proyectos</a>
-                        <ul class="submenu">
-                          <li><a href="classic">classic</a></li>
-                          <li><a href="fullscreen">fullscreen</a></li>
-                          <li><a href="lightbox">lightbox</a></li>
-                          <li><a href="projects-details">Detalle proyectos</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-t-submenu"><a href="news">Noticias</a>
-                        <ul class="submenu">
-                          <li><a href="news-details">News Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-t-submenu"><a href="shop">Tienda</a>
-                        <ul class="submenu">
-                          <li><a href="product">Detalle Producto</a></li>
-                          <li><a href="cart">Cart Page</a></li>
-                          <li><a href="checkout">Checkout Page</a></li>
-                        </ul>
-                      </li>
+                      
+                      <li ><a href="news">Noticias</a></li>
+                       <li ><a href="news">Clientes</a></li>
                       <li><a href="contact">contactanos</a></li>
                     </ul>
                   </div>
