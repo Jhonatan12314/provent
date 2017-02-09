@@ -104,3 +104,8 @@ Route::post('configuracion/create','ConfiguracionController@create');
 Route::get('logout','UserController@logout');
 
 });
+
+Route::get('500', function()
+{
+    abort(500);
+});
