@@ -33,44 +33,72 @@
                     </div>
                 </div>
                 <ul class="nav">
+                    @if($route=="dashboard")
                     <li class="active">
-                        <a href="dashboard.html">
+                    @else
+                    <li>
+                    @endif
+                        <a href="{{url('admin/dashboard')}}">
                             <i class="material-icons">dashboard</i>
                             <p>Inicio</p>
                         </a>
                     </li>
+                    @if($route=="categorias")
+                    <li class="active">
+                    @else
                     <li>
+                    @endif
                         <a  href="{{url('admin/categorias')}}">
                             <i class="material-icons">list</i>
                             <p>Categorías </p>
                         </a>
                     </li>
+                    @if($route=="productos")
+                    <li class="active">
+                    @else
                     <li>
+                    @endif
                         <a href="{{url('admin/productos')}}">
                         <i class="material-icons">store</i>
                             
                             <p>Productos</p>
                         </a>
                     </li>
+                    @if($route=="clientes")
+                    <li class="active">
+                    @else
                     <li>
+                    @endif
                         <a href="{{url('admin/clientes')}}">
                             <i class="material-icons">person</i>
                             <p>Clientes</p>
                         </a>
                     </li>
+                    @if($route=="noticias")
+                    <li class="active">
+                    @else
                     <li>
+                    @endif
                         <a href="{{url('admin/noticias')}}">
                             <i class="material-icons">insert_comment</i>
                             <p>Noticias</p>
                         </a>
                     </li>                    
+                    @if($route=="sliders")
+                    <li class="active">
+                    @else
                     <li>
-                        <a href="{{url('admin/slider')}}">
+                    @endif
+                        <a href="{{url('admin/sliders')}}">
                             <i class="material-icons">image</i>
                             <p>Slider</p>
                         </a>
                     </li>
+                    @if($route=="configuracion")
+                    <li class="active">
+                    @else
                     <li>
+                    @endif
                         <a  href="{{url('admin/configuracion')}}">
                         <i class="material-icons">settings_applications</i>
                             <p>Configuración</p>

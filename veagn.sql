@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2017 a las 20:46:55
+-- Tiempo de generación: 09-02-2017 a las 21:40:04
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -69,6 +69,37 @@ INSERT INTO `clientes` (`id`, `nombre`, `email`, `estado`, `telefono`, `deleted`
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `configuracion`
+--
+
+CREATE TABLE `configuracion` (
+  `id` int(11) NOT NULL,
+  `facebook` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `twitter` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `youtube` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `pinterest` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `vision` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `mision` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `valores` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `objetivos` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `imagen` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `direccion` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `email` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `telefono` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `configuracion`
+--
+
+INSERT INTO `configuracion` (`id`, `facebook`, `twitter`, `youtube`, `pinterest`, `vision`, `mision`, `valores`, `objetivos`, `imagen`, `direccion`, `email`, `telefono`, `created_at`, `updated_at`) VALUES
+(1, 'fb', 'tw', 'yt', 'pt', 'v', 'm', 'v', 'o', 'i', 'd', 'e', 't', '2017-02-09 20:39:24', '2017-02-10 02:39:24');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `noticias`
 --
 
@@ -81,6 +112,13 @@ CREATE TABLE `noticias` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `noticias`
+--
+
+INSERT INTO `noticias` (`id`, `titulo`, `descripcion`, `imagen`, `deleted`, `created_at`, `updated_at`) VALUES
+(1, 'pruebaa1', 'kjkljkljkljlj1', 'kljlkjklj1', 0, '2017-02-09 19:58:17', '2017-02-10 01:58:02');
 
 -- --------------------------------------------------------
 
@@ -123,6 +161,13 @@ CREATE TABLE `sliders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --
+-- Volcado de datos para la tabla `sliders`
+--
+
+INSERT INTO `sliders` (`id`, `descripcion`, `imagen`, `deleted`, `created_at`, `updated_at`) VALUES
+(1, 'asdfasdfsdf1', 'dfasdf1', 0, '2017-02-09 20:08:37', '2017-02-10 02:08:20');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -136,6 +181,12 @@ ALTER TABLE `categorias`
 -- Indices de la tabla `clientes`
 --
 ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `configuracion`
+--
+ALTER TABLE `configuracion`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -171,10 +222,15 @@ ALTER TABLE `categorias`
 ALTER TABLE `clientes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT de la tabla `configuracion`
+--
+ALTER TABLE `configuracion`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT de la tabla `noticias`
 --
 ALTER TABLE `noticias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
@@ -184,7 +240,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

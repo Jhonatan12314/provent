@@ -90,20 +90,16 @@ Route::get('noticias/delete/{id}','NoticiasController@delete');
 
 
 //slider
-Route::get('slider','SliderController@getIndex');
-Route::get('slider/create','SliderController@getCreate');
-Route::post('slider/create','SliderController@create');
-Route::get('slider/update/{id}','SliderController@getUpdate');
-Route::post('slider/update','SliderController@update');
-Route::get('slider/delete/{id}','SliderController@delete');
+Route::get('sliders','SliderController@getIndex');
+Route::get('sliders/create','SliderController@getCreate');
+Route::post('sliders/create','SliderController@create');
+Route::get('sliders/update/{id}','SliderController@getUpdate');
+Route::post('sliders/update','SliderController@update');
+Route::get('sliders/delete/{id}','SliderController@delete');
 
 //configuracion
 Route::get('configuracion','ConfiguracionController@getIndex');
-Route::get('configuracion/create','ConfiguracionController@getCreate');
 Route::post('configuracion/create','ConfiguracionController@create');
-Route::get('configuracion/update/{id}','ConfiguracionController@getUpdate');
-Route::post('configuracion/update','ConfiguracionController@update');
-Route::get('configuracion/delete/{id}','ConfiguracionController@delete');
 
 Route::get('logout','UserController@logout');
 

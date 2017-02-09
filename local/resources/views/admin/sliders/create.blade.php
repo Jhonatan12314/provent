@@ -32,23 +32,38 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar slider</h4>
-                                    <form method="#" action="#">
+                                @if(isset($slider))
+                                    <h4 class="card-title">Editar slider</h4>
+                                    <form method="post" action="{{url('admin/sliders/update')}}">
+                                     {{ csrf_field() }}
+                                    <input type="hidden" name="id" value="{{$slider->id}}">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Titulo</label>
-                                            <input type="text" class="form-control" id="imagen">
+                                            <label class="" id="desc1">Imagen</label>
+                                            <input type="text" name="imagen" value="{{$slider->imagen}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
+                                            <label class="" id="desc1">Descripción</label>
+                                            <input type="text" name="descripcion"  value="{{$slider->descripcion}}" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                                                       
+                                        <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                         <a href="{{url('admin/sliders')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                    </form>
+                                    @else
+                                     <h4 class="card-title">Agregar slider</h4>
+                                    <form method="post" action="{{url('admin/sliders/create')}}">
+                                     {{ csrf_field() }}
+                                        <div class="form-group label-floating is-empty">
                                             <label class="control-label" id="desc1">Imagen</label>
-                                            <input type="password" class="form-control">
+                                            <input type="password" name="imagen" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label" id="desc1">Descripción</label>
-                                            <input type="password" class="form-control">
+                                            <input type="password" name="descripcion" class="form-control">
                                         <span class="material-input"></span></div>                                                                                                                       
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
-                                         <a href="{{url('admin/slider')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                         <a href="{{url('admin/sliders')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+                                    @endif
                                 </div>
                                 <!-- end content-->
                             </div>

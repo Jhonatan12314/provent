@@ -19,13 +19,13 @@ class ClientesController extends Controller
    public function getIndex()
     {
         $clientes=Cliente::where('deleted','=',0)->get();
-        return view('admin/clientes/index')->with('clientes',$clientes);
+        return view('admin/clientes/index')->with('clientes',$clientes)->with('route','clientes');
     }
 
     public function getCreate(Request $request)
     {
         $clientes=Cliente::where('deleted','=',0)->get();
-        return view('admin/clientes/create')->with('clientes',$clientes);
+        return view('admin/clientes/create')->with('clientes',$clientes)->with('route','clientes');
     }
 
     public function create(Request $request)
@@ -44,7 +44,7 @@ class ClientesController extends Controller
     {
         $cliente=Cliente::find($id);
         $clientes=Cliente::where('deleted','=',0)->get();
-        return view('admin/clientes/create')->with('cliente',$cliente)->with('clientes',$clientes);
+        return view('admin/clientes/create')->with('cliente',$cliente)->with('clientes',$clientes)->with('route','clientes');
     }
 
     public function update(Request $request)

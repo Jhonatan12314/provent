@@ -14,13 +14,13 @@ class ProductosController extends Controller
     public function getIndex()
     {
         $productos=Producto::where('deleted','=',0)->get();
-        return view('admin/productos/index')->with('productos',$productos);
+        return view('admin/productos/index')->with('productos',$productos)->with('route','productos');
     }
 
     public function getCreate(Request $request)
     {
         $categorias=Categoria::where('deleted','=',0)->get();
-        return view('admin/productos/create')->with('categorias',$categorias);
+        return view('admin/productos/create')->with('categorias',$categorias)->with('route','productos');
     }
 
     public function create(Request $request)
@@ -40,7 +40,7 @@ class ProductosController extends Controller
     {
         $producto=Producto::find($id);
         $categorias=Categoria::where('deleted','=',0)->get();
-        return view('admin/productos/create')->with('producto',$producto)->with('categorias',$categorias);
+        return view('admin/productos/create')->with('producto',$producto)->with('categorias',$categorias)->with('route','productos');
     }
 
     public function update(Request $request)

@@ -32,23 +32,47 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar Noticia</h4>
-                                    <form method="#" action="#">
+                                  @if(isset($noticia))
+                                    <h4 class="card-title">Editar Noticia</h4>
+                                    <form method="post" action="{{url('admin/noticias/update')}}">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="id" value="{{$noticia->id}}">
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Titulo</label>
-                                            <input type="text" class="form-control">
+                                            <label class="">Titulo</label>
+                                            <input type="text" value="{{$noticia->titulo}}" name="titulo" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Imagen</label>
-                                            <input type="text" class="form-control">
+                                            <label class="">Imagen</label>
+                                            <input type="text" value="{{$noticia->imagen}}" name="imagen" class="form-control">
                                         <span class="material-input"></span></div>                                        
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <input type="text" class="form-control">
+                                            <label class="">Descripción</label>
+                                            <input type="text" value="{{$noticia->descripcion}}" name="descripcion" class="form-control">
                                         <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/noticias')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+                                    @else
+                                    <h4 class="card-title">Agregar Noticia</h4>
+                                    <form method="post" action="{{url('admin/noticias/create')}}">
+                                    {{ csrf_field() }}
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Titulo</label>
+                                            <input type="text" name="titulo" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Imagen</label>
+                                            <input type="text" name="imagen" class="form-control">
+                                        <span class="material-input"></span></div>                                        
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Descripción</label>
+                                            <input type="text" name="descripcion" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                
+                                        <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                         <a href="{{url('admin/noticias')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                    </form>
+
+                                    @endif
                                 </div>
                                 <!-- end content-->
                             </div>

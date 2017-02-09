@@ -36,7 +36,7 @@ class UserController extends Controller
 
      public function dashboard(Request $request)
     {
-       return view('admin/index');       
+       return view('admin/index')->with('route','dashboard');       
     }
 
     public function logout()

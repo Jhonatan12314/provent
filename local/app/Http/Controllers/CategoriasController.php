@@ -19,12 +19,12 @@ class CategoriasController extends Controller
     public function getIndex()
     {
         $categorias=Categoria::where('deleted','=',0)->get();
-        return view('admin/categorias/index')->with('categorias',$categorias);
+        return view('admin/categorias/index')->with('categorias',$categorias)->with('route','categorias');
     }
 
     public function getCreate(Request $request)
     {
-        return view('admin/categorias/create');
+        return view('admin/categorias/create')->with('route','categorias');
     }
 
     public function create(Request $request)
@@ -40,7 +40,7 @@ class CategoriasController extends Controller
     public function getUpdate($id)
     {
         $categoria=Categoria::find($id);
-        return view('admin/categorias/create')->with('categoria',$categoria);
+        return view('admin/categorias/create')->with('categoria',$categoria)->with('route','categorias');
     }
 
     public function update(Request $request)
