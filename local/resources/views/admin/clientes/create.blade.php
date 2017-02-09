@@ -32,27 +32,57 @@
                      <div class="col-md-6">
                             <div class="card">
                                 <div class="card-content">
-                                    <h4 class="card-title">Agregar/Editar clientes</h4>
-                                    <form method="#" action="#">
+                                 @if(isset($cliente))
+                                    <h4 class="card-title">Editar clientes</h4>
+
+                                    <form action="{{url('admin/clientes/update')}}" method="post">
+                                    <input type="hidden" name="id" value="{{$cliente->id}}">
+                                    {{ csrf_field() }}
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre del clente</label>
-                                            <input type="text" class="form-control">
+                                            <label >Nombre del clente</label>
+                                            <input type="text" name="nombre" value="{{$cliente->nombre}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Estado</label>
-                                            <input type="text" class="form-control">
+                                            <label >Estado</label>
+                                            <input type="text" name="estado" value="{{$cliente->estado}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Teléfono</label>
-                                            <input type="password" class="form-control">
+                                            <label>Teléfono</label>
+                                            <input type="text" name="telefono" value="{{$cliente->telefono}}" class="form-control">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Email</label>
-                                            <input type="email" class="form-control">
+                                            <label>Email</label>
+                                            <input type="email" name="email" value="{{$cliente->email}}" class="form-control">
                                         <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/clientes')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+                                    @else
+
+                                     <h4 class="card-title">Agregar clientes</h4>
+                                    <form action="{{url('admin/clientes/create')}}" method="post">
+                                    {{ csrf_field() }}
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Nombre del clente</label>
+                                            <input type="text" name="nombre" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Estado</label>
+                                            <input type="text" name="estado" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Teléfono</label>
+                                            <input type="text" name="telefono" class="form-control">
+                                        <span class="material-input"></span></div>
+                                        <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Email</label>
+                                            <input type="email" name="email" class="form-control">
+                                        <span class="material-input"></span></div>                                                                                
+                                        <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                         <a href="{{url('admin/clientes')}}" class="btn btn-fill btn-blue">Cancelar</a>
+                                    </form>
+
+                                    @endif
                                 </div>
                                 <!-- end content-->
                             </div>

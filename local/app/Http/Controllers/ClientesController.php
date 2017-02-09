@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-use App\Producto;
+use App\Cliente;
 
 class ClientesController extends Controller
 {
@@ -16,40 +16,62 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function getIndex()
+   public function getIndex()
     {
-       return view('admin/clientes/index');
+        $clientes=Cliente::where('deleted','=',0)->get();
+        return view('admin/clientes/index')->with('clientes',$clientes);
     }
 
     public function getCreate(Request $request)
     {
-        return view('admin/clientes/create');
-
+        $clientes=Cliente::where('deleted','=',0)->get();
+        return view('admin/clientes/create')->with('clientes',$clientes);
     }
 
     public function create(Request $request)
     {
-
+        $cliente=new Cliente;
+        $cliente->nombre=$request->nombre;
+        $cliente->estado=$request->estado;
+        $cliente->telefono=$request->telefono;
+        $cliente->email=$request->email;
+        $cliente->save();
+        return redirect('admin/clientes');
 
     }
 
-    public function getUdate(Request $request)
+    public function getUpdate($id)
     {
-        return view('admin/clientes/create');
-
+        $cliente=Cliente::find($id);
+        $clientes=Cliente::where('deleted','=',0)->get();
+        return view('admin/clientes/create')->with('cliente',$cliente)->with('clientes',$clientes);
     }
 
     public function update(Request $request)
     {
-
-
+        $cliente=Cliente::find($request->id);
+        $cliente->nombre=$request->nombre;
+        $cliente->estado=$request->estado;
+        $cliente->telefono=$request->telefono;
+        $cliente->email=$request->email;
+        $cliente->save();
+        return redirect('admin/clientes');
     }
 
-    public function delete(Request $request)
+    public function delete($id)
     {
-
-
+        $cliente=Cliente::find($id);
+        if($cliente)
+        {
+            $cliente->deleted=1;
+            $cliente->save();
+            return redirect('admin/clientes');
+        }else{
+            return redirect('admin/clientes');
+        }
+        
     }
+
 
 
     

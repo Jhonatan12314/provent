@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2017 a las 20:48:23
+-- Tiempo de generación: 09-02-2017 a las 20:46:55
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -35,6 +35,13 @@ CREATE TABLE `categorias` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `nombre`, `descripcion`, `deleted`, `created_at`, `updated_at`) VALUES
+(1, 'computadoras', 'computadoras', 0, '2017-02-09 04:16:55', '2017-02-09 04:16:55');
+
 -- --------------------------------------------------------
 
 --
@@ -44,13 +51,20 @@ CREATE TABLE `categorias` (
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
   `nombre` varchar(300) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `correo` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `empresa` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `email` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `estado` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `telefono` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nombre`, `email`, `estado`, `telefono`, `deleted`, `created_at`, `updated_at`) VALUES
+(1, 'adfsgsd', 'rodrigo_2392@hotmail.com', 'fgsdfg', 'sdfgdsf', 1, '2017-02-09 19:46:14', '2017-02-10 01:46:14');
 
 -- --------------------------------------------------------
 
@@ -85,6 +99,13 @@ CREATE TABLE `productos` (
   `idcategoria` int(11) NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `imagen`, `created_at`, `updated_at`, `idcategoria`, `deleted`) VALUES
+(1, 'computadora hp', 'computadora hp', 'computadora hp', 'computadora hp', '2017-02-08 22:29:14', '2017-02-09 04:29:08', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -143,12 +164,12 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `noticias`
 --
@@ -158,7 +179,7 @@ ALTER TABLE `noticias`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `sliders`
 --
