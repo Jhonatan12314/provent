@@ -110,41 +110,7 @@
     </section>
     <!-- We offer Different Services-->
     <!-- Control in compliance-->
-    <section class="container ind-common-pad2 clearfix">
-      <div class="quality-wrapper text-center">
-        <div class="vision tab-panel fade in">
-          <h2>A hight level Quality Control in compliance with National and In International regulations and standards</h2>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consect petur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-        </div>
-        <div class="values tab-panel fade hide">
-          <h2>A hight level Quality Control in compliance with National and In International regulations and standards</h2>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consect petur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-        </div>
-        <div class="mission tab-panel fade hide">
-          <h2>A hight level Quality Control in compliance with National and In International regulations and standards</h2>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consect petur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur.  
-          </p>
-        </div>
-        <div class="vision-wrapper text-center">
-          <ul>
-            <li><a id="vision" href="javascript:void(0)"><img src="public/frontend/images/services/ser-icon4.png" alt="">
-                <p>Vision</p></a></li>
-            <li><a id="values" href="javascript:void(0)"><img src="public/frontend/images/services/ser-icon5.png" alt="">
-                <p>Values</p></a></li>
-            <li><a id="mission" href="javascript:void(0)"><img src="public/frontend/images/services/ser-icon6.png" alt="">
-                <p>Mission</p></a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+
     <!-- Control in compliance-->
     <!-- Our Services natural resource-->
     <section class="fluid-service-area-home">
@@ -223,7 +189,7 @@
         <div class="row">
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <div class="indurial-solution-text2">
-              <h2>LOOKING AN ADEQUATE SOLUTION FOR YOUR COMPANY?</h2>
+              <h2>¿NECESITAS UN PRODUCTO ESPECÍFICO?</h2>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
@@ -233,77 +199,6 @@
       </div>
     </section>
     <!-- LOOKING AN ADEQUATE-->
-    <!-- Latest News-->
-    <section class="latest-news1 sectpad">
-      <div class="container clearfix">
-        <div class="row">
-          <div class="col-lg-6 about-sec-content">
-            <div class="section_header2 common">
-              <h2>About Us</h2>
-            </div>
-            <h4>Tdolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit. Red quia numquam.</h4>
-            <p>Tdolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit. Red quia numquam.</p>
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><i class="fa fa-arrow-circle-right"></i> Our Company Growth</li>
-                  <li><i class="fa fa-arrow-circle-right"></i> 1000 Employed</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><i class="fa fa-arrow-circle-right"></i> Our Company Growth</li>
-                  <li><i class="fa fa-arrow-circle-right"></i> Customer Relationship</li>
-                </ul>
-              </div>
-            </div>
-            <div class="req-button about-but text-left"><a href="about" class="submit">About Us <i class="fa fa-arrow-right"></i></a></div>
-          </div>
-          <div class="col-lg-6">
-            <div class="section-faq">
-              <div class="section_header2 common">
-                <h2>Frequently Ask questions</h2>
-              </div>
-              <div class="accordian-area accordian-area-pad">
-                <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
-                  <div class="panel panel-default">
-                    <div id="headingOne" role="tab" class="panel-heading">
-                      <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed"><span>WE offer luxury service to our customer</span><i class="fa fa-minus"></i><i class="fa fa-plus"></i></a></h4>
-                    </div>
-                    <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
-                      <div class="panel-body faq-content">
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div id="headingTwo" role="tab" class="panel-heading">
-                      <h4 class="panel-title on"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">WE offer luxury service to our customer<i class="fa fa-minus"></i><i class="fa fa-plus"></i></a></h4>
-                    </div>
-                    <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse in">
-                      <div class="panel-body faq-content">
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div id="headingThree" role="tab" class="panel-heading">
-                      <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">WE offer luxury service to our customer<i class="fa fa-minus"></i><i class="fa fa-plus"></i></a></h4>
-                    </div>
-                    <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
-                      <div class="panel-body faq-content">
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our Projects-->
     <!-- Lattest news-->
     <div class="container clearfix sectpad-sec">
       <div class="section_header2 common">

@@ -7,6 +7,8 @@ use App\Http\Requests;
 
 use App\Configuracion;
 use App\Categoria;
+use App\Producto;
+use App\Noticia;
 
 class FrontendController extends Controller
 {
@@ -34,12 +36,14 @@ public function getAbout(){
 public function getNews(){
         $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
-    	return view('frontend/news')->with('configuracion',$configuracion)->with('categorias',$categorias);
+        $noticias=Noticia::where('deleted','=',0)->get();
+    	return view('frontend/news')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticias',$noticias);
 }
 public function getSolutions(){
+        $productos=Producto::where('deleted','=',0)->get();
         $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
-    	return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias);
+    	return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
 }
 public function getProjects(){
 

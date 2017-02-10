@@ -53,63 +53,24 @@
           <div class="col-md-8 col-sm-12 pull-right">
             <!-- News-->
             <div class="section_header color">
-              <h2>featured Products</h2>
+              <h2>Todos los productos</h2>
             </div>
             <div class="row shop-item-wrapper">
+
+            @foreach($productos as $producto)
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
+                <a href="{{url('Producto/Detalle')}}/{{$producto->id}}">
                   <div class="img-box"><img src="public/frontend/images/shop/1.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
+                  <div class="content">
+                      <h3>{{$producto->nombre}}</h3></a>
+                      <span class="price">{{substr($producto->descripcion, 0, 150)}}...</span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="public/frontend/images/shop/2.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="public/frontend/images/shop/3.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="public/frontend/images/shop/4.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="public/frontend/images/shop/5.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-shop-item">
-                  <div class="img-box"><img src="public/frontend/images/shop/6.jpg" alt="Awesome Image"></div>
-                  <div class="content"><a href="product">
-                      <h3>Industrial Tools</h3></a>
-                    <div class="review-box"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span class="price">$68.99</span><a href="product" class="thm-btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
+              @endforeach
+
+
             </div>
           </div>
         </div>
