@@ -69,7 +69,7 @@
                  
                   <div class="content">
                       <h3>{{$producto->nombre}}</h3></a>
-                      <span class="price">{{str_limit(strip_tags($producto->description), 150)}}...</span>
+                      <span class="price">{{str_limit(strip_tags($producto->descripcion), 150)}}...</span>
                   </div>
                 </div>
               </div>
