@@ -36,7 +36,7 @@
                 <li><i class="fa fa-map-marker"></i>
                   <div class="fleft location_address">{{$configuracion->direccion}}</div>
                 </li>
-                <li><i class="fa fa-phone"></i>
+                <li><i class="fa  fa-phone"></i>
                   <div class="fleft contact_no">{{$configuracion->telefono}}</div>
                 </li>
                 <li><i class="fa fa-envelope-o"></i>

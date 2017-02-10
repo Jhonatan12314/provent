@@ -18,7 +18,7 @@
           <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
-              <div class="req-button text-right"><a href="request-qoute" class="submit">Contactar</a></div>
+              <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a></div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
                   <ul class="nav">
@@ -60,10 +60,10 @@
                   </div>
                   <div class="nav-t-footer">
                     <ul class="nav">
-                      <li class="has-t-submenu"><a href="index">Inicio</a>
+                      <li class="has-t-submenu"><a href="{{url('index')}}">Inicio</a>
                       </li>
-                      <li ><a href="about">Nosotros</a></li>
-                      <li class="has-t-submenu"><a href="solutions">Productos</a>
+                      <li ><a href="{{url('about')}}">Nosotros</a></li>
+                      <li class="has-t-submenu"><a href="{{url('solutions')}}">Productos</a>
                      
                         <ul class="submenu">
                         @foreach($categorias as $categoria)
@@ -72,9 +72,9 @@
                         </ul>
                       </li>
                       
-                      <li ><a href="news">Noticias</a></li>
-                       <li ><a href="news">Clientes</a></li>
-                      <li><a href="contact">contactanos</a></li>
+                      <li ><a href="{{url('news')}}">Noticias</a></li>
+                       <li ><a href="{{url('testimonials')}}">Clientes</a></li>
+                      <li><a href="{{url('contact')}}">contactanos</a></li>
                     </ul>
                   </div>
                 </div>

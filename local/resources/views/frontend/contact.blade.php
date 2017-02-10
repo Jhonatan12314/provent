@@ -23,9 +23,9 @@
     <section class="core-projects touch">
       <div class="sectpad touch_bg">
         <div class="container clearfix">
-          <h1>Stat connected</h1>
-          <p>You can talk to our online representative at any time. Please use our Live Chat System on our website or<br>Fill up below instant messaging programs.</p>
-          <h6>Please be patient, We will get back to you. Our 24/7 Support, <span>General Inquireies Phone: + 0987 654 321</span></h6>
+          <h1>Siempre conectado</h1>
+          <p>Puedes hablar con nuestros representantes online a cualquier hora. Por favor usa nuestro Live Chat en nuestro sitio web o nuestro sistema de mensajería.</p>
+          <h6>por favor se paciente, nosotros responderemos con nuestro soporte 24/7</h6>
           <div class="row touch_middle">
             <div class="col-md-4 open_hours">
               <div class="touch_top-con">
@@ -33,19 +33,19 @@
                   <li class="item">
                     <div class="media">
                       <div class="media-left"><a href="#"><i class="fa fa-map-marker"></i></a></div>
-                      <div class="media-body">Calle 2 de febrero N°3405-A, Hogares de Nuevo México, C.P. 45120, Zapopan, Jalisco, México</div>
+                      <div class="media-body">{{$configuracion->direccion}}</div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="media">
                       <div class="media-left"><a href="#"><i class="fa fa-envelope-o"></i></a></div>
-                      <div class="media-body"><a href="mailto:contacto@veagn.com">contacto@veagn.com</a></div>
+                      <div class="media-body"><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="media">
                       <div class="media-left"><a href="#"><i class="fa fa-phone"></i></a></div>
-                      <div class="media-body">(01) 3336 6377 26/36</div>
+                      <div class="media-body">{{$configuracion->telefono}}</div>
                     </div>
                   </li>
                 </ul>
