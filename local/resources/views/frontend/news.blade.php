@@ -40,7 +40,7 @@
                 
                 <h6>{{$noticia->cretaed_at}}</h6>
                 <h3>{{$noticia->titulo}}</h3>
-                <p>{{substr($noticia->descripcion, 0, 200)}}...</p>
+                <p>{{str_limit(strip_tags($noticia->descripcion), 150)}}......</p>
                 <a href="news-details" class="read-more btn submit">Leer más</a>
               </article>
 
