@@ -30,7 +30,7 @@
             @foreach($noticias as $noticia)
 
             <article class="single-blog-post img-cap-effect">
-                <div class="img-box"><a href="news-details" class="image_hover"><img src="public/frontend/images/news/1.jpg" alt="" class="img-responsive zoom_img_effect"></a></div>
+                <div class="img-box"><a href="news-details" class="image_hover"><img src="{{$noticia->imagen}}" alt="" class="img-responsive zoom_img_effect"></a></div>
                 <h6>{{$noticia->cretaed_at}}</h6>
                 <h3>{{$noticia->titulo}}</h3>
                 <p>{{substr($noticia->descripcion, 0, 200)}}...</p>

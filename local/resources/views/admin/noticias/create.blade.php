@@ -29,7 +29,7 @@
                 <div class="container-fluid">
              
                     <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-12">
                             <div class="card">
                                 <div class="card-content">
                                   @if(isset($noticia))
@@ -41,13 +41,25 @@
                                             <label class="">Titulo</label>
                                             <input type="text" value="{{$noticia->titulo}}" name="titulo" class="form-control">
                                         <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="">Imagen</label>
-                                            <input type="text" value="{{$noticia->imagen}}" name="imagen" class="form-control">
-                                        <span class="material-input"></span></div>                                        
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>                                         
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Descripción</label>
-                                            <input type="text" value="{{$noticia->descripcion}}" name="descripcion" class="form-control">
+                                            <textarea name="descripcion" id="textarea1" >{{$noticia->descripcion}}</textarea>
                                         <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/noticias')}}" class="btn btn-fill btn-blue">Cancelar</a>
@@ -60,13 +72,26 @@
                                             <label class="control-label">Titulo</label>
                                             <input type="text" name="titulo" class="form-control">
                                         <span class="material-input"></span></div>
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>  
+
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Imagen</label>
-                                            <input type="text" name="imagen" class="form-control">
-                                        <span class="material-input"></span></div>                                        
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <input type="text" name="descripcion" class="form-control">
+                                            <label class="">Descripción</label>
+                                            <textarea name="descripcion" id="textarea1" ></textarea>
                                         <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/noticias')}}" class="btn btn-fill btn-blue">Cancelar</a>
@@ -83,6 +108,13 @@
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript">
+
+
+</script>
+
 
 
 @endsection

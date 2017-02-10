@@ -68,6 +68,7 @@
 <script src="{{url('public/backend/js/jquery.tagsinput.js')}}"></script>
 <!-- Material Dashboard javascript methods -->
 <script src="{{url('public/backend/js/material-dashboard.js')}}"></script>
+<script src="{{url('public/js/ckeditor/ckeditor.js')}}" type="text/javascript"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{{url('public/backend/js/demo.js')}}"></script>
 
@@ -111,6 +112,10 @@
         });
 
         $('.card .material-datatables label').addClass('form-group');
+
+        CKEDITOR.replace( 'textarea1', {
+    language: 'en'
+} );
     });
 </script>
 

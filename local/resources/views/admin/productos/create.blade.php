@@ -29,7 +29,7 @@
                 <div class="container-fluid">
              
                     <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-12">
                             <div class="card">
                                 <div class="card-content">
 
@@ -44,7 +44,7 @@
                                         <span class="material-input"></span></div>                                        
                                         <div class="form-group label-floating is-empty">
                                             <label>Descripción</label>
-                                            <textarea  class="form-control" name="descripcion">{{$producto->descripcion}}</textarea>
+                                            <textarea  id="textarea1" class="form-control" name="descripcion">{{$producto->descripcion}}</textarea>
                                         <span class="material-input"></span></div>
 
                                         <div class="form-group label-floating is-empty">
@@ -97,8 +97,8 @@
                                             <input type="text" name="nombre" class="form-control">
                                         <span class="material-input"></span></div>                                        
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <textarea  class="form-control" name="descripcion"></textarea>
+                                            <label class="">Descripción</label>
+                                            <textarea  class="form-control" id="textarea1" name="descripcion"></textarea>
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
                                             <label >Categoría</label>

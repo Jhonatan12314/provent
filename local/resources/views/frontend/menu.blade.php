@@ -15,14 +15,15 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
-          <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 text-right">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a></div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
                   <ul class="nav">
                     <li class="item item-phone">
+
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Phone2"></i></a></div>
                         <div class="media-body">
@@ -30,11 +31,12 @@
                         </div>
                       </div>
                     </li>
-                    <li class="item item-ad">
+
+                    <li class="item item-phone">
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Pointer"></i></a></div>
                         <div class="media-body">
-                          <p>{{$configuracion->direccion}}</p>
+                          <p style="line-height:20px;">{{$configuracion->direccion}}</p>
                         </div>
                       </div>
                     </li>

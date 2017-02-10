@@ -61,7 +61,7 @@
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
                 <a href="{{url('Producto/Detalle')}}/{{$producto->id}}">
-                  <div class="img-box"><img src="public/frontend/images/shop/1.jpg" alt="Awesome Image"></div>
+                  <div class="img-box"><img src="{{$producto->imagen}}" alt="Awesome Image"></div>
                   <div class="content">
                       <h3>{{$producto->nombre}}</h3></a>
                       <span class="price">{{substr($producto->descripcion, 0, 150)}}...</span>
