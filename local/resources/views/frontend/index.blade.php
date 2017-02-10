@@ -189,11 +189,11 @@
         <div class="row">
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <div class="indurial-solution-text2">
-              <h2>¿NECESITAS UN PRODUCTO ESPECÍFICO?</h2>
+              <h2>¿POR QUÉ SOMOS LOS MEJORES?</h2>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
-            <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactanos <i class="fa fa-arrow-right"></i></a></div>
+            <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Descubrelo <i class="fa fa-arrow-right"></i></a></div>
           </div>
         </div>
       </div>
