@@ -22,8 +22,9 @@ class FrontendController extends Controller
     	return view('frontend/contact')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getShop(){
-
-    	return view('frontend/shop');
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getAbout(){
         $configuracion=Configuracion::first();
@@ -31,8 +32,9 @@ public function getAbout(){
     	return view('frontend/about')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getNews(){
-
-    	return view('frontend/news');
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/news')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getSolutions(){
         $configuracion=Configuracion::first();
@@ -50,8 +52,9 @@ public function getTeam(){
     	return view('frontend/team');
 }
 public function getTestimonials(){
-
-    	return view('frontend/testimonials');
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+    	return view('frontend/testimonials')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getFaq(){
 
