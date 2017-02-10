@@ -27,10 +27,22 @@ class ProductosController extends Controller
     {
         $producto=new Producto;
         $producto->nombre=$request->nombre;
-        $producto->descripcion=$request->nombre;
-        $producto->precio=$request->nombre;
-        $producto->imagen=$request->nombre;
+        $producto->descripcion=$request->descripcion;
+        $producto->precio=$request->precio;
         $producto->idcategoria=$request->categoria;
+
+        $file = $request->file('imagen');
+
+       if($file)
+        {
+            $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+            Storage::disk('productos')->put($imageName ,File::get($file));
+            $producto->imagen="public/upload/productos/".$imageName;
+        }else
+        {
+            $producto->imagen="";
+        }
+
         $producto->save();
         return redirect('admin/productos');
 
@@ -49,7 +61,17 @@ class ProductosController extends Controller
         $producto->nombre=$request->nombre;
         $producto->descripcion=$request->descripcion;
         $producto->precio=$request->precio;
-        $producto->imagen=$request->nombre;
+        $file = $request->file('imagen');
+            
+            if($file)
+                {
+                    $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+                    Storage::disk('productos')->put($imageName ,File::get($file));
+                    File::Delete($producto->imagen);
+                    $producto->imagen="public/upload/productos/".$imageName;
+
+                }
+
         $producto->save();
         return redirect('admin/productos');
     }
@@ -66,6 +88,17 @@ class ProductosController extends Controller
             return redirect('admin/productos');
         }
         
+    }
+
+        public function NewGuid() { 
+    $s = strtoupper(md5(uniqid(rand(),true))); 
+    $guidText = 
+        substr($s,0,8) . '-' . 
+        substr($s,8,4) . '-' . 
+        substr($s,12,4). '-' . 
+        substr($s,16,4). '-' . 
+        substr($s,20); 
+        return $guidText;
     }
 
 

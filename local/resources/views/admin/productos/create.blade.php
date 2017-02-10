@@ -35,7 +35,7 @@
 
                                 @if(isset($producto))
                                  <h4 class="card-title">Editar producto</h4>
-                                    <form method="post" action="{{url('admin/productos/update')}}">
+                                    <form method="post" action="{{url('admin/productos/update')}}" enctype="multipart/form-data">
                                      {{ csrf_field() }}
                                      <input type="hidden" name="id" value="{{$producto->id}}">
                                         <div class="form-group label-floating is-empty">
@@ -89,7 +89,7 @@
                                     </form>
                                 @else
                                     <h4 class="card-title">Agregar producto</h4>
-                                    <form method="post" action="{{url('admin/productos/create')}}">
+                                    <form method="post" action="{{url('admin/productos/create')}}" enctype="multipart/form-data">
                                      {{ csrf_field() }}
                                         
                                         <div class="form-group label-floating is-empty">

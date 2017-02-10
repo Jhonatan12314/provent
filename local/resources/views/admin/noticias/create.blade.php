@@ -34,7 +34,7 @@
                                 <div class="card-content">
                                   @if(isset($noticia))
                                     <h4 class="card-title">Editar Noticia</h4>
-                                    <form method="post" action="{{url('admin/noticias/update')}}">
+                                    <form method="post" action="{{url('admin/noticias/update')}}" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="id" value="{{$noticia->id}}">
                                         <div class="form-group label-floating is-empty">
@@ -66,7 +66,7 @@
                                     </form>
                                     @else
                                     <h4 class="card-title">Agregar Noticia</h4>
-                                    <form method="post" action="{{url('admin/noticias/create')}}">
+                                    <form method="post" action="{{url('admin/noticias/create')}}" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Titulo</label>

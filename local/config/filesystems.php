@@ -41,6 +41,9 @@ return [
     |
     */
 
+
+
+
     'disks' => [
 
         'local' => [
@@ -53,6 +56,14 @@ return [
             'root' => storage_path('app/public'),
             'visibility' => 'public',
         ],
+            'noticias' => [
+                'driver' => 'local',
+                'root' => 'public/upload/noticias',
+            ],
+            'productos' => [
+                'driver' => 'local',
+                'root' => 'public/upload/productos',
+            ],
 
         's3' => [
             'driver' => 's3',
