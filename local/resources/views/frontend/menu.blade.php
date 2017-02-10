@@ -26,7 +26,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Phone2"></i></a></div>
                         <div class="media-body">
-                          <p>(01) 3336 6377 26/36<br><span><a href="mailto:contacto@veagn.com">contacto@veagn.com</a></span></p>
+                          <p>{{$configuracion->telefono}}<br><span><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></span></p>
                         </div>
                       </div>
                     </li>
@@ -34,7 +34,7 @@
                       <div class="media">
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Pointer"></i></a></div>
                         <div class="media-body">
-                          <p>Calle 2 de febrero N°3405-A<br><br>Hogares de Nuevo México<br><span>C.P. 45120, Zapopan, Jalisco, México</span></p>
+                          <p>{{$configuracion->direccion}}</p>
                         </div>
                       </div>
                     </li>

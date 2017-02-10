@@ -37,7 +37,7 @@
                   <div class="fleft location_address">{{$configuracion->direccion}}</div>
                 </li>
                 <li><i class="fa fa-phone"></i>
-                  <div class="fleft contact_no"><a href="#">{{$configuracion->telefono}}</a></div>
+                  <div class="fleft contact_no">{{$configuracion->telefono}}</div>
                 </li>
                 <li><i class="fa fa-envelope-o"></i>
                   <div class="fleft contact_mail"><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></div>

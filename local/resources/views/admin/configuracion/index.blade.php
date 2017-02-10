@@ -99,7 +99,7 @@
                                     <h4 class="card-title">Contacto</h4>
                                    
                                         <div class="form-group label-floating is-empty">
-                                            <label class="">Direccón</label>
+                                            <label class="">Dirección</label>
                                             <input type="text" name="direccion" value="{{$configuracion->direccion}}" class="form-control" id="direccion">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
@@ -107,7 +107,7 @@
                                             <input type="text" name="email" value="{{$configuracion->email}}" class="form-control" id="email">
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
-                                            <label class="">Teléfonno</label>
+                                            <label class="">Teléfono</label>
                                             <input type="text" name="telefono" value="{{$configuracion->telefono}}" class="form-control" id="tel">
                                         <span class="material-input"></span></div>                             
                                   
