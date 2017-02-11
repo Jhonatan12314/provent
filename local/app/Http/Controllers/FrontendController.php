@@ -9,13 +9,15 @@ use App\Configuracion;
 use App\Categoria;
 use App\Producto;
 use App\Noticia;
+use App\Slider;
 
 class FrontendController extends Controller
 {
     public function getIndex(){
         $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
-    	return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias);
+        $slider=Slider::where('deleted','=',0)->get();
+    	return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('sliders',$slider);
 }
  public function getContact(){
      $configuracion=Configuracion::first();

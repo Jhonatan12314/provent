@@ -29,43 +29,70 @@
                 <div class="container-fluid">
              
                     <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-12">
                             <div class="card">
-                                <div class="card-content">
-                                @if(isset($slider))
-                                    <h4 class="card-title">Editar slider</h4>
-                                    <form method="post" action="{{url('admin/sliders/update')}}">
-                                     {{ csrf_field() }}
+                                 <div class="card-content">
+                                  @if(isset($slider))
+                                    <h4 class="card-title">Editar Slider</h4>
+                                    <form method="post" action="{{url('admin/sliders/update')}}" enctype="multipart/form-data">
+                                    {{ csrf_field() }}
                                     <input type="hidden" name="id" value="{{$slider->id}}">
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>                                         
                                         <div class="form-group label-floating is-empty">
-                                            <label class="" id="desc1">Imagen</label>
-                                            <input type="text" name="imagen" value="{{$slider->imagen}}" class="form-control">
-                                        <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="" id="desc1">Descripción</label>
-                                            <input type="text" name="descripcion"  value="{{$slider->descripcion}}" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                                                       
+                                            <label class="">Descripción</label>
+                                            <textarea name="descripcion" id="textarea1" >{{$slider->descripcion}}</textarea>
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/sliders')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
                                     @else
-                                     <h4 class="card-title">Agregar slider</h4>
-                                    <form method="post" action="{{url('admin/sliders/create')}}">
-                                     {{ csrf_field() }}
+                                    <h4 class="card-title">Agregar Slider</h4>
+                                    <form method="post" action="{{url('admin/sliders/create')}}" enctype="multipart/form-data">
+                                    {{ csrf_field() }}
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>  
+
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label" id="desc1">Imagen</label>
-                                            <input type="password" name="imagen" class="form-control">
-                                        <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="control-label" id="desc1">Descripción</label>
-                                            <input type="password" name="descripcion" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                                                       
+                                            <label class="">Descripción</label>
+                                            <textarea name="descripcion" id="textarea1" ></textarea>
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/sliders')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
+
                                     @endif
                                 </div>
                                 <!-- end content-->
+                            </div>
                             </div>
                             <!--  end card  -->
                         </div>
@@ -75,5 +102,9 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+
+
+</script>
 
 @endsection

@@ -24,7 +24,8 @@ class SliderController extends Controller
 
     public function getCreate(Request $request)
     {
-        return view('admin/sliders/create')->with('route','sliders');
+        $sliders=SLider::where('deleted','=',0)->get();
+        return view('admin/sliders/create')->with('sliders',$sliders)->with('route','sliders');
     }
 
     public function create(Request $request)
@@ -32,6 +33,19 @@ class SliderController extends Controller
         $slider=new Slider;
         $slider->descripcion=$request->descripcion;
         $slider->imagen=$request->imagen;
+
+        $file = $request->file('imagen');
+        
+     if($file)
+        {
+            $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+            Storage::disk('sliders')->put($imageName ,File::get($file));
+            $slider->imagen="public/upload/sliders/".$imageName;
+        }else
+        {
+            $slider->imagen="";
+        }
+
         $slider->save();
         return redirect('admin/sliders');
 
@@ -40,7 +54,8 @@ class SliderController extends Controller
     public function getUpdate($id)
     {
         $slider=Slider::find($id);
-        return view('admin/sliders/create')->with('slider',$slider)->with('route','sliders');
+        $sliders=Slider::where('deleted','=',0)->get();
+        return view('admin/sliders/create')->with('slider',$slider)->with('sliders',$sliders)->with('route','sliders');
     }
 
     public function update(Request $request)
@@ -48,6 +63,18 @@ class SliderController extends Controller
         $slider=Slider::find($request->id);
         $slider->descripcion=$request->descripcion;
         $slider->imagen=$request->imagen;
+
+        $file = $request->file('imagen');
+            
+            if($file)
+                {
+                    $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+                    Storage::disk('sliders')->put($imageName ,File::get($file));
+                    File::Delete($slider->imagen);
+                    $slider->imagen="public/upload/sliders/".$imageName;
+
+                }
+
         $slider->save();
         return redirect('admin/sliders');
     }
@@ -66,7 +93,16 @@ class SliderController extends Controller
         
     }
 
-
+            public function NewGuid() { 
+    $s = strtoupper(md5(uniqid(rand(),true))); 
+    $guidText = 
+        substr($s,0,8) . '-' . 
+        substr($s,8,4) . '-' . 
+        substr($s,12,4). '-' . 
+        substr($s,16,4). '-' . 
+        substr($s,20); 
+        return $guidText;
+    }
 
     
 }

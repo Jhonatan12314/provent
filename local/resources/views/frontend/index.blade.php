@@ -5,44 +5,33 @@
 @section('content')
 
     <!-- =========home banner start============-->
+    
     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider full_width ver_new_1_slider">
       <!-- Wrapper for slides-->
+      
+      
       <div role="listbox" class="carousel-inner">
-        <div style="background-image:url(http://www.veagn.com/photos/1400/2.png);" class="item active">
+      @foreach($sliders as $slider)
+      @if($slider->imagen!="")
+        <div style="background-image:url({{$slider->imagen}});" class="item active">
+         @else
+         <div style="background-image:url({{url('public/frontend/images/sinimagen.png')}});" class="item active">
+         @endif
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-top">
                 <div class="content text-left pull-right" >
-                  <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">El Mejor Diseño para el servicio de agua potable domestico e Industrial.</h1>
+                  <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">{{str_limit(strip_tags($slider->descripcion), 150)}}</h1>
          
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div style="background-image:url(http://www.veagn.com/photos/1400/1.png);" class="item">
-          <div class="carousel-caption">
-            <div class="thm-container">
-              <div class="box valign-top">
-                <div class="content text-left pull-right">
-                  <h1 data-animation="animated fadeInLeft"  style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">Innovador mecanismo anti moroso que permite Bloquear o Limitar el suministro de agua sin necesidad de dañar la toma domiciliaria.</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="background-image:url(http://www.veagn.com/photos/1400/3.png);" class="item">
-          <div class="carousel-caption">
-            <div class="thm-container">
-              <div class="box valign-top">
-                <div class="content text-left pull-right">
-                  <h1 data-animation="animated fadeInUp" class="bnrfnt40" style="margin-top: 300px;background:rgba(0,0,0,0.5);">Permite atrapar y alojar pequeños sedimentos existentes en el agua , mediante la camara “Y”.</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      @endforeach
       </div>
+
+      
       <!-- Controls--><a href="#minimal-bootstrap-carousel" role="button" data-slide="prev" class="left carousel-control"><i class="fa fa-angle-left"></i><span class="sr-only">Previous</span></a><a href="#minimal-bootstrap-carousel" role="button" data-slide="next" class="right carousel-control"><i class="fa fa-angle-right"></i><span class="sr-only">Next</span></a>
     </div>
     <!-- =========home banner end============-->
