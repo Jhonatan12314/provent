@@ -5,43 +5,44 @@
 @section('content')
 
     <!-- =========home banner start============-->
-    
-    <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider full_width ver_new_1_slider">
+
+     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider full_width ver_new_1_slider">
       <!-- Wrapper for slides-->
-      
-      @foreach($sliders as $slider)
       <div role="listbox" class="carousel-inner">
+
+      <?php $c=1; ?>
+      @foreach($sliders as $slider)
+
+      
       @if($slider->imagen!="")
-        <div style="background-image:url({{$slider->imagen}});" class="item active">
+
+      @if($c==1)
+      <div style="background-image:url({{$slider->imagen}});" class="item active">
+      @else
+	  <div style="background-image:url({{$slider->imagen}});" class="item ">
+      @endif
+      
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-top">
                 <div class="content text-left pull-right" >
                   <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">{{str_limit(strip_tags($slider->descripcion), 150)}}</h1>
+         
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
-          @else
-         <div style="background-image:url({{url('public/frontend/images/sinimagen.png')}});" class="item active">
-           <div class="carousel-caption">
-            <div class="thm-container">
-              <div class="box valign-top">
-                <div class="content text-left pull-right" >
-                  <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">{{str_limit(strip_tags($slider->descripcion), 150)}}</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         @endif
-      </div>
+        @endif
+
+        <?php $c++; ?>
+     
 		@endforeach
-      
+      </div>
       <!-- Controls--><a href="#minimal-bootstrap-carousel" role="button" data-slide="prev" class="left carousel-control"><i class="fa fa-angle-left"></i><span class="sr-only">Previous</span></a><a href="#minimal-bootstrap-carousel" role="button" data-slide="next" class="right carousel-control"><i class="fa fa-angle-right"></i><span class="sr-only">Next</span></a>
     </div>
+
+
     <!-- =========home banner end============-->
     <!-- We offer Different Services-->
     <section class="diff-offer-wrapper">
