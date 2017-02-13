@@ -60,7 +60,7 @@
             @foreach($productos as $producto)
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="single-shop-item">
-                <a href="{{url('projects-details')}}?id={{$producto->id}}">
+                <a href="{{url('Producto')}}/{{$producto->id}}">
                 @if($producto->imagen!="")
                  <div class="img-box"><img src="{{$producto->imagen}}" width="100%" alt="Awesome Image"></div>
                 @else

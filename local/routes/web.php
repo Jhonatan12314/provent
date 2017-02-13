@@ -31,7 +31,11 @@ Route::get('faq','FrontendController@getFaq');
 Route::get('classic','FrontendController@getClassic');
 Route::get('fullscreen','FrontendController@getFullscreen');
 Route::get('lightbox','FrontendController@getLightbox');
-Route::get('projects-details','FrontendController@getProjectdetails');
+
+
+Route::get('Producto/{id}','FrontendController@detalleProducto');
+
+
 Route::get('news-details','FrontendController@getNewsdetails');
 Route::get('product','FrontendController@getProduct');
 Route::get('cart','FrontendController@getCart');
