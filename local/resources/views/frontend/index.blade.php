@@ -169,7 +169,7 @@ Lic. En Ciencias y TC<br>
           <div class="news-evn-cont">
           <br>
               <h3>{{$noticia->titulo}}</h3></a>
-            <p>{{str_limit(strip_tags($noticia->descripcion), 150)}}s</p>
+            <p>{{str_limit(strip_tags($noticia->descripcion), 150)}}...</p>
           </div>
         </div>
       @endforeach

@@ -19,7 +19,7 @@
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a><br><br>
-              <a href="{{url('contact')}}" class="submit">Suscribirme</a>
+              <a href="#" onClick="document.getElementById('formmenu').submit();" class="submit">Suscribirme</a>
               </div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
@@ -31,7 +31,11 @@
                         <div class="media-body">
                           <p>{{$configuracion->telefono}}<br><span><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></span></p>
                           <div style="margin-top: 27px;">
-                          <input type="text" class="form-control" placeholder="ejemplo@mail.com">
+                           <form action="https://veagn.us14.list-manage.com/subscribe/post" id="formmenu" method="POST">
+                                <input type="hidden" name="u" value="12a6b5a0621545b8ba0247d76">
+                                <input type="hidden" name="id" value="769530ed06">
+                                  <input type="text" name="MERGE0" id="MERGE0" class="form-control" placeholder="ejemplo@mail.com">
+                          </form>
                           </div>
                         </div>
                       </div>

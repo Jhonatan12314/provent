@@ -52,10 +52,14 @@
            <div class="widget widget-links col-md-3 col-sm-6">
             <h4 class="widget_title">Suscríbete...</h4>
             <div class="widget-contact-list row m0">
-            <input type="text" class="form-control" placeholder="ejemplo@mail.com"><br>
-            <div class="req-button text-right">
-            <a href="{{url('contact')}}" class="submit">Suscribirme</a>
-            </div>
+                <form action="https://veagn.us14.list-manage.com/subscribe/post" id="formfooter" method="POST">
+                    <input type="hidden" name="u" value="12a6b5a0621545b8ba0247d76">
+                    <input type="hidden" name="id" value="769530ed06">
+                    <input type="text" class="form-control" name="MERGE0" id="MERGE0" placeholder="ejemplo@mail.com"><br>
+              <div class="req-button text-right">
+               <a href="#" onClick="document.getElementById('formfooter').submit();" class="submit">Suscribirme</a>
+              </div>
+            </form>
             </div>
           </div>
 
