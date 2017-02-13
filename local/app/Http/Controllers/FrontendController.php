@@ -11,13 +11,15 @@ use App\Producto;
 use App\Noticia;
 use App\Slider;
 
+
 class FrontendController extends Controller
 {
     public function getIndex(){
+        $noticias=Noticia::where('deleted','=',0)->orderBy('created_at')->take(3)->get();
         $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
         $slider=Slider::where('deleted','=',0)->get();
-    	return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('sliders',$slider);
+    	return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('sliders',$slider)->with('noticias',$noticias);
 }
  public function getContact(){
      $configuracion=Configuracion::first();
@@ -86,16 +88,17 @@ public function detalleProducto($id){
 
 }
 public function Categoria($id){
-    $categorias=Categoria::where('deleted','=',0)->where('id','=',$id)->get();
+    $productos=Producto::where('idcategoria','=',$id)->where('deleted','=',0)->get();
+    $categorias=Categoria::where('deleted','=',0)->get();
     $configuracion=Configuracion::first();
-    return view('frontend/categorias')->with('configuracion',$configuracion)->with('categorias',$categorias);
+    return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
 
 }
-public function detalleNoticia(){
-     $configuracion=Configuracion::first();
+public function detalleNoticia($id){
+    $noticia=Noticia::find($id);
+    $configuracion=Configuracion::first();
     $categorias=Categoria::where('deleted','=',0)->get();
-
-    	return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias);
+    return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticia',$noticia);
 }
 public function getProduct(){
 

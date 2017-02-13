@@ -47,7 +47,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Descripcion</th>
-                                                    <th>Iamgen</th>
+                                                    <th>Imagen</th>
                                                     <th class="disabled-sorting text-right">Actions</th>
                                                 </tr>
                                             </thead>
@@ -55,8 +55,8 @@
                                                  @foreach($sliders as $slider)
                                                 <tr>
                                                     <td>{{$slider->id}}</td>
-                                                    <td>{{$slider->descripcion}}</td>
-                                                    <td>{{$slider->imagen}}</td>
+                                                    <td>{{str_limit(strip_tags($slider->descripcion), 150)}}</td>
+                                                    <td><img src="{{url($slider->imagen)}}" style="width: 150px!important;"></td>
                                                     <td class="text-right">
                                                         <a href="{{url('admin/sliders/update')}}/{{$slider->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
                                                         <a href="{{url('admin/sliders/delete')}}/{{$slider->id}}" onClick="confirm('¿Estas seguro que deseas eliminar la categoría?')" class="btn btn-simple btn-danger btn-icon"><i class="material-icons">close</i></a>

@@ -28,11 +28,11 @@
     <!-- Projects  Details-->
     <section class="core-projects sectpad">
       <div class="container clearfix">
-        <div class="pro-det-img"><img src="{{$producto->imagen}}" alt=""></div>
+        <div class="pro-det-img"><img src="{{url($producto->imagen)}}" height="400" alt=""></div>
         <div class="pro-content clearfix">
           <h1>{{$producto->nombre}}</h1>
           <h4>Descripción</h4>
-          <p>{{str_limit(strip_tags($producto->descripcion), 150)}}</p>
+          <p>{!!html_entity_decode($producto->descripcion)!!}</p>
         </div>
         <div class="projects_hours clearfix">
           <div class="row">

@@ -58,7 +58,7 @@
                                                  <tr>
                                                     <td>{{$producto->id}}</td>
                                                     <td>{{$producto->nombre}}</td>
-                                                    <td>{{$producto->descripcion}}</td>
+                                                    <td>{{str_limit(strip_tags($producto->descripcion), 150)}}</td>
                                                     <td>{{$producto->precio}}</td>
                                                     <td>{{$producto->getCategoria->nombre}}</td>
                                                     <td class="text-right">

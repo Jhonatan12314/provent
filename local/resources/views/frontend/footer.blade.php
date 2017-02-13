@@ -31,16 +31,19 @@
           </div>
           <div class="widget widget-contact col-md-3 col-sm-6">
             <h4 class="widget_title">Mantente en contacto</h4>
+            
+
+
             <div class="widget-contact-list row m0">
               <ul>
                 <li><i class="fa fa-map-marker"></i>
                   <div class="fleft location_address">{{$configuracion->direccion}}</div>
                 </li>
-                <li><i class="fa  fa-phone"></i>
-                  <div class="fleft contact_no">{{$configuracion->telefono}}</div>
+                <li><i class="fa fa-phone"></i>
+                  <div class="fleft contact_no"><a href="#">{{$configuracion->telefono}}</a></div>
                 </li>
                 <li><i class="fa fa-envelope-o"></i>
-                  <div class="fleft contact_mail"><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></div>
+                  <div class="fleft contact_mail"><a href="mailto:info@woodworkshop.com">{{$configuracion->email}}</a></div>
                 </li>
               </ul>
             </div>

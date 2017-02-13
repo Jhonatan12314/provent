@@ -56,7 +56,7 @@
                                                 <tr>
                                                     <td>{{$noticia->id}}</td>
                                                     <td>{{$noticia->titulo}}</td>
-                                                    <td>{{$noticia->descripcion}}</td>
+                                                    <td>{{str_limit(strip_tags($noticia->descripcion), 150)}}...</td>
                                                     <td class="text-right">
                                                         <a href="{{url('admin/noticias/update')}}/{{$noticia->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
                                                         <a href="{{url('admin/noticias/delete')}}/{{$noticia->id}}" onClick="confirm('¿Estas seguro que deseas eliminar la categoría?')" class="btn btn-simple btn-danger btn-icon"><i class="material-icons">close</i></a>

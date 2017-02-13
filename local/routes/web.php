@@ -37,7 +37,7 @@ Route::get('Producto/{id}','FrontendController@detalleProducto');
 Route::get('categorias/{id}','FrontendController@Categoria');
 
 
-Route::get('detalleNoticia','FrontendController@detalleNoticia');
+Route::get('Noticia/{id}','FrontendController@detalleNoticia');
 Route::get('product','FrontendController@getProduct');
 Route::get('cart','FrontendController@getCart');
 Route::get('checkout','FrontendController@getCheckout');

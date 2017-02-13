@@ -57,8 +57,8 @@
                                                 <tr>
                                                     <td>{{$categoria->id}}</td>
                                                     <td>{{$categoria->nombre}}</td>
-                                                    <td>{{$categoria->descripcion}}</td>
-                                                    <td>{{$categoria->imagen}}</td>                                                    
+                                                    <td>{{str_limit(strip_tags($categoria->descripcion), 150)}}</td>
+                                                    <td><img src="{{url($categoria->imagen)}}" style="width: 150px!important;"></td>                                                    
                                                     <td class="text-right">
                                                         <a href="{{url('admin/categorias/update')}}/{{$categoria->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
                                                         <a href="{{url('admin/categorias/delete')}}/{{$categoria->id}}" onClick="confirm('¿Estas seguro que deseas eliminar la categoría?')" class="btn btn-simple btn-danger btn-icon"><i class="material-icons">close</i></a>

@@ -31,9 +31,9 @@
 
             <article class="single-blog-post img-cap-effect">
              @if($noticia->imagen!="")
-                <div class="img-box"><a href="news-details" class="image_hover"><img src="{{$noticia->imagen}}" alt="" class="img-responsive zoom_img_effect"></a></div>
+                <div class="img-box"><a href="{{url('Noticia')}}/{{$noticia->id}}" class="image_hover"><img src="{{$noticia->imagen}}" alt="" class="img-responsive zoom_img_effect"></a></div>
                 @else
-                <div class="img-box"><a href="news-details" class="image_hover"><img src="{{url('public/frontend/images/sinimagen.png')}}" alt="" class="img-responsive zoom_img_effect"></a></div>
+                <div class="img-box"><a href="{{url('Noticia')}}/{{$noticia->id}}" class="image_hover"><img src="{{url('public/frontend/images/sinimagen.png')}}" alt="" class="img-responsive zoom_img_effect"></a></div>
                 @endif
 
                 
@@ -41,7 +41,7 @@
                 <h6>{{$noticia->cretaed_at}}</h6>
                 <h3>{{$noticia->titulo}}</h3>
                 <p>{{str_limit(strip_tags($noticia->descripcion), 150)}}</p>
-                <a href="news-details" class="read-more btn submit">Leer más</a>
+                <a href="{{url('Noticia')}}/{{$noticia->id}}"" class="read-more btn submit">Leer más</a>
               </article>
 
 

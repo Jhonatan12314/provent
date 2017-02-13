@@ -62,7 +62,7 @@
                 <div class="single-shop-item">
                 <a href="{{url('Producto')}}/{{$producto->id}}">
                 @if($producto->imagen!="")
-                 <div class="img-box"><img src="{{$producto->imagen}}" width="100%" alt="Awesome Image"></div>
+                 <div class="img-box"><img src="{{url($producto->imagen)}}" height="200" alt="Awesome Image"></div>
                 @else
                  <div class="img-box"><img src="{{url('public/frontend/images/sinimagen.png')}}" width="100%" alt="Awesome Image"></div>
                 @endif
