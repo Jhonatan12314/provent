@@ -91,9 +91,11 @@ public function Categoria($id){
     return view('frontend/categorias')->with('configuracion',$configuracion)->with('categorias',$categorias);
 
 }
-public function getNewsdetails(){
+public function detalleNoticia(){
+     $configuracion=Configuracion::first();
+    $categorias=Categoria::where('deleted','=',0)->get();
 
-    	return view('frontend/news-details');
+    	return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
 public function getProduct(){
 

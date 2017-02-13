@@ -122,7 +122,9 @@
                 <div class="name-content clearfix">
                   <div class="tst-img"><img src="public/frontend/images/testimonial/test-img2.png" alt=""></div>
                   <div class="client-name">
-                    <p>Industrial is great firm<span>Michale John (CEO & Founder)</span></p>
+                    <p>Salvador  Osorio<br>
+                    Ing. Comunicaciones Eléctricas<br>
+                    Fundador (Desarrollador Tecnológico)</p>
                     <ul>
                       <li><a href="#"><i class="fa fa-star"></i></a></li>
                       <li><a href="#"><i class="fa fa-star"></i></a></li>
