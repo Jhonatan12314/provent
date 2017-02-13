@@ -34,6 +34,7 @@ Route::get('lightbox','FrontendController@getLightbox');
 
 
 Route::get('Producto/{id}','FrontendController@detalleProducto');
+Route::get('categorias/{id}','FrontendController@Categoria');
 
 
 Route::get('news-details','FrontendController@getNewsdetails');

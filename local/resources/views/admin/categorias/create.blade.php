@@ -29,7 +29,7 @@
                 <div class="container-fluid">
              
                     <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-12">
                             <div class="card">
                                 <div class="card-content">
                                     @if(isset($categoria))
@@ -38,28 +38,61 @@
                                     {{ csrf_field() }}
                                     <input type="hidden" name="id" value="{{$categoria->id}}">
                                         <div class="form-group label-floating is-empty">
-                                            <label>Nombre de la categoría</label>
+                                            <label>Nombre de Categoría</label>
                                             <input type="text" name="nombre" value="{{$categoria->nombre}}" class="form-control">
-                                        <span class="material-input"></span></div>
+                                        <span class="material-input"></span></div>                                    
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>                                         
                                         <div class="form-group label-floating is-empty">
-                                            <label>Descripción</label>
-                                            <input type="text" name="descripcion" value="{{$categoria->descripcion}}" class="form-control">
-                                        <span class="material-input"></span></div>
+                                            <label class="">Descripción</label>
+                                            <textarea name="descripcion" id="textarea1" >{{$categoria->descripcion}}</textarea>
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/categorias')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
                                     @else
-                                    <h4 class="card-title">Agregar categoría</h4>
-                                    <form method="post" action="{{url('admin/categorias/create')}}">
+                                    <h4 class="card-title">Agregar Categoría</h4>
+                                    <form method="post" action="{{url('admin/categorias/create')}}" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Nombre de la categoría</label>
+                                            <label class="control-label">Nombre de Categoría</label>
                                             <input type="text" name="nombre" class="form-control">
-                                        <span class="material-input"></span></div>
+                                        <span class="material-input"></span></div>                                    
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>  
+
                                         <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Descripción</label>
-                                            <input type="text" name="descripcion" class="form-control">
-                                        <span class="material-input"></span></div>
+                                            <label class="">Descripción</label>
+                                            <textarea name="descripcion" id="textarea1" ></textarea>
+                                        <span class="material-input"></span></div>                                                                                
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/categorias')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>

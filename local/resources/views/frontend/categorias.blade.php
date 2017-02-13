@@ -10,10 +10,10 @@
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
 
-      @if(isset($producto))
-      
+
+      @foreach ($categorias as $categoria)
      
-        <h2>{{$producto->nombre}}</h2>  
+        <h2>{{$categoria->nombre}}</h2>  
       </div>
     </section>
     <section class="breadcumb-wrapper">
@@ -28,23 +28,13 @@
     <!-- Projects  Details-->
     <section class="core-projects sectpad">
       <div class="container clearfix">
-        <div class="pro-det-img"><img src="{{$producto->imagen}}" alt=""></div>
+        <div class="pro-det-img"><img src="{{$categoria->imagen}}" alt=""></div>
         <div class="pro-content clearfix">
-          <h1>{{$producto->nombre}}</h1>
+          <h1>{{$categoria->nombre}}</h1>
           <h4>Descripción</h4>
-          <p>{{str_limit(strip_tags($producto->descripcion), 150)}}</p>
+          <p>{{str_limit(strip_tags($categoria->descripcion), 150)}}</p>
         </div>
-        <div class="projects_hours clearfix">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <p>Precio<span>{{str_limit(strip_tags($producto->precio), 150)}}</span></p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <p>Categoría<span>{{$producto->getCategoria->nombre}}</span></p>
-            </div>
-          </div>
-        </div>
-        @endif
+        @endforeach
       </div>
     </section>
 @endsection

@@ -85,6 +85,12 @@ public function detalleProducto($id){
     return view('frontend/detalleProducto')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('producto',$producto);
 
 }
+public function Categoria($id){
+    $categorias=Categoria::where('deleted','=',0)->where('id','=',$id)->get();
+    $configuracion=Configuracion::first();
+    return view('frontend/categorias')->with('configuracion',$configuracion)->with('categorias',$categorias);
+
+}
 public function getNewsdetails(){
 
     	return view('frontend/news-details');

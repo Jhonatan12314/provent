@@ -13,7 +13,7 @@ class Categoria extends Model
      * @var array
      */
     protected $fillable = [
-        'categoria', 'description', 'deleted',
+        'categoria', 'description','imagen', 'deleted',
     ];
 
     /**

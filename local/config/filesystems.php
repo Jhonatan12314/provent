@@ -68,6 +68,10 @@ return [
                 'driver' => 'local',
                 'root' => 'public/upload/sliders',
             ],
+            'categorias' => [
+                'driver' => 'local',
+                'root' => 'public/upload/categorias',
+            ],
 
         's3' => [
             'driver' => 's3',

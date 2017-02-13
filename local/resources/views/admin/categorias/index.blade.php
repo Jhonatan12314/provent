@@ -48,6 +48,7 @@
                                                     <th>ID</th>
                                                     <th>Categoría</th>
                                                     <th>Descripción</th>
+                                                    <th>Imagen</th>
                                                     <th class="disabled-sorting text-right">Acciones</th>
                                                 </tr>
                                             </thead>
@@ -57,6 +58,7 @@
                                                     <td>{{$categoria->id}}</td>
                                                     <td>{{$categoria->nombre}}</td>
                                                     <td>{{$categoria->descripcion}}</td>
+                                                    <td>{{$categoria->imagen}}</td>                                                    
                                                     <td class="text-right">
                                                         <a href="{{url('admin/categorias/update')}}/{{$categoria->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
                                                         <a href="{{url('admin/categorias/delete')}}/{{$categoria->id}}" onClick="confirm('¿Estas seguro que deseas eliminar la categoría?')" class="btn btn-simple btn-danger btn-icon"><i class="material-icons">close</i></a>
