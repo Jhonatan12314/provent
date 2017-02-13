@@ -57,7 +57,7 @@
                                                 <tr>
                                                     <td>{{$categoria->id}}</td>
                                                     <td>{{$categoria->nombre}}</td>
-                                                    <td>{{str_limit(strip_tags($categoria->descripcion), 150)}}</td>
+                                                    <td>{{$categoria->descripcion}}</td>
                                                     <td><img src="{{url($categoria->imagen)}}" style="width: 150px!important;"></td>                                                    
                                                     <td class="text-right">
                                                         <a href="{{url('admin/categorias/update')}}/{{$categoria->id}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">edit</i></a>
