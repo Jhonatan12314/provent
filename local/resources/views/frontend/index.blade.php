@@ -19,7 +19,7 @@
       @if($c==1)
       <div style="background-image:url({{$slider->imagen}});" class="item active">
       @else
-	  <div style="background-image:url({{$slider->imagen}});" class="item ">
+	  <div style="background-image:url({{$slider->imagen}});" class="item">
       @endif
       
           <div class="carousel-caption">

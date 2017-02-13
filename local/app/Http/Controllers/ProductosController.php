@@ -14,7 +14,8 @@ class ProductosController extends Controller
     public function getIndex()
     {
         $productos=Producto::where('deleted','=',0)->get();
-        return view('admin/productos/index')->with('productos',$productos)->with('route','productos');
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('admin/productos/index')->with('productos',$productos)->with('route','productos')->with('categorias',$categorias)->with('route','productos');
     }
 
     public function getCreate(Request $request)

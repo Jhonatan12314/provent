@@ -79,8 +79,11 @@ public function getLightbox(){
     	return view('frontend/lightbox');
 }
 public function getProjectdetails(){
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+        $productos=Producto::where('deleted','=',0)->get();
+        return view('frontend/projects-details')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
 
-    	return view('frontend/projects-details');
 }
 public function getNewsdetails(){
 
