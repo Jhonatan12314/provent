@@ -27,7 +27,7 @@
                 <li data-tab-name="history" class="active"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">Nuestra VISION</a></li>
                 <li data-tab-name="mission"><a href="#mission" aria-controls="mission" role="tab" data-toggle="tab">Nuestros VALORES</a></li>
                 <li data-tab-name="vision"><a href="#vision" aria-controls="vision" role="tab" data-toggle="tab">Nuestra MISION</a></li>
-                <li data-tab-name="objetivo"><a href="#objetivo" aria-controls="objetivo" role="tab" data-toggle="tab">Nuestra OBJETIVO</a></li>
+                <li data-tab-name="objetivo"><a href="#objetivo" aria-controls="objetivo" role="tab" data-toggle="tab">Nuestro OBJETIVO</a></li>
               </ul>
             </div>
           </div>

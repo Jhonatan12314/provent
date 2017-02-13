@@ -48,6 +48,19 @@
               </ul>
             </div>
           </div>
+
+           <div class="widget widget-links col-md-3 col-sm-6">
+            <h4 class="widget_title">Suscríbete...</h4>
+            <div class="widget-contact-list row m0">
+            <input type="text" class="form-control" placeholder="ejemplo@mail.com"><br>
+            <div class="req-button text-right">
+            <a href="{{url('contact')}}" class="submit">Suscribirme</a>
+            </div>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
     </footer>

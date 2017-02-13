@@ -18,7 +18,9 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
-              <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a></div>
+              <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a><br><br>
+              <a href="{{url('contact')}}" class="submit">Suscribirme</a>
+              </div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
                   <ul class="nav">
@@ -28,6 +30,9 @@
                         <div class="blue-color media-left"><a href="#"><i class="icon icon-Phone2"></i></a></div>
                         <div class="media-body">
                           <p>{{$configuracion->telefono}}<br><span><a href="mailto:{{$configuracion->email}}">{{$configuracion->email}}</a></span></p>
+                          <div style="margin-top: 27px;">
+                          <input type="text" class="form-control" placeholder="ejemplo@mail.com">
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -78,18 +83,6 @@
                        <li ><a href="{{url('testimonials')}}">Clientes</a></li>
                       <li><a href="{{url('contact')}}">contactanos</a></li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-search pull-right text-right">
-                <div class="widget-t widget-t-search">
-                  <div class="widget-t-inner">
-                    <form action="#" method="get" class="search-form">
-                      <div class="input-group">
-                        <input type="search" placeholder="buscar" class="form-control"><span class="input-group-addon">
-                          <button type="submit"><i class="icon icon-Search"></i></button></span>
-                      </div>
-                    </form>
                   </div>
                 </div>
               </div>
