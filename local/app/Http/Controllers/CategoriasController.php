@@ -36,7 +36,7 @@ class CategoriasController extends Controller
         $categoria->imagen=$request->imagen;
 
         $file = $request->file('imagen');
-        
+
         if($file)
         {
             $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
@@ -67,13 +67,15 @@ class CategoriasController extends Controller
         $categoria->imagen=$request->imagen;
 
         $file = $request->file('imagen');
+            
+            if($file)
+                {
+                    $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+                    Storage::disk('categorias')->put($imageName ,File::get($file));
+                    File::Delete($categoria->imagen);
+                    $categoria->imagen="public/upload/categorias/".$imageName;
 
-        	if($file)
-       		 {
-	            $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
-	            Storage::disk('categorias')->put($imageName ,File::get($file));
-	            $categoria->imagen="public/upload/categorias/".$imageName;
-	        }
+                }
 
         $categoria->save();
         return redirect('admin/categorias');
