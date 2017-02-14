@@ -56,6 +56,7 @@
               <h2>Todos los productos</h2>
             </div>
             <div class="row shop-item-wrapper">
+            <?php $c=1;?>
 
             @foreach($productos as $producto)
               <div class="col-md-4 col-sm-6 col-xs-12">
@@ -73,7 +74,17 @@
                   </div>
                 </div>
               </div>
-              <div class="clearfix visible-xs"></div>
+              
+
+              <?php
+              if($c==3)
+              {
+                echo '<div class="clearfix visible-xs"></div>';
+                $c=0;
+              }
+              $c++;
+              ?>
+
               @endforeach
 
 
