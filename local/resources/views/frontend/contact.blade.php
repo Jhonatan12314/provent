@@ -73,6 +73,6 @@
       </div>
     </section>
     <section id="map-area">
-      <div id="contact-google-map" data-map-lat="-37.812802" data-map-lng="144.956981" data-icon-path="images/map/map-marker.png" data-map-title="Envato HQ" data-map-zoom="12" class="google-map"></div>
+      <div id="contact-google-map" data-map-lat="20.7596674" data-map-lng="-103.4337567" data-icon-path="{{url('public/frontend/images/map-marker.png')}}" data-map-title="Envato HQ" data-map-zoom="15" class="google-map"></div>
     </section>
 @endsection
