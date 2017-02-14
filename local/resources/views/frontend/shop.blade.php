@@ -55,8 +55,9 @@
             <div class="section_header color">
               <h2>Todos los productos</h2>
             </div>
-            <div class="row shop-item-wrapper">
+         
             <?php $c=1;?>
+            <div class="row shop-item-wrapper">
 
             @foreach($productos as $producto)
               <div class="col-md-4 col-sm-6 col-xs-12">
@@ -81,6 +82,8 @@
               {
                 echo '<div class="clearfix visible-xs"></div>';
                 $c=0;
+                echo "</div>";
+                echo '<div class="row shop-item-wrapper">';
               }
               $c++;
               ?>
