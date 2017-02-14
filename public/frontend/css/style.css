@@ -515,7 +515,6 @@ body {
     
     left: 0;
     width: 100%;
-    z-index: 9999;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fafafa+19,e2e2e2+69,d7d7d7+100 */
     
     background: #009bb3;
@@ -5186,7 +5185,6 @@ blockquote footer a {
 }
 .main_menu {
     position: relative;
-    z-index: 9999;
 }
 @keyframes menu_sticky {
     0% {
@@ -5204,7 +5202,6 @@ blockquote footer a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
     animation-name: menu_sticky;
     animation-duration: 0.60s;
     animation-timing-function: ease-out;
