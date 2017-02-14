@@ -34,6 +34,10 @@ class ConfiguracionController extends Controller
         $configuracion->twitter=$request->twitter;
         $configuracion->youtube=$request->youtube;
         $configuracion->pinterest=$request->pinterest;
+        $configuracion->skype=$request->skype;
+        $configuracion->whatsapp=$request->whatsapp;
+        $configuracion->linkedin=$request->linkedin;
+        $configuracion->google=$request->google;
 
         $configuracion->mision=$request->mision;
         $configuracion->vision=$request->vision;

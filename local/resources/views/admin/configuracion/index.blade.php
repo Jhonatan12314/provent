@@ -57,7 +57,27 @@
                                         <div class="form-group label-floating is-empty">
                                             <i class="fa fa-pinterest"></i> Pinterest
                                             <input type="text" name="pinterest" value="{{$configuracion->pinterest}}" class="form-control" ">
-                                        <span class="material-input"></span></div>                            
+                                        <span class="material-input"></span></div> 
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-skype"></i> Skype
+                                            <input type="text" name="skype" value="{{$configuracion->skype}}" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-google-plus"></i> Google+
+                                            <input type="text" name="google" value="{{$configuracion->google}}" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-linkedin"></i> Linkedin
+                                            <input type="text" name="linkedin" value="{{$configuracion->linkedin}}" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-whatsapp"></i> Whatsapp
+                                            <input type="text" name="whatsapp" value="{{$configuracion->whatsapp}}" class="form-control" ">
+                                        <span class="material-input"></span></div>                             
                       
                                 </div>
                                 <!-- end content-->
@@ -139,6 +159,26 @@
                                         <div class="form-group label-floating is-empty">
                                             <i class="fa fa-pinterest"></i> Pinterest
                                             <input type="text" name="pinterest" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-skype"></i> Skype
+                                            <input type="text" name="skype" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-linkedin"></i> Linkedin
+                                            <input type="text" name="linkedin" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-google-plus"></i> Google+
+                                            <input type="text" name="google" class="form-control" ">
+                                        <span class="material-input"></span></div>  
+
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-whatsapp"></i> Whatsapp
+                                            <input type="text" name="whatsapp" class="form-control" ">
                                         <span class="material-input"></span></div>                            
                       
                                 </div>

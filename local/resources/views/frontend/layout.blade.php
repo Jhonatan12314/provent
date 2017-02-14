@@ -40,8 +40,103 @@
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
+
+        <style type="text/css">
+       #contact-buttons-bar {
+  position: fixed;
+  top: 120px;
+  left: 0px;
+  width: 50px;
+  z-index: 9999;
+}
+
+
+#contact-buttons-bar.slide-on-scroll {
+  position: absolute;
+}
+
+.contact-button-link  {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background: #8e8e93;
+  color: #fff;
+  position: relative;
+  left: 0;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  -webkit-transition: all 250ms;
+     -moz-transition: all 250ms;
+          transition: all 250ms;
+}
+.contact-button-link:hover,
+.contact-button-link:focus,
+.contact-button-link:active {
+  color: #fff;
+  padding-left: 20px;
+  width: 70px;
+}
+.contact-button-link.cb-hidden {
+  left: -50px;
+}
+.contact-button-link.facebook {
+  background: #3b5998;
+}
+.contact-button-link.linkedin {
+  background: #0077b5;
+}
+.contact-button-link.gplus {
+  background: #db4437;
+}
+
+.contact-button-link.separated {
+  margin-top: 1em;
+}
+
+.show-hide-contact-bar,
+.contact-button-link.show-hide-contact-bar:focus,
+.contact-button-link.show-hide-contact-bar:active {
+  background: transparent;
+  color: #000;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 50px;
+}
+.contact-button-link.show-hide-contact-bar:hover {
+  color: #000;
+  background: #ccc;
+  padding: 0;
+  width: 50px;
+}
+
+    </style>
   </head>
-  <body>
+  <body onload="socialbar()">
+
+ <div id="contact-buttons-bar">
+      <a href="{{$configuracion->facebook}}" class="contact-button-link cb-ancor" style="background-color: #3b5999;"><span class="fa fa-facebook"></span></a>
+      <a href="{{$configuracion->youtube}}" class="contact-button-link cb-ancor" style="background-color: #cd201f;"><span class="fa fa-youtube"></span></a>
+      <a href="{{$configuracion->twitter}}" class="contact-button-link cb-ancor" style="background-color: #55acee;"><span class="fa fa-twitter"></span></a>
+      <a href="{{$configuracion->pinterest}}" class="contact-button-link cb-ancor" style="background-color: #bd081c;"><span class="fa fa-pinterest"></span></a>
+      <a href="tel:{{$configuracion->skype}}" class="contact-button-link cb-ancor" style="background-color: #00AFF0;"><span class="fa fa-skype"></span></a>
+      <a href="{{$configuracion->google}}" class="contact-button-link cb-ancor" style="background-color: #dd4b39;"><span class="fa fa-google-plus"></span></a>
+      <a href="tel:{{$configuracion->whatsapp}}" class="contact-button-link cb-ancor" style="background-color: #25D366;"><span class="fa fa-whatsapp"></span></a>
+      <a href="{{$configuracion->linkedin}}" class="contact-button-link cb-ancor linkedin" ><span class="fa fa-linkedin"></span></a>
+
+      <a href="tel:{{$configuracion->telefono}}" class="contact-button-link cb-ancor phone separated" title="Call us"><span class="fa fa-phone"></span></a>
+      <a href="mailto:{{$configuracion->email}}" class="contact-button-link cb-ancor email" title="Send us an email"><span class="fa fa-envelope"></span></a></div>
+  </div>
+
+
         @include('frontend.menu')
         @yield('content')
         @include('frontend.footer')
@@ -89,6 +184,30 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+</script>
+<script type="text/javascript">
+
+function socialbar(){
+
+    
+    // Define element to slide
+    var el = $("#contact-buttons-bar.slide-on-scroll");
+    
+    // Load top default
+    el.attr('data-top', el.css('top'));
+    
+    // Listen to scroll
+    $(window).scroll(function() {
+      clearTimeout( $.data( this, "scrollCheck" ) );
+      $.data( this, "scrollCheck", setTimeout(function() {
+        var nTop = $(window).scrollTop() + parseInt(el.attr('data-top'));
+        el.animate({
+          top : nTop
+        }, 500);
+      }, 250) );
+    });
+}
+
 </script>
 <!--End of Tawk.to Script-->
 
