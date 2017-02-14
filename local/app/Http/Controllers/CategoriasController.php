@@ -36,6 +36,7 @@ class CategoriasController extends Controller
         $categoria->imagen=$request->imagen;
 
         $file = $request->file('imagen');
+
         if($file)
         {
             $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
@@ -54,7 +55,8 @@ class CategoriasController extends Controller
     public function getUpdate($id)
     {
         $categoria=Categoria::find($id);
-        return view('admin/categorias/create')->with('categoria',$categoria)->with('route','categorias');
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('admin/categorias/create')->with('categoria',$categoria)->with('categorias',$categorias)->with('route','categorias');
     }
 
     public function update(Request $request)
@@ -65,15 +67,15 @@ class CategoriasController extends Controller
         $categoria->imagen=$request->imagen;
 
         $file = $request->file('imagen');
-        if($file)
-        {
-            $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
-            Storage::disk('categorias')->put($imageName ,File::get($file));
-            $categoria->imagen="public/upload/categorias/".$imageName;
-        }else
-        {
-            $categoria->imagen="";
-        }
+            
+            if($file)
+                {
+                    $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+                    Storage::disk('categorias')->put($imageName ,File::get($file));
+                    File::Delete($categoria->imagen);
+                    $categoria->imagen="public/upload/categorias/".$imageName;
+
+                }
 
         $categoria->save();
         return redirect('admin/categorias');
@@ -93,7 +95,7 @@ class CategoriasController extends Controller
         
     }
 
-    public function NewGuid() { 
+            public function NewGuid() { 
     $s = strtoupper(md5(uniqid(rand(),true))); 
     $guidText = 
         substr($s,0,8) . '-' . 
@@ -103,5 +105,6 @@ class CategoriasController extends Controller
         substr($s,20); 
         return $guidText;
     }
+
     
 }
