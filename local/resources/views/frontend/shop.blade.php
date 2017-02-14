@@ -73,6 +73,7 @@
                   </div>
                 </div>
               </div>
+              <div class="clearfix visible-xs"></div>
               @endforeach
 
 
