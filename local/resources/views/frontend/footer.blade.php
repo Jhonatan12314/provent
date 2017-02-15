@@ -57,7 +57,7 @@
           </div>
 
            <div class="widget widget-links col-md-3 col-sm-6">
-            <h4 class="widget_title">Suscríbete...</h4>
+            <h4 class="widget_title">Suscríbete a nuestro boletín</h4>
             <div class="widget-contact-list row m0">
                 <form action="https://veagn.us14.list-manage.com/subscribe/post" id="formfooter" method="POST">
                     <input type="hidden" name="u" value="12a6b5a0621545b8ba0247d76">
@@ -67,8 +67,8 @@
                       <input type="text" class="form-control" name="MERGE0" id="MERGE0" placeholder="ejemplo@mail.com">
                      </div>
                       <div class="col-md-1 col-sm-1" style="margin-left: 150px;margin-top: -40px;">
-                        <div class="req-button text-right">
-                          <a href="#" onClick="document.getElementById('formfooter').submit();" style="position: absolute;" class="submit">Suscribirme</a>
+                        <div class="req-button text-right" style="margin-top: 5px;">
+                          <a href="#" onClick="document.getElementById('formfooter').submit();" style="position: absolute;padding-top: 9px;padding-bottom: 9px;" class="submit">Suscribirme</a>
                         </div>
                       </div>
                       <div class="col-md-12 col-sm-12" style="margin-top: 30px;">
@@ -110,7 +110,8 @@
     <section class="footer-t-bottom footer-bottom footer-bottom3">
       <div class="container clearfix">
         <div class="pull-left fo-txt">
-          <p>Copyright © VEAGN 2017. Todos los derechos reservados.</p>
+          <p>Copyright © 2017 Veagn. Derechos Reservados.<br>
+Una Empresa Manufacturas e Importaciones Multicierre A.G. S.A. de C.V.</p>
         </div>
         <div class="pull-right fo-txt">
           <p>Created by: <a href="http://indexceed.com">Indexceed</a></p>
