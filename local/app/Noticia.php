@@ -2,7 +2,7 @@
 
 namespace App;
 use Illuminate\Database\Eloquent\Model;
-
+use Carbon\Carbon;
 class Noticia extends Model
 {
 
@@ -21,5 +21,6 @@ class Noticia extends Model
      *
      * @var array
      */
+
 
 }

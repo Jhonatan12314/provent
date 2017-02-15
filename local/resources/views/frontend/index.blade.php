@@ -158,15 +158,17 @@ Lic. En Ciencias y TC<br>
         <h2>Últimas noticias</h2>
       </div>
       <div class="row event-pad">
-
+      <?php Carbon\Carbon::setLocale('es'); ?>
       @foreach($noticias as $noticia)
       <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="news-evn-img"><a href="news" class="image_hover"><img src="{{url($noticia->imagen)}}" height="250" alt="" class=" zoom_img_effect"></a>
-            <div class="event-date">
-              <h3>05 <small>Aug</small></h3>
-            </div>
+          <div class="news-evn-img"><a href="{{url('Noticia')}}/{{$noticia->id}}" class="image_hover"><img src="{{url($noticia->imagen)}}" height="250" alt="" class=" zoom_img_effect"></a>
+
+       
           </div>
+          <div class="news-meta"><span>{{ Carbon\Carbon::parse($noticia->created_at)->diffForHumans()}}</span></div>
+
           <div class="news-evn-cont">
+          
           <br>
               <h3>{{$noticia->titulo}}</h3></a>
             <p>{{str_limit(strip_tags($noticia->descripcion), 150)}}...</p>
