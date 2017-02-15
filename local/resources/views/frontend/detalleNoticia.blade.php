@@ -12,7 +12,7 @@
     <section class="breadcumb-wrapper">
       <div class="container clearfix">
         <ul class="breadcumb">
-          <li><a href="index">Inicio</a></li>
+          <li><a href="{{url('index')}}">Inicio</a></li>
           <li><span>Noticias</span></li>
         </ul>
       </div>

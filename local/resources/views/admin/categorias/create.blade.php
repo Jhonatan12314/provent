@@ -34,7 +34,7 @@
                                 <div class="card-content">
                                     @if(isset($categoria))
                                     <h4 class="card-title">Editar categoría</h4>
-                                    <form method="post" action="{{url('admin/categorias/update')}}">
+                                    <form method="post" action="{{url('admin/categorias/update')}}" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="id" value="{{$categoria->id}}">
                                         <div class="form-group label-floating is-empty">

@@ -55,8 +55,7 @@ class CategoriasController extends Controller
     public function getUpdate($id)
     {
         $categoria=Categoria::find($id);
-        $categorias=Categoria::where('deleted','=',0)->get();
-        return view('admin/categorias/create')->with('categoria',$categoria)->with('categorias',$categorias)->with('route','categorias');
+        return view('admin/categorias/create')->with('categoria',$categoria)->with('route','categorias');
     }
 
     public function update(Request $request)
