@@ -1,3 +1,4 @@
+
     <footer class="sec-padding footer-bg footer-bg3">
       <div class="container clearfix">
         <div class="row">
@@ -74,6 +75,30 @@
         </div>
       </div>
     </footer>
+    <style type="text/css">
+      .alert
+      {
+        padding-bottom: 50px!important;
+        margin-bottom: 0px!important;
+      }
+    </style>
+     <section class="looking-wrapper alert alert-dismissable clearfix" style="background-color: #009cb5!important;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="indurial-solution-text2">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
+              <center>
+              <h2>Atención a clientes disponible de Lunes a Viernes 9am - 6pm</h2>
+              <p style="color:#FFF;font-size: 18px!important;">Contáctanos: contacto@veagn.com o llámanos al: (33)-3663-7726 con 10 lineas disponibles.<br>
+              atendido por alguno de nuestros asesores comerciales</p>
+              </center>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
     <section class="footer-t-bottom footer-bottom footer-bottom3">
       <div class="container clearfix">
         <div class="pull-left fo-txt">
