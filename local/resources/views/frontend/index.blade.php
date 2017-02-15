@@ -63,7 +63,7 @@
         <div class="col-sm-4 service-info">
             <div class="item"><a href="{{url('categorias')}}/{{$categoria->id}}" class="post-image view image_hover">     <img src="{{url($categoria->imagen)}}" alt="" class="img-responsive zoom_img_effect"></a><a href="{{url('categorias')}}/{{$categoria->id}}">
                 <h4>{{$categoria->nombre}}</h4></a>
-              <p align="justify">{{str_limit(strip_tags($categoria->descripcion), 150)}}...</p>
+              <p align="justify">{{str_limit(strip_tags($categoria->descripcion), 100)}}...</p>
               <h6><a href="{{url('categorias')}}/{{$categoria->id}}">Leer m&aacute;s</a></h6>
             </div>
           </div>
