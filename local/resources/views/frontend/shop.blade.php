@@ -55,6 +55,8 @@
             <div class="section_header color">
             @if(isset($search))
             <h2>Resultados para "{{$search}}"</h2>
+            @elseif(isset($cat))
+            <h2>{{$cat->nombre}}</h2>
             @else
             <h2>Todos los productos</h2>
             @endif

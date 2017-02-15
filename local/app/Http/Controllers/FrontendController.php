@@ -100,8 +100,10 @@ public function detalleProducto($id){
 public function Categoria($id){
     $productos=Producto::where('idcategoria','=',$id)->where('deleted','=',0)->get();
     $categorias=Categoria::where('deleted','=',0)->get();
+    $categoria=Categoria::find($id);
     $configuracion=Configuracion::first();
-    return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
+
+    return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos)->with('cat',$categoria);
 
 }
 public function detalleNoticia($id){
