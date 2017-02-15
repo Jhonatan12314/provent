@@ -27,6 +27,7 @@
               <li><a href="{{$configuracion->twitter}}"><i class="fa fa-twitter"></i></a></li>
               <li><a href="{{$configuracion->youtube}}"><i class="fa fa-youtube-square"></i></a></li>
               <li><a href="{{$configuracion->pinterest}}"><i class="fa fa-pinterest-square"></i></a></li>
+              <li><a href="{{$configuracion->instagram}}"><i class="fa fa-instagram"></i></a></li>
 
                <li><a href="{{$configuracion->google}}"><i class="fa fa-google-plus-square"></i></a></li>
                <li><a href="{{$configuracion->linkedin}}"><i class="fa fa-linkedin-square"></i></a></li>

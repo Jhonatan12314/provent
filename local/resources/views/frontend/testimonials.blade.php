@@ -31,7 +31,7 @@
       <div class="container clearfix">
         <div class="row">
           <div class="col-lg-12 testimonial-col-p">
-          <img src="http://www.veagn.com/images/CLIENTES.png" width="100%">
+          <img src="{{url('public/frontend/images/CLIENTES.png')}}" width="100%">
           </div>
         </div>
       </div>

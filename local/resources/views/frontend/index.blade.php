@@ -89,7 +89,7 @@
             <div class="testimonialn-slider">
               <div class="item">
                 <div class="name-content clearfix">
-                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}" alt=""></div>
+                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img2.png')}}" alt=""></div>
                   <div class="client-name">
                     <p>Salvador  Osorio<br>
                     Ing. Comunicaciones Eléctricas<br>

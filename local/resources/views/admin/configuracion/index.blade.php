@@ -58,6 +58,10 @@
                                             <i class="fa fa-pinterest"></i> Pinterest
                                             <input type="text" name="pinterest" value="{{$configuracion->pinterest}}" class="form-control" ">
                                         <span class="material-input"></span></div> 
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-instagram"></i> Instagram
+                                            <input type="text" name="instagram" value="{{$configuracion->instagram}}" class="form-control" ">
+                                        <span class="material-input"></span></div> 
 
                                         <div class="form-group label-floating is-empty">
                                             <i class="fa fa-skype"></i> Skype
@@ -160,6 +164,10 @@
                                             <i class="fa fa-pinterest"></i> Pinterest
                                             <input type="text" name="pinterest" class="form-control" ">
                                         <span class="material-input"></span></div>  
+                                        <div class="form-group label-floating is-empty">
+                                            <i class="fa fa-instagram"></i> Instagram
+                                            <input type="text" name="instagram" class="form-control" ">
+                                        <span class="material-input"></span></div>
 
                                         <div class="form-group label-floating is-empty">
                                             <i class="fa fa-skype"></i> Skype
