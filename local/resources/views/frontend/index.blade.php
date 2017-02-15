@@ -180,7 +180,8 @@ Lic. En Ciencias y TC<br>
     <!-- product solutions-->
     <section class="our-sol-wrapper clearfix">
       <div class="container clearfix">
-        <p>Somos una empresa preocupada por la <span> ecología </span>y el bienestar humano y nuestros productos están diseñados para ser Amigables con el entorno. Usamos <span>Tecnología</span> Verde, tecnología que evita los tóxicos al humano y la contaminación.</p>
+      <p>Somos una empresa preocupada por la <span> ecología</span> y el bienestar humano, nuestros productos están totalmente diseñados para ser <span>amigables</span> con el entorno. Desarrollado con <span>Tecnología</span> Verde, que evita la contaminación.</p>
+      
       </div>
     </section>
 
