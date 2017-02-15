@@ -186,6 +186,7 @@
       <a href="{{$configuracion->google}}" class="contact-button-link cb-ancor" style="background-color: #dd4b39;"><span class="fa fa-google-plus"></span></a>
       <a href="tel:{{$configuracion->whatsapp}}" class="contact-button-link cb-ancor" style="background-color: #25D366;"><span class="fa fa-whatsapp"></span></a>
       <a href="{{$configuracion->linkedin}}" class="contact-button-link cb-ancor linkedin" ><span class="fa fa-linkedin"></span></a>
+      <a href="{{$configuracion->instagram}}" class="contact-button-link cb-ancor instagram" style="background-color: #e4405f"><span class="fa fa-instagram"></span></a>
 
       <a href="tel:{{$configuracion->telefono}}" class="contact-button-link cb-ancor phone separated" title="Call us"><span class="fa fa-phone"></span></a>
       <a href="mailto:{{$configuracion->email}}" class="contact-button-link cb-ancor email" title="Send us an email"><span class="fa fa-envelope"></span></a></div>
