@@ -28,9 +28,9 @@
               <!-- Search-->
               <div class="widget-search-blog">
                 <div class="row widget-inner">
-                  <form action="#" method="get" class="search-form">
+                  <form action="" method="get" class="search-form">
                     <div class="input-group">
-                      <input type="search" placeholder="Buscar producto..." class="form-control"><span class="input-group-addon">
+                      <input type="search" placeholder="Buscar producto..." name="search" class="form-control"><span class="input-group-addon">
                         <button type="submit"><i class="icon icon-Search"></i></button></span>
                     </div>
                   </form>
@@ -53,7 +53,12 @@
           <div class="col-md-8 col-sm-12 pull-right">
             <!-- News-->
             <div class="section_header color">
-              <h2>Todos los productos</h2>
+            @if(isset($search))
+            <h2>Resultados para "{{$search}}"</h2>
+            @else
+            <h2>Todos los productos</h2>
+            @endif
+              
             </div>
          
             <?php $c=1;?>
@@ -89,6 +94,10 @@
               ?>
 
               @endforeach
+
+              @if(count($productos)==0)
+              <h2>No se encontraron productos</h2>
+              @endif
 
 
             </div>

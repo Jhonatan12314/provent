@@ -44,10 +44,20 @@ public function getNews(){
     	return view('frontend/news')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticias',$noticias);
 }
 public function getSolutions(){
-        $productos=Producto::where('deleted','=',0)->get();
-        $configuracion=Configuracion::first();
+
+      $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
-    	return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
+    if(isset($_GET['search']))
+    {
+        $productos=Producto::where('deleted','=',0)->where('nombre','like','%'.$_GET['search'].'%')->get();
+        return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos)->with('search',$_GET['search']);
+    }else{
+        $productos=Producto::where('deleted','=',0)->get();
+        return view('frontend/shop')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('productos',$productos);
+    }
+        
+      
+    	
 }
 public function getProjects(){
 
