@@ -91,6 +91,16 @@
                             <div class="card">
                                 <div class="card-content">
                                     <h4 class="card-title">Información Nosotros</h4>
+                                     <div class="form-group label-floating is-empty">
+                                            <label class="">Historia</label>
+                                            <input type="text" name="historia" value="{{$configuracion->historia}}" class="form-control" id="historia">
+                                        <span class="material-input"></span></div>
+
+
+                                     <div class="form-group label-floating is-empty">
+                                            <label class="">Misión</label>
+                                            <input type="text" name="mision" value="{{$configuracion->mision}}" class="form-control" id="mision">
+                                        <span class="material-input"></span></div>
                            
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Visión</label>
@@ -100,10 +110,7 @@
                                             <label class="">Valores</label>
                                             <input type="text" name="valores" value="{{$configuracion->valores}}" class="form-control" id="valores">
                                         <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="">Misión</label>
-                                            <input type="text" name="mision" value="{{$configuracion->mision}}" class="form-control" id="mision">
-                                        <span class="material-input"></span></div>
+                                       
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Objetivos</label>
                                             <input type="text" name="objetivos" value="{{$configuracion->objetivos}}" class="form-control" id="objetivos">
@@ -197,6 +204,16 @@
                             <div class="card">
                                 <div class="card-content">
                                     <h4 class="card-title">Información Nosotros</h4>
+
+                                      <div class="form-group label-floating is-empty">
+                                            <label class="">Historia</label>
+                                            <input type="text" name="historia" value="{{$configuracion->historia}}" class="form-control" id="historia">
+                                        <span class="material-input"></span></div>
+
+                                           <div class="form-group label-floating is-empty">
+                                            <label class="control-label">Misión</label>
+                                            <input type="text" name="mision" class="form-control" id="mision">
+                                        <span class="material-input"></span></div>
                            
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Visión</label>
@@ -206,10 +223,7 @@
                                             <label class="control-label">Valores</label>
                                             <input type="text" name="valores" class="form-control" id="valores">
                                         <span class="material-input"></span></div>
-                                        <div class="form-group label-floating is-empty">
-                                            <label class="control-label">Misión</label>
-                                            <input type="text" name="mision" class="form-control" id="mision">
-                                        <span class="material-input"></span></div>
+                                     
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Objetivos</label>
                                             <input type="text" name="objetivos" class="form-control" id="objetivos">

@@ -32,8 +32,6 @@
                <li><a href="{{$configuracion->google}}"><i class="fa fa-google-plus-square"></i></a></li>
                <li><a href="{{$configuracion->linkedin}}"><i class="fa fa-linkedin-square"></i></a></li>
                <li><a href="{{$configuracion->whatsapp}}"><i class="fa fa-whatsapp"></i></a></li>
-               <li><a href="{{$configuracion->skype}}"><i class="fa fa-skype"></i></a></li>
-
             </ul>
             </div>
           </div>

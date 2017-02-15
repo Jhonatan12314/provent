@@ -33,7 +33,9 @@
     <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
     <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js" />
     <script id="dsq-count-scr" src="//veagn.disqus.com/count.js" async></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--if lt IE 9
@@ -177,12 +179,17 @@
   <body onload="socialbar()">
   <a href="#0" class="cd-top">Subir</a>
 
+
+
+</div>
+
  <div id="contact-buttons-bar">
       <a href="{{$configuracion->facebook}}" class="contact-button-link cb-ancor" style="background-color: #3b5999;"><span class="fa fa-facebook"></span></a>
       <a href="{{$configuracion->youtube}}" class="contact-button-link cb-ancor" style="background-color: #cd201f;"><span class="fa fa-youtube"></span></a>
       <a href="{{$configuracion->twitter}}" class="contact-button-link cb-ancor" style="background-color: #55acee;"><span class="fa fa-twitter"></span></a>
       <a href="{{$configuracion->pinterest}}" class="contact-button-link cb-ancor" style="background-color: #bd081c;"><span class="fa fa-pinterest"></span></a>
-      <a href="tel:{{$configuracion->skype}}" class="contact-button-link cb-ancor" style="background-color: #00AFF0;"><span class="fa fa-skype"></span></a>
+     
+
       <a href="{{$configuracion->google}}" class="contact-button-link cb-ancor" style="background-color: #dd4b39;"><span class="fa fa-google-plus"></span></a>
       <a href="{{$configuracion->whatsapp}}" class="contact-button-link cb-ancor" style="background-color: #25D366;"><span class="fa fa-whatsapp"></span></a>
       <a href="{{$configuracion->linkedin}}" class="contact-button-link cb-ancor linkedin" ><span class="fa fa-linkedin"></span></a>

@@ -40,6 +40,7 @@ class ConfiguracionController extends Controller
         $configuracion->google=$request->google;
         $configuracion->instagram=$request->instagram;
 
+        $configuracion->historia=$request->historia;
         $configuracion->mision=$request->mision;
         $configuracion->vision=$request->vision;
         $configuracion->objetivos=$request->objetivos;
