@@ -19,7 +19,7 @@
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a><br><br>
-              <a href="#" onClick="document.getElementById('formmenu').submit();" class="submit">Suscribirme</a>
+              <a href="#" onClick="document.getElementById('formmenu').submit();" class="submit" style="padding-right: 17px;padding-left: 17px;">Suscribirme</a>
               </div>
               <div class="top-panel">
                 <div class="touch_top touch_top_pad">
