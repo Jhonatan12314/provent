@@ -62,11 +62,19 @@
                 <form action="https://veagn.us14.list-manage.com/subscribe/post" id="formfooter" method="POST">
                     <input type="hidden" name="u" value="12a6b5a0621545b8ba0247d76">
                     <input type="hidden" name="id" value="769530ed06">
-                    <input type="text" class="form-control" name="MERGE0" id="MERGE0" placeholder="ejemplo@mail.com"><br>
-              <div class="req-button text-right">
-               <a href="#" onClick="document.getElementById('formfooter').submit();" class="submit">Suscribirme</a>
-              </div>
-            </form>
+
+                     <div class="col-md-11 col-sm-11">
+                      <input type="text" class="form-control" name="MERGE0" id="MERGE0" placeholder="ejemplo@mail.com">
+                     </div>
+                      <div class="col-md-1 col-sm-1" style="margin-left: 150px;margin-top: -40px;">
+                        <div class="req-button text-right">
+                          <a href="#" onClick="document.getElementById('formfooter').submit();" style="position: absolute;" class="submit">Suscribirme</a>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12" style="margin-top: 30px;">
+                      <img src="{{url('public/frontend/images/metodos.png')}}">
+                      </div>
+                      </form>
             </div>
           </div>
 
@@ -90,8 +98,8 @@
             <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
               <center>
               <h2>Atención a clientes disponible de Lunes a Viernes 9am - 6pm</h2>
-              <p style="color:#FFF;font-size: 18px!important;">Contáctanos: contacto@veagn.com o llámanos al: (33)-3663-7726 con 10 lineas disponibles.<br>
-              atendido por alguno de nuestros asesores comerciales</p>
+              <p style="color:#FFF;font-size: 18px!important;">Contáctanos: contacto@veagn.com o llámanos al: (33)-3663-7726 con 10 lineas disponibles<br>
+              atendido por alguno de nuestros asesores comerciales.</p>
               </center>
             </div>
           </div>
