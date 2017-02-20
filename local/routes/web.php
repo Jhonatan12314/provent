@@ -38,16 +38,13 @@ Route::get('categorias/{id}','FrontendController@Categoria');
 
 
 Route::get('Noticia/{id}','FrontendController@detalleNoticia');
-Route::get('product','FrontendController@getProduct');
-Route::get('cart','FrontendController@getCart');
-Route::get('checkout','FrontendController@getCheckout');
-Route::get('meterial','FrontendController@getMeterial');
-Route::get('agricultural','FrontendController@getAgricultural');
-Route::get('mechanical','FrontendController@getMechanical');
-Route::get('chemical','FrontendController@getChemical');
-Route::get('power','FrontendController@getPower');
-Route::get('oil','FrontendController@getOil');
-Route::get('alternate','FrontendController@getAlternate');
+
+Route::get('Mejores','FrontendController@getMejores');
+//Route::get('product','FrontendController@getProduct');
+//Route::get('cart','FrontendController@getCart');
+//Route::get('checkout','FrontendController@getCheckout');
+
+//Route::get('alternate','FrontendController@getAlternate');
 
 //admin
 

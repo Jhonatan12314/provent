@@ -196,7 +196,7 @@ Lic. En Ciencias y TC<br>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
-            <div class="req-button text-right"><a href="{{url('somos-los-mejores')}}" class="submit">Descúbrelo <i class="fa fa-arrow-right"></i></a></div>
+            <div class="req-button text-right"><a href="{{url('Mejores')}}" class="submit">Descúbrelo <i class="fa fa-arrow-right"></i></a></div>
           </div>
         </div>
       </div>
