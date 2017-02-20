@@ -15,7 +15,7 @@
       <!-- Logo Section-->
       <div class="container">
         <div class="row pad-logo logo-wrapper">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images//header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 t-logo"><a href="index"><img src="{{url('public/frontend/images/header/logo.png')}}" alt="logo" class="img-responsive"></a></div>
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 text-right">
             <div class="top-two-right">
               <div class="req-button text-right"><a href="{{url('contact')}}" class="submit">Contactar</a><br><br>
@@ -61,7 +61,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
-              <div class="logo"><img src="public/frontend/images//header/logo.png" height="40" width="150" alt=""></div>
+              <div class="logo"><img src="{{url('public/frontend/images/header/logo.png')}}" height="40" width="150" alt=""></div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="nav-menu pull-left text-left">
@@ -71,7 +71,7 @@
                   </div>
                   <div class="nav-t-footer">
                     <ul class="nav">
-                      <li class="has-t-submenu"><a href="{{url('index')}}">Inicio</a>
+                      <li><a href="{{url('index')}}">Inicio</a>
                       </li>
                       <li ><a href="{{url('about')}}">Nosotros</a></li>
                       <li class="has-t-submenu"><a href="{{url('solutions')}}">Productos</a>

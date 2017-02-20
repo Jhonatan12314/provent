@@ -55,7 +55,7 @@
             </div>
           </div>
 
-           <div class="widget widget-links col-md-3 col-sm-6">
+           <div class="widget widget-links col-md-3 col-sm-6" id="footersuscription">
             <h4 class="widget_title">Suscríbete a nuestro boletín</h4>
             <div class="widget-contact-list row m0">
                 <form action="https://veagn.us14.list-manage.com/subscribe/post" id="formfooter" method="POST">
