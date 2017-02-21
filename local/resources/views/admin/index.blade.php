@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Productos</p>
-                                    <h3 class="card-title">184</h3>
+                                    <h3 class="card-title">{{$productos}}</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Visitas</p>
-                                    <h3 class="card-title">75.521</h3>
+                                    <h3 class="card-title"><img src="http://hitwebcounter.com/counter/counter.php?page=6603064&style=0032&nbdigits=1&type=ip&initCount=0" title="" Alt=""  border="0" style="height: 20px!important;width: 10px!important"></h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Clientes</p>
-                                    <h3 class="card-title">150</h3>
+                                    <h3 class="card-title">{{$clientes}}</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">

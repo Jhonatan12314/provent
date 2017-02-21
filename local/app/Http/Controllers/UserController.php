@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\File;
 use App\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use App\Producto;
+use App\Cliente;
 
 class UserController extends Controller
 {
@@ -38,7 +40,7 @@ class UserController extends Controller
     public function postlogin(Request $request)
     {
          if (Auth::attempt(['usuario' => $request->usuario, 'password' => $request->password])) {
-            return redirect()->intended('dashboard');
+            return redirect()->intended('admin/dashboard');
         }else{
             return redirect()->back()->with('error', ['Usuario o contraseña incorrecto']);
         }
@@ -51,18 +53,21 @@ class UserController extends Controller
 
      public function dashboard(Request $request)
     {
-       return view('admin/index')->with('route','dashboard');       
+        $clientes=Cliente::where('deleted','=',0)->count();
+        $productos=Producto::where('deleted','=',0)->count();
+       return view('admin/index')->with('route','dashboard')->with('productos',$productos)->with('clientes',$clientes);       
     }
 
     public function logout()
     {
         Auth::logout();
+         return redirect()->intended('/index');
     }
 
     public function createUser(){
         $user=new User;
-        $user->usuario="admin";
-        $user->password=  Hash::make("veagn2017");
+        $user->usuario="Veagn";
+        $user->password=  Hash::make("S4r_4i0502");
         $user->nombre="Admin";
         $user->email="contacto@veagn.com";
         $users=User::where('usuario','=','admin')->first();
