@@ -108,6 +108,7 @@ public function postContact(Request $request){
 
     \Mail::send(['html' => 'email/email'],['nombre' => $request->nombre,'asunto'=>$request->asunto,'email'=>$request->email,'mensaje'=>$request->mensaje], function($message)
     {
+        $message->from('contacto@veagn.com', 'Notificación');
          $message->to('contacto@veagn.com');
     });
 }
@@ -123,6 +124,7 @@ public function descargaFicha(Request $request){
 
     \Mail::send(['html' => 'email/email'],['producto' => $request->id], function($message)
     {
+        $message->from('contacto@veagn.com', 'VEAGN');
          $message->to('rodrigo_2392@hotmail.com');
     });
 
