@@ -106,7 +106,7 @@
                   <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}" alt=""></div>
                   <div class="client-name">
                     <p>Caleb Salvador Aguirre Soto<br> 
-                    Lic. En Enseñanza de Ingles <br>
+                   Lic En Administración de Empresas <br>
                     (Gerente Comercial)
                     </p>
                    
