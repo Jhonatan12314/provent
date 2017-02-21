@@ -57,6 +57,8 @@ Route::get('createuser','UserController@createUser');
 
 Route::post('descargaFicha','FrontendController@descargaFicha');
 
+Route::post('postContact','FrontendController@postContact');
+
 
 
 

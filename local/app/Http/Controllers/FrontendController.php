@@ -106,11 +106,12 @@ public function postContact(Request $request){
     $cliente->estado="";
     $cliente->save(); 
 
-    \Mail::send(['html' => 'email/email'],['nombre' => $request->nombre,'asunto'=>$request->asunto,'email'=>$request->email,'mensaje'=>$request->mensaje], function($message)
+    \Mail::send(['html' => 'email/contacto'],['nombre' => $request->nombre,'asunto'=>$request->asunto,'email'=>$request->email,'mensaje'=>$request->mensaje], function($message)
     {
-        $message->from('contacto@veagn.com', 'Notificación');
-         $message->to('contacto@veagn.com');
+        $message->from('no-responder@veagn.com', 'Notificación');
+         $message->to('rodrigo_2392@hotmail.com')->subject('Nuevo contacto');
     });
+    return redirect()->back()->with('msg', ['El email ha sido enviado']);
 }
 
 public function descargaFicha(Request $request){
