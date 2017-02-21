@@ -125,7 +125,7 @@ public function descargaFicha(Request $request){
     \Mail::send(['html' => 'email/email'],['producto' => $request->id], function($message)
     {
         $message->from('contacto@veagn.com', 'VEAGN');
-         $message->to('rodrigo_2392@hotmail.com');
+         $message->to('rodrigo_2392@hotmail.com')->subject('Ficha técnica');
     });
 
     return redirect()->back()->with('msg', ['El email ha sido enviado']);
