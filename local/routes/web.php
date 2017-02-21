@@ -59,6 +59,8 @@ Route::post('descargaFicha','FrontendController@descargaFicha');
 
 Route::post('postContact','FrontendController@postContact');
 
+Route::get('ficha','FrontendController@showFicha');
+
 
 
 
