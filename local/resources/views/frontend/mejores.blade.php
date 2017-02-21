@@ -15,7 +15,7 @@
       <div class="container clearfix">
         <ul class="breadcumb">
           <li><a href="index">Inicio</a></li>
-          <li><span>Somos los mejores</span></li>
+          <li><span>Somos los mejores</span></li> 
         </ul>
       </div>
     </section>
