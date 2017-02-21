@@ -34,7 +34,10 @@
 
           <div class="col-lg-6">
           <img src="{{url('public/frontend/images/mejores/1.png')}}" width="80">
-           <p><b>Envío inmediato</b> <br>Enviamos desde una sola pieza por la paqueteria de su preferencia.</p>
+           <p><b>Envío inmediato</b> <br>Enviamos desde una sola pieza por la paqueteria de su preferencia.<br>
+           <b><a href="#">Pagando antes de la 1:30 PM de Lunes a Miércoles</a></b><br>
+           </p>
+           
           </div>
 
           <div class="col-lg-6">
@@ -80,7 +83,9 @@
 
           <div class="col-lg-6">
           <img src="{{url('public/frontend/images/mejores/7.png')}}" width="80">
-         <p><b>Servicio y soporte</b><br>Contamos con un equipo de especialistas capacitados y especializados a tu servicio.</p>
+         <p><b>Servicio y soporte</b><br>Contamos con un equipo de especialistas capacitados y especializados a tu servicio.<br>
+           <b><a href="#">Tel. +52(33)36 63 77 26 Ext. 121</a></b>
+           </p>
           </div>
 
           <div class="col-lg-6">
@@ -97,7 +102,9 @@
           <div class="col-lg-12">
            <div class="col-lg-6">
           <img src="{{url('public/frontend/images/mejores/9.png')}}" width="80">
-           <p><b>Contacto</b><br>Disponemos con un conmutador IP con mas de 50 lineas con personal capacitado para atenderlo como lo merece.</p>
+           <p><b>Contacto</b><br>Disponemos con un conmutador IP con mas de 50 lineas con personal capacitado para atenderlo como lo merece.<br>
+           <b><a href="#">Tel. +52(33)36 63 77 26 / 36</a></b>
+           </p>
           </div>
 
           <div class="col-lg-6">
