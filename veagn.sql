@@ -1,79 +1,88 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2017 a las 21:40:04
--- Versión del servidor: 10.1.19-MariaDB
--- Versión de PHP: 5.6.28
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
+-- Host: localhost    Database: veagn
+-- ------------------------------------------------------
+-- Server version	5.7.17-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Base de datos: `veagn`
+-- Table structure for table `categorias`
 --
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `categorias`
---
-
+DROP TABLE IF EXISTS `categorias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `categorias` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `descripcion` varchar(250) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `imagen` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `categorias`
+-- Dumping data for table `categorias`
 --
 
-INSERT INTO `categorias` (`id`, `nombre`, `descripcion`, `deleted`, `created_at`, `updated_at`) VALUES
-(1, 'computadoras', 'computadoras', 0, '2017-02-09 04:16:55', '2017-02-09 04:16:55');
-
--- --------------------------------------------------------
+LOCK TABLES `categorias` WRITE;
+/*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
+INSERT INTO `categorias` VALUES (1,'Accesorios',' prueba',0,'2017-02-15 23:38:40','2017-02-15 22:39:46','public/upload/categorias/80A00A5B-9F40-F0CC-EE54-B1989C3FB7EA.png'),(2,'Bota de Registro','<p>Su funci&oacute;n principal es proteger, resguardar la seguridad de conexiones, medidores, v&aacute;lvulas y llaves de agua con su amplio dise&ntilde;o ergon&oacute;mico.</p>\r\n',0,'2017-02-15 23:46:12','2017-02-15 23:46:12','public/upload/categorias/5E308E68-0A66-BBE4-61BC-B040A27CD115.png'),(3,'Caja de Registro','<p style=\"text-align:justify\">Su funci&oacute;n principal es proteger, resguardar la seguridad de conexiones, medidores. Consta de una caja principal y tapa.</p>\r\n',0,'2017-02-15 23:46:34','2017-02-15 23:46:34','public/upload/categorias/A8EC1CDE-9559-A8D2-9419-70D3573C54E6.png'),(4,'Filtros','<p>La configuraci&oacute;n del filtro de s&oacute;lidos permite atrapar y alojar peque&ntilde;os sedimentos existentes en el agua mediante la camara &ldquo;y&rdquo;.</p>\r\n',0,'2017-02-15 23:41:38','2017-02-15 23:41:38','public/upload/categorias/F1BB607D-00B6-A6E3-9486-530F370C808B.png'),(5,'Caja de Registro',' prueba',1,'2017-02-15 23:38:40','2017-02-10 23:08:13',''),(6,'Bota de Registro',' prueba',1,'2017-02-15 23:38:40','2017-02-10 23:08:17',''),(7,'Medidores','<p>Este medidor de agua modelo MJGREEN, ha sido dise&ntilde;ado para el servicio de agua potable domestico e Industrial. Su s&oacute;lido y robusto dise&ntilde;o le permiten operar en los sistemas m&aacute;s adversos,</p>\r\n',0,'2017-02-15 23:44:21','2017-02-15 23:44:21','public/upload/categorias/8C531A37-AC84-7DE7-2250-E7DD7FA6C650.png'),(8,'Válvulas','<p style=\"text-align:justify\">El sistema Antifraude Multi-Lock es un innovador mecanismo anti moroso que permite bloquear o limitar el suministro de agua sin necesidad de da&ntilde;ar la toma domiciliaria.</p>\r\n',0,'2017-02-15 23:45:10','2017-02-15 23:45:10','public/upload/categorias/78550D3E-FB22-91C0-79F5-1F983D0EE98F.png'),(9,'Cuadro Medidor','',0,'2017-02-17 17:06:11','2017-02-17 17:06:11','public/upload/categorias/1E4E6AF4-F8EA-8E9B-25C9-29D04F81295B.png'),(10,'Kit para Hidrotoma','',0,'2017-02-17 17:10:30','2017-02-17 17:10:30','public/upload/categorias/FEF61990-2358-DCF5-6F47-DD708D3142AB.png');
+/*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `clientes`
+-- Table structure for table `clientes`
 --
 
+DROP TABLE IF EXISTS `clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `clientes` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(300) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `email` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `estado` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `telefono` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `clientes`
+-- Dumping data for table `clientes`
 --
 
-INSERT INTO `clientes` (`id`, `nombre`, `email`, `estado`, `telefono`, `deleted`, `created_at`, `updated_at`) VALUES
-(1, 'adfsgsd', 'rodrigo_2392@hotmail.com', 'fgsdfg', 'sdfgdsf', 1, '2017-02-09 19:46:14', '2017-02-10 01:46:14');
-
--- --------------------------------------------------------
+LOCK TABLES `clientes` WRITE;
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (1,'adfsgsd','rodrigo_2392@hotmail.com','fgsdfg','sdfgdsf',1,'2017-02-09 19:46:14','2017-02-10 01:46:14'),(2,'Alexander González','alexander@siapa.com','Nuevo León','44 7894 5216',1,'2017-02-13 19:11:50','2017-02-13 19:11:50');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `configuracion`
+-- Table structure for table `configuracion`
 --
 
+DROP TABLE IF EXISTS `configuracion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `configuracion` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `facebook` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `twitter` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `youtube` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
@@ -87,47 +96,65 @@ CREATE TABLE `configuracion` (
   `email` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `telefono` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `whatsapp` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  `linkedin` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  `skype` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  `google` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  `instagram` varchar(200) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
+  `historia` longtext COLLATE utf8mb4_spanish2_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `configuracion`
+-- Dumping data for table `configuracion`
 --
 
-INSERT INTO `configuracion` (`id`, `facebook`, `twitter`, `youtube`, `pinterest`, `vision`, `mision`, `valores`, `objetivos`, `imagen`, `direccion`, `email`, `telefono`, `created_at`, `updated_at`) VALUES
-(1, 'fb', 'tw', 'yt', 'pt', 'v', 'm', 'v', 'o', 'i', 'd', 'e', 't', '2017-02-09 20:39:24', '2017-02-10 02:39:24');
-
--- --------------------------------------------------------
+LOCK TABLES `configuracion` WRITE;
+/*!40000 ALTER TABLE `configuracion` DISABLE KEYS */;
+INSERT INTO `configuracion` VALUES (1,'https://www.facebook.com/veagnmx/','https://twitter.com/VEAGN','https://www.youtube.com/channel/UCCymAI0GmKYOEwzUp2kkQ4w','https://es.pinterest.com/Veagn16/','Ser una empresa líder en Latinoamérica, promoviendo la cultura del cuidado y buen uso de los recursos naturales no renovables, a través de la implementación de tecnología de punta y diseño innovador de herramientas para el control y medición de flujo de agua potable y gas natural.','Somos una empresa Jalisciense que Actualmente fabricamos nuestros productos con los estándares más altos de calidad, incorporando materiales 100 % reciclables al fin de su vida útil, así como con los índices más bajos de material nocivo para el consumo humano.','Excelencia: En todo momento nos planteamos desafíos mutuos para mejorar nuestros productos y nuestros procesos y así superarnos. Siempre nos esforzamos por comprender los negocios de nuestros clientes y ayudarlos a lograr sus metas. Promovemos la diversidad, el tratamiento justo, el respeto mutuo y la confianza.  Integridad: Debemos de exigir, a los demás y a nosotros mismos, las más altas normas de integridad individual y corporativa. Salvaguardamos los activos de la empresa. Cumplimos con todas las políticas y leyes de la empresa. Trabajo en Equipo: Promovemos un entorno que aliente la innovación, la creatividad y los resultados a través del trabajo en equipo. Nuestros líderes enseñan, inspiran y promueven la participación activa en la empresa, junto con el desarrollo profesional. Estimulamos la comunicación y la interacción abierta y eficaz. Productividad: Para ser competitivo, abrazamos y cultivamos la riqueza que brinda la diversidad a nuestra organización. VEAGN siempre ha estado comprometido en promover una fuerza laboral diversa y proveer oportunidades para todos para que contribuyan con todo su potencial. Responsabilidad:Cumplimos con nuestros compromisos y asumimos la responsabilidad por todas las acciones y resultados en forma personal. Creamos una disciplina operativa de mejoras continuas que es parte de nuestra cultura. ','Ser una marca líder en el mercado, al fabricar, distribuir e innovar en soluciones, eficientes y de bajo costo que motiven la implementación de las mismas en el la operación natural de nuestros clientes. Así como lograr la incursión al 35 % del mercado a nivel nacional en el 2015.','','Calle 2 de febrero N°3405-A, Col. Hogares de Nuevo México, C.P. 45120, Zapopan, Jalisco, México','contacto@veagn.com','33 36 63 77 26 / 36','2017-02-20 18:08:08','2017-02-20 18:08:08','https://chat.whatsapp.com/invite/7xr6kp7RDVtFeSwsCMo8z0','https://mx.linkedin.com/in/veagn-multicierregreen-b0b295139','https://secure.skype.com/portal/overview','https://plus.google.com/u/2/110501996074010425776','https://www.instagram.com/veagn_multicierre_green/','El 1 de junio se fundó por el Ingeniero Salvador Osorio y  comienza sus operaciones como importador y distribuidor al mayoreo de válvulas y equipo para agua y gas natural nombrándose como Veagn S.A. de C.V, ofreciendo servicios de desarrollo de ingeniería a los Organismos Operadores del Agua Potable, diseñando herramientas eficaces para acompañar la estrategia de cobranza y recuperación activa de la cartera de usuarios morosos. La efectividad y la alta calidad en el diseño innovador de nuestros productos pronto nos dieron un lugar en el mercado, debido a la alta confiabilidad, cultura de servicio y buena estrategia de distribución.   Pero sin duda alguna a los 12 meses del inicio de operaciones se desarrolla en la empresa un sistema antifraude contra morosos para las tomas domesticas de agua y gas natural, utilizando en su fabricación materia prima certificada como NO-Contaminante, NO-Toxica, y reciclable al 100%. Se encuentra en trámite una patente de “Modelo Funcional” para este sistema. Durante la segunda parte del año 2009 se inicia la introducción y venta de este artículo, con nombre/marca comercial ya en proceso de registro, “Multicierre Green”, actualmente se tienen ventas nacionales de un promedio de 38,000 válvulas mensuales para agua MULTICIERRE GREEN. En Enero del 2011 se iniciara la exportación del primer pedido a Latinoamérica, a Ecuador por 30,000 de estas válvulas. Los planes son cubrir el territorio nacional para el 2012, con válvulas y equipos para agua, y Latinoamérica, con ventas en 5 países. Después de la primera mitad del próximo año 2011, se iniciarán las operaciones del equipo para gas natural, simultáneamente con Latinoamérica. Ya está fabricándose la versión “Multicierre Green” para toma domiciliaria de gas natural.  Somos una empresa Jalisciense que Actualmente fabricamos nuestros productos con los estándares más altos de calidad, incorporando materiales 100 % reciclables al fin de su vida útil, así como con los índices más bajos de material nocivo para el consumo humano.');
+/*!40000 ALTER TABLE `configuracion` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `noticias`
+-- Table structure for table `noticias`
 --
 
+DROP TABLE IF EXISTS `noticias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `noticias` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `descripcion` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
   `imagen` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `noticias`
+-- Dumping data for table `noticias`
 --
 
-INSERT INTO `noticias` (`id`, `titulo`, `descripcion`, `imagen`, `deleted`, `created_at`, `updated_at`) VALUES
-(1, 'pruebaa1', 'kjkljkljkljlj1', 'kljlkjklj1', 0, '2017-02-09 19:58:17', '2017-02-10 01:58:02');
-
--- --------------------------------------------------------
+LOCK TABLES `noticias` WRITE;
+/*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
+INSERT INTO `noticias` VALUES (1,'Buscarán modificar operación de los organismos de agua potable en Sudcalifornia','<p style=\"text-align:justify\">La Presidenta de la Comisi&oacute;n del Agua del Congreso del Estado, Dip Eda Mar&iacute;a Palacios M&aacute;rquez, informo que se est&aacute;n recabando propuestas de los organismos operadores de agua de los cinco municipios con miras a reformar la Ley de Aguas del Estado.&nbsp; Lo anterior debido que dicho ordenamiento jur&iacute;dico es el que regula la actuaci&oacute;n y operaci&oacute;n de los dichos organismos, as&iacute; como de la Comisi&oacute;n Estatal del Agua. El prop&oacute;sito es actualizar la legislaci&oacute;n que data del a&ntilde;o 2001 para adaptarla a los tiempos actuales, buscando con ello, una mayor eficiencia de los OOMSAPAS&nbsp; que redunde en un mejor servicio a los usuarios, y se garantice el derecho humano del acceso al agua a toda la poblaci&oacute;n.<br />\r\n<br />\r\nAgrego que una vez que se recaben las propuestas ser&aacute;n analizadas en su conjunto con otros estudios de derecho comparado que de manera propia a&nbsp; realizo la comisi&oacute;n legislativa sobre diverso t&oacute;picos para mejorar el funcionamiento de los SAPAS. Indico que se analizaran todas las propuestas para ponderar su viabilidad jur&iacute;dica y en su caso integrarlas a una iniciativa que tentativamente se presentar&iacute;a en el pr&oacute;ximo periodo extraordinario de sesiones que iniciara en el mes de marzo del presente a&ntilde;o,&nbsp; para que sea analizada por el pleno legislativo.</p>\r\n\r\n<p style=\"text-align:justify\">Por otro lado, la legisladora se&ntilde;alo que el presente a&ntilde;o 2017 se presenta complicado para los organismos operadores del agua de todo el pa&iacute;s, de los cuales no se escapan los de Baja California Sur, pues se redujo en casi un 70%&nbsp; los recursos que reciben los Estados de la Federaci&oacute;n para programas de agua potable y programas hidroagricolas, por lo que se tendr&aacute; que priorizar las obras y acciones en este rubro &ldquo;nosotros en su momento presentamos en el mes de octubre del a&ntilde;o 2016 un Punto de Acuerdo que&nbsp; aprob&oacute; el Congreso del Estado&nbsp; por el que se exhorto a la C&aacute;mara de Diputados a que en la discusi&oacute;n del presupuesto de egresos de la federaci&oacute;n 2017 no se redujeran los recursos destinados a los programas del agua potable, ni los programas de la CONAGUA pues ello tendr&iacute;a un impacto muy negativo en nuestro estado,&nbsp; debido a que para garantizar el&nbsp; derecho humano al agua es necesario que el Gobierno del Estado y los Ayuntamientos aptos para recibir apoyos, tengan una contraparte presupuestal de la Federaci&oacute;n acorde a las necesidades que tenemos como entidad&rdquo;</p>\r\n\r\n<p style=\"text-align:justify\">Sin embargo apunto que las gestiones del Ejecutivo del Estado Carlos Mendoza Davis ante la Federaci&oacute;n&nbsp; han permitido concertar recursos para&nbsp; atender obras prioritarias de abasto del vital liquido, como lo atestiguo esta semana con el inicio de los trabajos para la introducci&oacute;n de l&iacute;neas abastecedoras de agua potable y drenaje en la colonia Vista Hermosa de San Jos&eacute; del Cabo, que beneficiara a mas de 8000 mil ciudadanos que carec&iacute;an de este servicio, en un esfuerzo conjunto con el Alcalde Cabe&ntilde;o Arturo de la Rosa Escalante.</p>\r\n\r\n<p style=\"text-align:justify\">Fuente. veagn.com</p>\r\n','public/upload/noticias/6115CFB3-3AE0-F492-D6FC-FDD55317DCF5.jpg',0,'2017-02-15 21:59:30','2017-02-15 21:59:30'),(2,'Los humedales en la Ciudad de México, en grave riesgo por los asentamiento irregulares','<p><strong>Ciudad de M&eacute;xico, a 10 de febrero de 2017.-&nbsp;</strong>Los humedales son cuerpos de agua salobre o dulce que existen sobre la superficie terrestre. Tienen una funci&oacute;n ecol&oacute;gica relevante, son h&aacute;bitat de muchas especies animales y vegetales y ayudan a la regulaci&oacute;n del clima en el planeta. Se trata de zonas de tierras, generalmente planas, cuya superficie se inunda de manera permanente o intermitente. Al cubrirse regularmente de agua, el suelo se satura, quedando desprovisto de ox&iacute;geno y dando lugar a un ecosistema h&iacute;brido entre los puramente acu&aacute;ticos y los terrestres.</p>\r\n\r\n<p>En M&eacute;xico existen m&aacute;s de seis mil y son espacios para los cuales no hay la atenci&oacute;n ni la infraestructura id&oacute;nea para protegerlos, se&ntilde;al&oacute; Irma Escamilla Herrera, acad&eacute;mica del Instituto de Geograf&iacute;a (IGg) de la UNAM. En nuestro pa&iacute;s los humedales pertenecen al suelo de conservaci&oacute;n (que ocupa el 59 por ciento del territorio nacional), pero todos est&aacute;n parcial o totalmente afectados. En el marco del D&iacute;a Mundial de los Humedales, que se conmemor&oacute; el 2 de febrero, dijo que uno de los factores que los pone en mayor riesgo son los asentamientos humanos irregulares &ndash;problema social que emerge de la pobreza y la falta de regulaci&oacute;n&ndash;, que mantienen a poblaciones marginadas en espacios llamados periurbanos, ubicados en los contornos de las ciudades y donde a veces no existen las servicios m&iacute;nimos para la vivienda, como agua, luz y drenaje. Las orillas de los humedales son invadidos por asentamientos irregulares, primero con casas de bloques, l&aacute;mina y cart&oacute;n, pero m&aacute;s adelante con suelos de cemento que alteran definitivamente el ecosistema natural, remarc&oacute;. Tambi&eacute;n hay casos, como el de la Riviera Maya, en donde los suelos de conservaci&oacute;n son ocupados por grandes inversiones econ&oacute;micas de cadenas hoteleras y residenciales. &ldquo;Pero en muchos casos, como los de Xochimilco y Tl&aacute;huac, cuyos humedales son reductos del lago de Chalco, este tipo de suelo de conservaci&oacute;n es la &uacute;nica alternativa que tiene la gente. Y est&aacute;n en proceso de desecaci&oacute;n&rdquo;, alert&oacute;.</p>\r\n\r\n<p>Adem&aacute;s de los materiales de construcci&oacute;n, los asentamientos irregulares producen basura y contaminan con residuos org&aacute;nicos el agua y suelo. Asimismo, prosigui&oacute; Escamilla, es com&uacute;n la &ldquo;ocupaci&oacute;n hormiga&rdquo;, que comienza con unas pocas familias y se va extendiendo poco a poco.</p>\r\n\r\n<p><strong>Suelo de conservaci&oacute;n</strong></p>\r\n\r\n<p style=\"text-align:justify\">Los suelos de conservaci&oacute;n son necesarios para mantener la estabilidad del territorio y tienen importancia a escala local y global. Proporcionan bienes y servicios ecosist&eacute;micos para la sustentabilidad, contienen m&aacute;s de mil 800 especies de plantas y animales y retienen part&iacute;culas suspendidas que disminuyen la contaminaci&oacute;n atmosf&eacute;rica. Favorecen la infiltraci&oacute;n del agua de lluvia para abastecimiento urbano, regulan el clima con la captura de di&oacute;xido de carbono y preserva la biodiversidad. Actualmente, el suelo de conservaci&oacute;n del pa&iacute;s est&aacute; ocupado en 43 por ciento por bosques, 32 por ciento por actividades agr&iacute;colas, 12 por ciento por pastos y 11 por ciento por espacios urbanos que van en crecimiento.</p>\r\n\r\n<p style=\"text-align:justify\">En la Ciudad de M&eacute;xico existen m&aacute;s de 800 asentamientos irregulares instalados en un &aacute;rea de ocho mil hect&aacute;reas de suelo de conservaci&oacute;n, y son habitados por 42 mil familias. Xochimilco concentra 300 de esos asentamientos &ndash;poblados por m&aacute;s de 125 mil personas en 700 hect&aacute;reas de suelo de conservaci&oacute;n&ndash;, mientras que Tl&aacute;huac reporta 81 de ellos, que alojan a m&aacute;s de cuatro mil familias en una superficie de 300 hect&aacute;reas. Estos datos evidencian que estos ecosistemas est&aacute;n en creciente riesgo, aunque existe reglamentaci&oacute;n que protege a zonas de conservaci&oacute;n con humedales, finaliz&oacute; la universitaria.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\">Fuente. veagn.com</p>\r\n','public/upload/noticias/C4E8A022-12BD-55CC-C115-A139A8E186D0.jpg',0,'2017-02-15 21:58:38','2017-02-15 21:58:38'),(3,'Anuncia Pepe Haro cobro por saneamiento de agua','<p style=\"text-align:justify\"><strong>(Cortes&iacute;a)</strong></p>\r\n\r\n<p style=\"text-align:justify\">FRESNILLO.-&nbsp; Jos&eacute; Haro de la Torre, alcalde de Fresnillo, expres&oacute; que a partir de marzo iniciar&aacute; el cobro por concepto de saneamiento en las tarifas del Sistema de Agua Potable, Alcantarillado y Saneamiento de Fresnillo. Explic&oacute; que corresponder&aacute; a un porcentaje con base en las tarifas y se trata de una normatividad nacional que el municipio no aplic&oacute;. El cobro se aprob&oacute; en una sesi&oacute;n del Consejo Directivo del Siapasf que est&aacute; integrado por representantes de la Secretar&iacute;a del Agua y Medio Ambiente del estado, la Comisi&oacute;n Nacional del Agua, un participante de la sociedad civil, el alcalde y directivos del organismo operador.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\">Haro de la Torre mencion&oacute; que se aprob&oacute; la puesta en marcha de las plantas tratadoras de aguas residuales oriente y poniente, adem&aacute;s de dar continuidad a la planta potabilizadora por lo que corresponde el cobro bajo el concepto en menci&oacute;n. Asimismo, se tom&oacute; el acuerdo de la aplicaci&oacute;n de subsidios y descuentos por parte del Siapasf a los diferentes grupos en vulnerabilidad y zonas de desbasto. El alcalde no detall&oacute; los acuerdos concretos en este tema.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><strong>Respaldo a impuesto</strong></p>\r\n\r\n<p style=\"text-align:justify\">El primer edil expres&oacute; que como coordinador de los alcaldes pri&iacute;stas en el estado, respalda la aplicaci&oacute;n del Impuesto Ecol&oacute;gico a los diferentes giros que trabajan en la entidad y traen consigo alg&uacute;n impacto en esta materia. Expuso que el municipio ser&aacute; respetuoso del trato del tema, pero puede participar como interlocutor con las empresas colocadas en lo local, ante la relaci&oacute;n que se tiene con sus representantes. Consider&oacute; que el gobierno estatal que encabeza Alejandro Tello tom&oacute; un riesgo, pero traer&aacute; consigo buenos resultados para los habitantes ya que se plantean proyectos para El Mineral derivados de la recaudaci&oacute;n de este impuesto. Haro de la Torre afirm&oacute; que durante el fin de semana se tendr&aacute;n reuniones entre autoridades estatales y representantes de las empresas mineras para dar seguimiento al tr&aacute;mite.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><strong>Buscan acuerdos</strong></p>\r\n\r\n<p style=\"text-align:justify\">Acerca de la organizaci&oacute;n de la expo que corresponde a la celebraci&oacute;n del D&iacute;a del Amor y la Amistad, el alcalde refiri&oacute; que en diciembre se tuvieron experiencias desfavorables por lo que se determin&oacute; no realizar la actividad. Asegur&oacute; que el municipio tiene dos solicitudes de diferentes organizaciones para realizar la expo, pero se les convoc&oacute; a que tomen un acuerdo entre ambas sobre los espacios que se utilizar&iacute;an para ver la viabilidad del evento. Sin embargo, Haro de la Torre descart&oacute; que la expo se apruebe para los jardines del centro de la ciudad por la afectaci&oacute;n a la v&iacute;a p&uacute;blica y su imagen.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><strong>Aumenta costo del alumbrado</strong></p>\r\n\r\n<p style=\"text-align:justify\">Derivado del cambio en el sistema de luminarias en el municipio que se aplic&oacute; durante la administraci&oacute;n anterior, el gobierno local tuvo un aumento en las tarifas de la Comisi&oacute;n Federal de Electricidad por cerca de 3 millones de pesos.&nbsp;<span style=\"font-size:11.0pt\">El presidente municipal dijo que se valoran opciones para disminuir costos por este concepto.&nbsp; </span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:11.0pt\">Fuente:&nbsp;veagn.com</span></p>\r\n','public/upload/noticias/2E33621C-ADB4-2459-47C8-DAC80F6E8DE9.png',0,'2017-02-15 23:15:20','2017-02-15 23:15:20'),(4,'Quedan 10 años de agua a la ciudad de Chihuahua: JMAS','<p style=\"text-align:justify\"><em>Chihuahua&mdash;</em>&nbsp;De acuerdo con proyecciones de la Junta Municipal de Agua y Saneamiento (JMAS), la ciudad cuenta s&oacute;lo con unos 10 a&ntilde;os de agua, debido a la baja recarga de los mantos acu&iacute;feros y la sobreexplotaci&oacute;n de los mismos. La sobreexplotaci&oacute;n de los mantos acu&iacute;feros de los que es abastecida la ciudad cada a&ntilde;o se agrava por lo que las reservas tienen un mayor desgaste. Esto ha provocado que las perforaciones tengan que ser de entre tres y cinco metros m&aacute;s profundas cada a&ntilde;o. A este ritmo en cuesti&oacute;n de una d&eacute;cada se agotar&aacute;n y la ciudad se quedar&aacute; sin agua suficiente para sus habitantes, coment&oacute; el presidente de la JMAS, Mario Mata. Ante este panorama la mejor opci&oacute;n que se tiene es traer agua a la mancha urbana desde la presa El Granero y fomentar la construcci&oacute;n de pozos de absorci&oacute;n, as&iacute; como renegociar el tratado de agua que se tiene con los Estados Unidos, enfatiz&oacute; Mata.<br />\r\n<br />\r\nSeg&uacute;n explic&oacute; el funcionario estatal, es urgente que se tomen medidas para garantizar el agua para la ciudad, debido a que no se podr&aacute; mantener el ritmo de la perforaci&oacute;n de los pozos que surten a la ciudad, ya que el l&iacute;quido est&aacute; cada vez m&aacute;s profundo y se llega a un momento en que los sedimentos hacen que no sea apta para consumo humano. A&ntilde;adi&oacute; que cada a&ntilde;o se tiene que perforar tres o cinco metros m&aacute;s, debido a que no existe un adecuada recarga de los mantos, lo que se debe a factores como invasi&oacute;n de las zonas de recarga, pero en especial la sobreexplotaci&oacute;n. Mencion&oacute; que en la ciudad son necesarios pozos de absorci&oacute;n, los cuales ya han sido probados en escalas peque&ntilde;as, pero ahora se debe pensar la forma en que su uso sea a gran escala.<br />\r\n<br />\r\nAgreg&oacute; que otras ciudades utilizan el agua superficial, la cual resulta mucho m&aacute;s f&aacute;cil de usar, pero con el problema de que hay que traerle desde puntos distantes y el m&aacute;s factible es la presa El Granero, que es utilizada como presa de control y desde la cual se paga la deuda de agua con Estados Unidos. Pero ante la situaci&oacute;n se tiene que pensar en cambiar el acuerdo binacional para tratar de garantizar el suministro para los habitantes.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\">Fuente: veagn.com</p>\r\n','public/upload/noticias/038789EB-C1B7-6362-A7A7-6F0CD6936C20.jpg',0,'2017-02-15 22:07:12','2017-02-15 22:07:12'),(5,'Expertos alertan de que el cambio climático intensificará la problemática hídrica de la Comunitat Valenciana','<p style=\"text-align:justify\"><strong>Castell&oacute;n Informaci&oacute;n</strong></p>\r\n\r\n<p style=\"text-align:justify\">La Comunitat Valenciana consume el 90% de los recursos h&iacute;dricos disponibles. Industria, turismo y agricultura representan buena parte de este consumo. La &uacute;nica v&iacute;a para garantizar los recursos a las generaciones futuras es &ldquo;moderar la demanda&rdquo;. Este y muchos otros aspectos sobre la realidad del consumo del agua en la Comunidad Valenciana y los efectos que puede generar el cambio clim&aacute;tico sobre nuestro territorio han sido expuestos por el experto en sostenibilidad&nbsp;<strong>Ricardo Almenar</strong>&nbsp;en el seno de la Subcomisi&oacute;n creada en las Cortes para analizar la gesti&oacute;n del agua y el cambio clim&aacute;tico. Almenar ha estado acompa&ntilde;ado en la comparecencia por el decano del Colegio de Bi&oacute;logos de la CV,&nbsp;<strong>Natxo Lacomba</strong>.</p>\r\n\r\n<p style=\"text-align:justify\">El experto en sostenibilidad ha expuesto que &ldquo;el cambio clim&aacute;tico planetario intensificar&aacute; la problem&aacute;tica h&iacute;drica de la Comunitat Valenciana&rdquo;. Las modificaciones que est&aacute; sufriendo el clima planteario supondr&aacute;n disponer de menos recursos. Esto puede afectar a todo tipo de ecosistemas que estar&aacute;n m&aacute;s estresados.<br />\r\n&ldquo;Moderar la demanda&rdquo; es una de las claves que ha planteado el ponente para mantener un equilibrio entre recursos naturales y necesidades humanas.</p>\r\n\r\n<p style=\"text-align:justify\">Almenar, ante los diputados de los cinco grupos parlamentarios que han planteado sus preguntas y observaciones, ha incidido tambi&eacute;n en el coste energ&eacute;tico y clim&aacute;tico que supone la depuraci&oacute;n, reutilizaci&oacute;n o desalinizaci&oacute;n. Se ha referido a los consumos que tienen, por ejemplo, plantas de desalinizaci&oacute;n, cuyo consumo el&eacute;ctrico es muy elevado.</p>\r\n\r\n<p style=\"text-align:justify\">Estabilizar o reducir la demanda de agua, disminuir la superficie de regad&iacute;o, estabilizar la superficie urbanizada y optimizar la eficiencia h&iacute;drica en la gesti&oacute;n del agua son aspectos clave para tratar de asegurar un futuro sostenible, seg&uacute;n ha explicado Almenar a los diputados.</p>\r\n\r\n<p style=\"text-align:justify\">En su exposici&oacute;n ha indicado que los recursos h&iacute;dricos no convencionales, aquellos procedentes de la reutilizaci&oacute;n, ser&aacute;n los &uacute;nicos que podr&aacute;n ser m&aacute;s aprovechados en el futuro.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>Agua, costa y cambio clim&aacute;tico</strong></p>\r\n\r\n<p style=\"text-align:justify\">Tras los &uacute;ltimos temporales sufridos por la costa valenciana Almenar ha insistido en la necesidad de proteger la primera l&iacute;nea litoral mediante sistemas propios de la naturaleza. El objetivo, adem&aacute;s de la protecci&oacute;n de la costa, deber&iacute;a ser la salvaguarda de los acu&iacute;feros costeros y evitar la intrusi&oacute;n marina para impedir la salinizaci&oacute;n de los humedales.</p>\r\n\r\n<p style=\"text-align:justify\"><strong>Ecom&iacute;mesis</strong></p>\r\n\r\n<p style=\"text-align:justify\">En su relato Ricardo Almenar ha enfocado la posible soluci&oacute;n a la situaci&oacute;n actual hacia lo que ha denominado &ldquo;ecom&iacute;mesis&rdquo;. Se trata de imitar las estructuras y funciones de la naturaleza. Eso s&iacute;, ha alertado que para poner en marcha medidas como, por ejemplo, la desalaci&oacute;n, se debe tener en cuenta el coste energ&eacute;tico que ello supone. Por tanto, huir de la dependencia de los combustibles f&oacute;siles es otra de las medidas a aplicar.</p>\r\n\r\n<p style=\"text-align:justify\">El experto en sostenibilidad ha defendido tambi&eacute;n la naturalizaci&oacute;n. Es de decir, que la intervenci&oacute;n humana trate de asemejarse lo m&aacute;s posible a los ciclos naturales, de modo que el impacto de la naturaleza sobre el hombre sea lo menos da&ntilde;ino posible. &ldquo;Rehacer cauces fluviales huyendo del hormigonado para evitar crecidas agresivas de los r&iacute;os, conservar los sistemas dunares para mitigar temporales mar&iacute;timos&hellip;&rdquo; son s&oacute;lo algunas de las propuestas que han podido escuchar los diputados.</p>\r\n\r\n<p style=\"text-align:justify\">Desde el Colegio Oficial de Bi&oacute;logos se les ha hecho entrega de esta documentaci&oacute;n para que la tengan en cuenta en el desarrollo de iniciativas legislativas y medidas concretas.</p>\r\n','public/upload/noticias/431B0C36-EEA7-8034-C368-F14F461DFA73.jpeg',0,'2017-02-15 22:14:49','2017-02-15 22:14:49');
+/*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `productos`
+-- Table structure for table `productos`
 --
 
+DROP TABLE IF EXISTS `productos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `productos` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `descripcion` longtext COLLATE utf8mb4_spanish2_ci NOT NULL,
   `precio` varchar(200) COLLATE utf8mb4_spanish2_ci NOT NULL,
@@ -135,112 +162,56 @@ CREATE TABLE `productos` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `idcategoria` int(11) NOT NULL,
-  `deleted` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `deleted` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `productos`
+-- Dumping data for table `productos`
 --
 
-INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `imagen`, `created_at`, `updated_at`, `idcategoria`, `deleted`) VALUES
-(1, 'computadora hp', 'computadora hp', 'computadora hp', 'computadora hp', '2017-02-08 22:29:14', '2017-02-09 04:29:08', 1, 0);
-
--- --------------------------------------------------------
+LOCK TABLES `productos` WRITE;
+/*!40000 ALTER TABLE `productos` DISABLE KEYS */;
+INSERT INTO `productos` VALUES (1,'computadora hp','computadora hp','computadora hp','computadora hp','2017-02-10 22:51:34','2017-02-10 22:51:34',1,1),(2,'Válvula Antifraude','<p style=\"text-align:justify\">El sistema Antifraude Multi-Lock es un innovador mecanismo anti moroso que permite bloquear o limitar el suministro de agua sin necesidad de da&ntilde;ar la toma domiciliaria, adem&aacute;s funciona como llave de paso para el usuario.Se adapta a sus necesidades de cierre ya sea parcial a baja presi&oacute;n de 0.2 a 1.5 kg/cm2 o parcial para Alta presi&oacute;n de 2.5 a 5 kg/cm2, y el cierre total. Las ofrecemos en diferentes medidas que van de &frac12;&quot; a 4&quot; (Mariposas opcionales de acetal, aluminio y acero). El material es 100% reciclable al t&eacute;rmino de su vida &uacute;til.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n','250','public/upload/productos/C180DA4F-D49E-77D7-6370-86812DAD02CE.png','2017-02-10 23:35:18','2017-02-10 23:35:18',2,1),(3,'Válvula Antifraude','<p style=\"text-align:justify\">El sistema Antifraude Multi-Lock es un innovador mecanismo anti moroso que permite bloquear o limitar el suministro de agua sin necesidad de da&ntilde;ar la toma domiciliaria, adem&aacute;s funciona como llave de paso para el usuario. Se adapta a sus necesidades de cierre ya sea parcial a baja presi&oacute;n de 0.2 a 1.5 kg/cm2 o parcial para Alta presi&oacute;n de 2.5 a 5 kg/cm2, y el cierre total. Las ofrecemos en diferentes medidas que van de &frac12;&quot; a 4&quot; (Mariposas opcionales de acetal, aluminio y acero). El material es 100% reciclable al t&eacute;rmino de su vida &uacute;til.</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n','$ 600.00','public/upload/productos/1C1D030E-5ECC-5B70-D2B6-F5E63A2D4AB5.png','2017-02-14 19:12:19','2017-02-14 19:12:19',8,0),(4,'Válvula ON-OFF','<p style=\"text-align:justify\">Es un equipo de tecnolog&iacute;a y materiales modernos 100% reciclables que protegen el medio ambiente. Evita la sub-medici&oacute;n que no se factura por bajos flujos de agua. Elimina el desperdicio de agua por las fallas por altas presiones de lineas nocturnas de la t&iacute;pica v&aacute;lvula de flotador. Adem&aacute;s permite el llenado del dep&oacute;sito con un cierre al 100% sin escurrimientos o rebases, reabre al 100% cu&aacute;ndo el dep&oacute;sito baja su nivel de agua del 8% al 15% dependiendo de su tama&ntilde;o, sin importar el tiempo.</p>\r\n\r\n<p style=\"text-align:justify\">Cuenta con un novedoso dise&ntilde;o que integra sus principales dispositivos a una v&aacute;lvula de accionamiento hidr&aacute;ulico en la entrada, remplaza ventajosamente la antigua, costosa y problematica v&aacute;lvula de flotador. Elimina el desperdicio de agua por rebase de limites que por presiones altas nocturnas o mal funcionamiento por sarro o atascamientos; asi como tambien remplaza ventajosamente al absoleto flotador por un novedoso tanque de tres funciones. Entre la v&aacute;lvula hidr&aacute;ulica y el tanque de tres funciones tiene un gatillo que asegura un cierre rapido al 100% con presiones desde 0.2kgs/cm2 y hasta 14kgs/cm2. Funciona por llenado de agua y combinaci&oacute;n de su c&aacute;mara hidr&aacute;ulica, para asegurar un cierre y reapertura al 100%. Arquitectura anti-sif&oacute;n, operaci&oacute;n silenciosa , antisarro, UV aditivo. Tiene a la entrada una coladera para retender residuos solidos, requiere mantenimiento espor&aacute;dico.</p>\r\n','$ 280.00','public/upload/productos/F9D14FE2-4948-D61D-28D5-79992E356009.png','2017-02-14 18:54:01','2017-02-14 18:54:01',8,0),(5,'Válvula Expulsora','<p style=\"text-align:justify\">Este dispositivo en muy importante para el buen funcionamiento de la toma deomiciliaria de agua, se usa por protecci&oacute;n del equipo, como el medidor de agua por golpe de ariete positivo y negativo. El usuario conocedor lo pide m&aacute;s para evitar quejas por &ldquo;cobro de Aire&rdquo;</p>\r\n\r\n<p style=\"text-align:justify\">Se recomienda para evitar que llegue a&iacute;re del tipo &ldquo;golpes de ariete&rdquo; positivo y negativo al medidor, da muy buenos resultados en lugares donde hay tandeo. Funci&oacute;n para tranquilidad del usuario, ya que &ldquo;evita el paso del a&iacute;re&rdquo; por fallas en la l&iacute;nea o tandeos de agua.</p>\r\n','$ 105.00','public/upload/productos/DB95204E-C2D0-6AB5-FBE6-8260CF177B74.png','2017-02-14 19:09:47','2017-02-14 19:09:47',8,0),(6,'Válvula Check','<p style=\"text-align:justify\">Esta v&aacute;lvula es adecuada para todo tipo de fontaneria dom&eacute;stica y comercial, en general con todos los fluidos no corrosivos. El resorte de desplace interior permite el paso del flujo cuando la presi&oacute;n es de 0.4psi. Una flecha en el cuerpo de la v&aacute;lvula indica la direcci&oacute;n del flujo.</p>\r\n\r\n<p style=\"text-align:justify\">La confifuraci&oacute;n del filtro de s&oacute;lidos permite atrapar y alojar peque&ntilde;os sedimentos existentes en el agua mediante la camara &ldquo;y&rdquo;. Este sistema garantiza aun m&aacute;s un correcto funcionamiento del cuadro medidor.</p>\r\n','$ 96.00','public/upload/productos/A8542752-89D1-6071-9C20-8D918DBD8BFD.png','2017-02-14 19:14:51','2017-02-14 19:14:51',8,0),(7,'Capuchón para Válvula Antifraude','','$ 10.00','public/upload/productos/EF7489F3-FC84-2D9A-1397-C46EF290E196.png','2017-02-17 17:58:22','2017-02-17 17:58:22',1,0),(8,'Sello Foliado de Control para Válvula Antifraude','','$ 10.00','public/upload/productos/2FB3CAD7-E755-4E0C-61C2-861F03C853FB.png','2017-02-17 17:57:44','2017-02-17 17:57:44',1,0),(9,'Conexiones Quitec','','00.00','public/upload/productos/456A9381-13F5-666E-DF45-3D2AA8C58D1E.png','2017-02-14 19:24:00','2017-02-14 19:24:00',1,0),(10,'Conexiones de Propileno','','00.00','','2017-02-16 15:27:48','2017-02-16 15:27:48',1,1),(11,'Llave de Seguridad de 3\"','<p>Venta Exclusiva a Organismos Operadores, NO Dispobile al P&uacute;blico en General.</p>\r\n','$ 740.00','public/upload/productos/883DBC1B-87D3-4136-DC07-3536DDA61595.png','2017-02-17 17:51:31','2017-02-17 17:51:31',1,0),(12,'Sello de Seguridad','<p>Venta Exclusiva a Organismos Operadores, NO Dispobile al P&uacute;blico en General.</p>\r\n','$ 15.00','public/upload/productos/D45EA80D-0B8B-BA89-8DF5-FFA492885192.png','2017-02-17 17:55:41','2017-02-17 17:55:41',1,0),(13,'Medidor Clase \"B\"','<p style=\"text-align:justify\">Este medidor de agua modelo MJGREEN, ha sido dise&ntilde;ado para el servicio de agua potable domestico e Industrial. Su s&oacute;lido y robusto dise&ntilde;o le permiten operar en los sistemas m&aacute;s adversos, tambien est&aacute; Pre-equipado con la tecnolog&iacute;a AMR Ready, para emisi&oacute;n de pulsos para lectura remota. Clase Metrol&oacute;gica B. Presi&oacute;n de trabajo de hasta 12 bar.</p>\r\n\r\n<p style=\"text-align:justify\">Nylon 6 +30 %fg (disminuye el robo para el mercado negro de metales) Registro sellado super-seco, con sello de registro tipo anillo de cobre. Transmisi&oacute;n magnetica de rotaci&oacute;n a la turbina en la capsula de registro seco, sellado, hermeticamente por termofusi&oacute;n y con proteccion antimagnetica. Cumple con los requisitos de la Directiva 2004/22 / CE relativa a los instrumentos de medida de la Comunidad Europea EN14154 y de la Organizaci&oacute;n Internacional de Legal metrolog&iacute;a OIML R49. As&iacute; como con la Norma Oficial Mexicana &ndash; 001 Conagua 2012.</p>\r\n','$ 812.50','public/upload/productos/3817F1EE-4EAC-B6F0-A9DE-87484E3F7AFC.png','2017-02-14 19:38:47','2017-02-14 19:38:47',7,0),(14,'Medidor Clase \"C\"','<p>Este medidor de agua con modelo MJGreen, ha sido dise&ntilde;ado para el servicio de agua potable. Su s&oacute;lido y robusto dise&ntilde;o le permiten operar en los sistemas m&aacute;s adversos, tambien est&aacute; Pre-equipado con la tecnolog&iacute;a AMR Ready, para emisi&oacute;n de pulsos para lectura remota. Clase Metrol&oacute;gica C. Presi&oacute;n de trabajo de hasta 12 bar.</p>\r\n\r\n<p>Nylon 6 +30 %fg (disminuye el robo para el mercado negro de metales) Registro sellado super-seco, con sello de registro tipo anillo de cobre. Transmisi&oacute;n magnetica de rotaci&oacute;n a la turbina en la capsula de registro seco, sellado, hermeticamente por termofusi&oacute;n y con proteccion antimagnetica. Cumple con los requisitos de la Directiva 2004/22 / CE relativa a los instrumentos de medida de la Comunidad Europea EN14154 y de la Organizaci&oacute;n Internacional de Legal metrolog&iacute;a OIML R49. As&iacute; como con la Norma Oficial Mexicana &ndash; 001 Conagua 2012.</p>\r\n\r\n<p>&nbsp;</p>\r\n','$ 1062.00','public/upload/productos/7AD28EC9-D42B-B120-3C4F-52DC101B670C.png','2017-02-14 19:39:03','2017-02-14 19:39:03',7,0),(15,'Válvula Expulsora de Plástico','','$ 00.00','public/upload/productos/64D015CF-7E5F-7F17-47D1-B1D09141D259.png','2017-02-14 19:40:55','2017-02-14 19:40:55',8,0),(16,'Filtro \"Y\"','<p>La configuraci&oacute;n del filtro de s&oacute;lidos permite atrapar y alojar peque&ntilde;os sedimentos existentes en el agua mediante la camara &ldquo;y&rdquo;. Este sistema garantiza aun m&aacute;s, el correcto funcionamiento del cuadro medidor por largas temporadas. Dependiendo de la calidad del agua, el filtro &ldquo;Y&rdquo; debe tener mantenimiento de limpieza de cuando en cuando dependiendo la calidad del agua en la zona. Sin cerrar el flujo de agua, se afloja el a mano el Tap&oacute;n | Tuerca y la coladera interior se lava con el mismo flujo de salida, se cierra con apriete normal manual.</p>\r\n','$ 96.00','public/upload/productos/21FF2D3A-3A35-21D2-1A8B-B6000C346CD3.png','2017-02-14 19:43:40','2017-02-14 19:43:40',4,0),(17,'Medidor Chorro Único','<p style=\"text-align:justify\">Dependiendo de la calidad del agua, el filtro &ldquo;Y&rdquo; debe tener mantenimiento de limpieza de cuando en cuando dependiendo la calidad del agua en la zona. Sin cerrar el flujo de agua, se afloja el a mano el Tap&oacute;n | Tuerca y la coladera interior se lava con el mismo flujo de salida, se cierra con apriete normal manual.</p>\r\n','$ 00.00','public/upload/productos/DC5C0B30-3E6E-E746-E933-66BD049C247E.png','2017-02-14 19:47:44','2017-02-14 19:47:44',7,0),(18,'Medidor Tipo Woltman','','$ 00.00','public/upload/productos/95D938CC-3BF2-E9C7-809B-80752DECD8F7.png','2017-02-14 19:48:01','2017-02-14 19:48:01',7,0),(19,'Medidor de Tambor','<p style=\"text-align:justify\">El medidor de Chorro &Uacute;nico de velocidad funciona bajo el principio de movimiento del agua sobre una turbina encapsulada con entrada de un chorro &uacute;nico que incide sobre esta haciendola girar, este movimiento de la turbina se transmite al registro mediante una transmisi&oacute;n magnetica que mide el volumen de agua que se esta consumiendo.</p>\r\n','00.00','public/upload/productos/857F5DB9-EED2-1526-2E9A-3645FC82ADBD.png','2017-02-14 19:53:55','2017-02-14 19:53:55',7,0),(20,'Caja de Registro Tapa Verde Grande','','00.00','public/upload/productos/85A414A4-2035-E596-6B4C-1DAD84FFBDBF.png','2017-02-17 17:43:00','2017-02-17 17:43:00',3,0),(21,'Bota de Registro Grande','','$ 00.00','public/upload/productos/FB49EF67-45B3-04E3-75EF-7673FAB618FB.png','2017-02-15 22:49:18','2017-02-15 22:49:18',2,0),(22,'Bota de Registro Chico','','$ 00.00','public/upload/productos/DF027BA1-801C-DF83-FE14-4A058818BC8C.png','2017-02-15 22:54:17','2017-02-15 22:54:17',2,0),(23,'Cuadro Medidor de Columpio','','$ 00.00','public/upload/productos/9E8BB006-831E-96E6-1A4E-83D5A8D76C1F.png','2017-02-17 17:27:00','2017-02-17 17:27:00',9,0),(24,'Cuadro Medidor de Columpio con Válvula Angular','','$ 00.00','public/upload/productos/6A958D4B-C098-93D2-EB7F-5FD8D1656993.png','2017-02-17 17:26:36','2017-02-17 17:26:36',9,0),(25,'Bota de Registro Lineal','','$ 00.00','public/upload/productos/D6702A87-D7E7-32E6-B777-A4406F4E4AF7.png','2017-02-17 17:29:54','2017-02-17 17:29:54',10,0),(26,'Bota de Registro con Medidor','','$ 00.00','public/upload/productos/63142C8E-2596-1501-7223-DD7B3F93C79E.png','2017-02-17 17:29:32','2017-02-17 17:29:32',10,0),(27,'Caja de Registro Chica Lineal','','$ 00.00','public/upload/productos/FDD78B3D-4C46-DAE9-C1C2-075C6BB0E4F2.png','2017-02-17 17:36:40','2017-02-17 17:36:40',10,0),(28,'Caja de Registro Grande Tapa Verde Lineal','','$ 00.00','public/upload/productos/41A41380-3AB5-F437-471D-669F31D95E5C.png','2017-02-17 17:38:45','2017-02-17 17:38:45',10,0);
+/*!40000 ALTER TABLE `productos` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `sliders`
+-- Table structure for table `sliders`
 --
 
+DROP TABLE IF EXISTS `sliders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sliders` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `descripcion` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `imagen` varchar(500) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `sliders`
+-- Dumping data for table `sliders`
 --
 
-INSERT INTO `sliders` (`id`, `descripcion`, `imagen`, `deleted`, `created_at`, `updated_at`) VALUES
-(1, 'asdfasdfsdf1', 'dfasdf1', 0, '2017-02-09 20:08:37', '2017-02-10 02:08:20');
+LOCK TABLES `sliders` WRITE;
+/*!40000 ALTER TABLE `sliders` DISABLE KEYS */;
+INSERT INTO `sliders` VALUES (1,'asdfasdfsdf1','dfasdf1',1,'2017-02-12 07:22:42','2017-02-12 07:22:42'),(2,'','public/upload/sliders/20D56145-6F64-4604-C08C-F90FD0F0A545.png',1,'2017-02-16 19:37:42','2017-02-16 19:37:42'),(3,'','public/upload/sliders/1C48B84B-153B-CDC2-9E09-BBE725FADD7B.png',1,'2017-02-16 19:37:45','2017-02-16 19:37:45'),(4,'','public/upload/sliders/556BDB3F-8014-2489-15F3-E1EC64F8F4E0.png',1,'2017-02-16 19:44:54','2017-02-16 19:44:54'),(5,'','public/upload/sliders/BF0921FA-9CF0-7C76-086B-59A124169955.png',1,'2017-02-16 19:58:38','2017-02-16 19:58:38'),(6,'','public/upload/sliders/64F3CB61-C4A0-FB1C-495F-5736A9FCB6CE.png',0,'2017-02-16 19:58:47','2017-02-16 19:58:47'),(7,'','public/upload/sliders/25AC9164-6CFB-5CE5-5D3E-1026D3C91689.png',1,'2017-02-16 20:11:32','2017-02-16 20:11:32'),(8,'','public/upload/sliders/0A2FA1B4-2103-7468-EEB9-2122699CAF7F.png',0,'2017-02-16 23:39:17','2017-02-16 23:39:17'),(9,'','public/upload/sliders/B6BB3264-1E6D-516E-7B55-2E5961A3DEEA.png',0,'2017-02-16 20:19:29','2017-02-16 20:19:29'),(10,'','public/upload/sliders/B96EC55C-42B8-2D55-EE4B-A26DA61E9388.png',0,'2017-02-16 20:19:50','2017-02-16 20:19:50'),(11,'','public/upload/sliders/6E47C15D-5238-C862-1AF3-98608B88F89B.png',0,'2017-02-16 20:27:47','2017-02-16 20:27:46');
+/*!40000 ALTER TABLE `sliders` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `categorias`
---
-ALTER TABLE `categorias`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `configuracion`
---
-ALTER TABLE `configuracion`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `noticias`
---
-ALTER TABLE `noticias`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `productos`
---
-ALTER TABLE `productos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `sliders`
---
-ALTER TABLE `sliders`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `categorias`
---
-ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `configuracion`
---
-ALTER TABLE `configuracion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `noticias`
---
-ALTER TABLE `noticias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `productos`
---
-ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT de la tabla `sliders`
---
-ALTER TABLE `sliders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-02-21 15:51:58

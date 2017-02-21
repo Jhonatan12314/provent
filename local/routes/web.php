@@ -49,10 +49,15 @@ Route::get('Mejores','FrontendController@getMejores');
 //admin
 
 
+Route::get('admin','UserController@getlogin');
+Route::get('login','UserController@getlogin');
+Route::post('login','UserController@postlogin');
 
-Route::group(['prefix' => 'admin'], function () {
+Route::get('createuser','UserController@createUser');
 
-Route::get('/','UserController@getlogin');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+
+
 Route::get('dashboard','UserController@dashboard');
 
 
@@ -105,7 +110,7 @@ Route::post('configuracion/create','ConfiguracionController@create');
 
 Route::get('logout','UserController@logout');
 
-});
+}); 
 
 Route::get('500', function()
 {

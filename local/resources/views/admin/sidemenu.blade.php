@@ -13,11 +13,11 @@
 
                 <div class="user">
                     <div class="photo">
-                        <img src="{{url('public/backend/img/faces/marc.jpg')}}" />
+                        <img src="{{url('public/frontend/images/user.jpg')}}"  />
                     </div>
                     <div class="info">
                         <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                            Marc Andrew
+                            {{Auth::user()->nombre}}
                             <b class="caret"></b>
                         </a>
                         <div class="collapse" id="collapseExample">
@@ -26,7 +26,7 @@
                                     <a href="#">Perfil</a>
                                 </li>
                                 <li>
-                                    <a href="{{url('admin')}}">Salir</a>
+                                    <a href="{{url('admin/logout')}}">Salir</a>
                                 </li>
                             </ul>
                         </div>

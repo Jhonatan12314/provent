@@ -37,10 +37,14 @@
                                         <h4 class="card-title">Iniciar sesión</h4>
                                         <h4 class="card-title">VEAGN</h4>
                                     </div>
-                                    <p class="category text-center">
-                                       
-                                    </p>
-                                    <form method="get" action="{{url('admin/dashboard')}}">
+                                   
+                                       @if(session()->has('error'))
+                                      
+                                        <p class="category text-center" style="color:#d9534f;">Usuario o contraseña incorrecto</p>
+                             
+                                       @endif
+                                    
+                                    <form method="post" action="{{url('login')}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <div class="card-content">
 
@@ -50,7 +54,7 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Usuario</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="usuario" class="form-control">
                                             </div>
                                         </div>
                                         <div class="input-group">
@@ -59,7 +63,7 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Contraseña</label>
-                                                <input type="password" class="form-control">
+                                                <input type="password" name="password" class="form-control">
                                             </div>
                                         </div>
                                     </div>

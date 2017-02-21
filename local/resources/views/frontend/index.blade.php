@@ -81,7 +81,7 @@
     <!-- Control in compliance-->
     <!-- Our Services natural resource-->
     <section class="fluid-service-area-home">
-      <div class="work-image-ser"><img src="public/frontend/images/services/ser-img-left.jpg" alt=""></div>
+      <div class="work-image-ser"><img src="public/frontend/images/services/ser-img-left.jpg" alt="" width="100%"></div>
       <div class="service-promo">
         <div class="service-t-content">
           <div class="test-quote-sec"><img src="public/frontend/images/testimonial/quote-n.png" alt=""></div>
@@ -105,10 +105,10 @@
                 <div class="name-content clearfix">
                   <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}" alt=""></div>
                   <div class="client-name">
-                    <p>Caleb Salvador Aguirre Soto<br>
-Lic. En Enseñanza de Ingles <br>
-(Gerente Comercial)
-</p>
+                    <p>Caleb Salvador Aguirre Soto<br> 
+                    Lic. En Enseñanza de Ingles <br>
+                    (Gerente Comercial)
+                    </p>
                    
                   </div>
                 </div>
