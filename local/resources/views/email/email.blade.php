@@ -323,7 +323,7 @@
                           <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
                             <tr>
                               <td class="mini-block">
-                               <center><span class="header-sm"><a href="http://localhost/provent/ficha?id={{$producto}}">Descargar AQUÍ</a></span></center><br />
+                               <center><span class="header-sm"><a href="http://indexceed.com/provent/ficha?id={{$producto}}">Descargar AQUÍ</a></span></center><br />
                               </td>
                             </tr>
                           </table>
