@@ -44,6 +44,21 @@ class ProductosController extends Controller
             $producto->imagen="";
         }
 
+
+        $ficha = $request->file('ficha');
+
+       if($ficha)
+        {
+            $imageName=$this->NewGuid().".".$ficha->getClientOriginalExtension();
+            Storage::disk('fichas')->put($imageName ,File::get($ficha));
+            $producto->fichatecnica="public/upload/productos/ficha/".$imageName;
+        }else
+        {
+            $producto->fichatecnica="";
+        }
+
+
+
         $producto->save();
         return redirect('admin/productos');
 
@@ -70,6 +85,17 @@ class ProductosController extends Controller
                     Storage::disk('productos')->put($imageName ,File::get($file));
                     File::Delete($producto->imagen);
                     $producto->imagen="public/upload/productos/".$imageName;
+
+                }
+
+          $ficha = $request->file('ficha');
+            
+            if($ficha)
+                {
+                    $imageName=$this->NewGuid().".".$ficha->getClientOriginalExtension();
+                    Storage::disk('fichas')->put($imageName ,File::get($ficha));
+                    File::Delete($producto->fichatecnica);
+                    $producto->fichatecnica="public/upload/productos/ficha/".$imageName;
 
                 }
 

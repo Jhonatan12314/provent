@@ -72,6 +72,10 @@ return [
                 'driver' => 'local',
                 'root' => 'public/upload/categorias',
             ],
+            'fichas' => [
+                'driver' => 'local',
+                'root' => 'public/upload/productos/ficha',
+            ],
 
         's3' => [
             'driver' => 's3',

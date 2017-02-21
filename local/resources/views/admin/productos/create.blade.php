@@ -76,14 +76,32 @@
                                                 <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                                 <div>
                                                     <span class="btn btn-rose btn-round btn-file">
-                                                        <span class="fileinput-new">Select image</span>
-                                                        <span class="fileinput-exists">Change</span>
+                                                        <span class="fileinput-new">Buscar imagen</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
                                                         <input type="file" name="imagen" />
                                                     </span>
-                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
                                                 </div>
                                             </div>   
-                                            </div>                                                                           
+                                            </div>  
+
+                                             <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Buscar ficha</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
+                                                        <input type="file" name="ficha" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                </div>
+                                            </div>   
+                                            </div> 
+
+
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/productos')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
@@ -122,14 +140,32 @@
                                                 <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                                 <div>
                                                     <span class="btn btn-rose btn-round btn-file">
-                                                        <span class="fileinput-new">Select image</span>
-                                                        <span class="fileinput-exists">Change</span>
+                                                        <span class="fileinput-new">Imagen</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
                                                         <input type="file" name="imagen" />
                                                     </span>
-                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
                                                 </div>
                                             </div>   
-                                            </div>                                                                           
+                                            </div>  
+
+                                            <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Ficha</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
+                                                        <input type="file" name="ficha" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                </div>
+                                            </div>   
+                                            </div> 
+
+
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/productos')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
