@@ -8,7 +8,8 @@
         "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
         "nesbot/carbon": "^1.22",
-        "cviebrock/eloquent-sluggable": "3.0.0-alpha"
+        "cviebrock/eloquent-sluggable": "3.0.0-alpha",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

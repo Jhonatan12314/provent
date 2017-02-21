@@ -55,6 +55,13 @@ Route::post('login','UserController@postlogin');
 
 Route::get('createuser','UserController@createUser');
 
+Route::post('descargaFicha','FrontendController@descargaFicha');
+
+
+
+
+
+//Backend
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
 

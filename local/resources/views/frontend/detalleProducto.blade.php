@@ -31,6 +31,12 @@
     <!-- Projects  Details-->
     <section class="core-projects sectpad">
       <div class="container clearfix">
+
+      @if(session()->has('msg'))
+                                      
+                                       <center><h2>La ficha técnica ha sido enviada...</h2></center>
+                             
+                                       @endif
       
 
         <div class="pro-det-img"><img src="{{url($producto->imagen)}}" height="400" alt=""></div>
@@ -80,8 +86,14 @@ margin-top: -250px;
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Descargar ficha técnica</h4>
       </div>
-      <form method="post" action="descargaFicha">
+      <form method="post" action="{{url('descargaFicha')}}">
+       {{ csrf_field() }}
       <div class="modal-body">
+       <label>Nombre:</label>
+      <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+       <label>Teléfono:</label>
+      <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+
       <label>Introduce tu correo electrónico:</label>
       <input type="hidden" name="id" value="{{$producto->id}}"> 
       <input type="text" class="form-control" name="email" placeholder="ejemplo@ejemplo.scom">

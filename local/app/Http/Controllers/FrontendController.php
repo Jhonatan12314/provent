@@ -10,6 +10,7 @@ use App\Categoria;
 use App\Producto;
 use App\Noticia;
 use App\Slider;
+use App\Cliente;
 
 
 class FrontendController extends Controller
@@ -27,6 +28,8 @@ class FrontendController extends Controller
 
     	return view('frontend/contact')->with('configuracion',$configuracion)->with('categorias',$categorias);
 }
+
+
 public function getShop(){
         $configuracion=Configuracion::first();
         $categorias=Categoria::where('deleted','=',0)->get();
@@ -93,6 +96,38 @@ public function detalleNoticia($id){
     $configuracion=Configuracion::first();
     $categorias=Categoria::where('deleted','=',0)->get();
     return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticia',$noticia);
+}
+
+public function postContact(Request $request){
+       $cliente=new Cliente;
+    $cliente->nombre=$request->nombre;
+    $cliente->telefono=$request->telefono;
+    $cliente->email=$request->email;
+    $cliente->estado="";
+    $cliente->save(); 
+
+    \Mail::send(['html' => 'email/email'],['nombre' => $request->nombre,'asunto'=>$request->asunto,'email'=>$request->email,'mensaje'=>$request->mensaje], function($message)
+    {
+         $message->to('contacto@veagn.com');
+    });
+}
+
+public function descargaFicha(Request $request){
+
+    $cliente=new Cliente;
+    $cliente->nombre=$request->nombre;
+    $cliente->telefono=$request->telefono;
+    $cliente->email=$request->email;
+    $cliente->estado="";
+    $cliente->save(); 
+
+    \Mail::send(['html' => 'email/email'],['producto' => $request->id], function($message)
+    {
+         $message->to('rodrigo_2392@hotmail.com');
+    });
+
+    return redirect()->back()->with('msg', ['El email ha sido enviado']);
+
 }
 
 }
