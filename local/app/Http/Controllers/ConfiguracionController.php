@@ -60,6 +60,36 @@ class ConfiguracionController extends Controller
 
     }
 
+     public function popup()
+    {
+        $configuracion=Configuracion::first();
+        return view('admin/popup/index')->with('configuracion',$configuracion)->with('route','popup');
+    }
+
+    public function postPopUp(Request $request)
+    {
+        
+        $configuracion=Configuracion::first();
+        if(!$configuracion)
+        {
+             $configuracion=new Configuracion;
+        }
+
+        $configuracion->popup=$request->descripcion;
+
+        if(isset($request->activo))
+        {
+            $configuracion->popupactivo=1;
+        }else{
+            $configuracion->popupactivo=0;
+        }
+
+        $configuracion->save();
+        
+
+        return redirect('admin/popup');
+    }
+
 
     
 }

@@ -43,6 +43,8 @@
                             <p>Inicio</p>
                         </a>
                     </li>
+
+
                     @if($route=="categorias")
                     <li class="active">
                     @else
@@ -53,6 +55,8 @@
                             <p>Categorías </p>
                         </a>
                     </li>
+
+
                     @if($route=="productos")
                     <li class="active">
                     @else
@@ -64,6 +68,8 @@
                             <p>Productos</p>
                         </a>
                     </li>
+
+
                     @if($route=="clientes")
                     <li class="active">
                     @else
@@ -74,6 +80,8 @@
                             <p>Clientes</p>
                         </a>
                     </li>
+
+
                     @if($route=="noticias")
                     <li class="active">
                     @else
@@ -83,7 +91,9 @@
                             <i class="material-icons">insert_comment</i>
                             <p>Noticias</p>
                         </a>
-                    </li>                    
+                    </li>    
+
+
                     @if($route=="sliders")
                     <li class="active">
                     @else
@@ -94,6 +104,8 @@
                             <p>Slider</p>
                         </a>
                     </li>
+
+
                     @if($route=="configuracion")
                     <li class="active">
                     @else
@@ -104,6 +116,19 @@
                             <p>Configuración</p>
                         </a>
                     </li>
+
+                    @if($route=="popup")
+                    <li class="active">
+                    @else
+                    <li>
+                    @endif
+                        <a  href="{{url('admin/popup')}}">
+                        <i class="material-icons">settings_applications</i>
+                            <p>PopUp</p>
+                        </a>
+                    </li>
+
+
                 </ul>
             </div>
         </div>

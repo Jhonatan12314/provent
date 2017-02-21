@@ -202,7 +202,44 @@ Lic. En Ciencias y TC<br>
       </div>
     </section>
 
+    @if($configuracion->popupactivo==1)
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#popup').modal('show');
+    });
+    </script>
+    @endif
 
+
+        <style type="text/css">
+      .modal-dialog{
+position: absolute;
+left: 45%;
+margin-left: -300px;
+height: 500px;
+top: 50%;
+margin-top: -250px;
+} 
+
+.modal{
+   z-index: 9999;
+}
+
+    </style>
+
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+     {!!html_entity_decode($configuracion->popup)!!}
+      </div>
+
+    </div>
+  </div>
+</div>
 
     <!-- our clients & Get in touch-->
 @endsection

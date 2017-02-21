@@ -119,6 +119,12 @@ Route::get('sliders/delete/{id}','SliderController@delete');
 Route::get('configuracion','ConfiguracionController@getIndex');
 Route::post('configuracion/create','ConfiguracionController@create');
 
+
+//popup
+
+Route::get('popup','ConfiguracionController@popup');
+Route::post('popup/create','ConfiguracionController@postPopUp');
+
 Route::get('logout','UserController@logout');
 
 }); 

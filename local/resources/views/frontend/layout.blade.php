@@ -33,6 +33,7 @@
     <link rel='stylesheet' href="{{url('public/frontend/css/responsive.css')}}" type="text/css" media="all" />
     <!--link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"-->
     <link rel='icon' type="image/png" sizes="16x16" href="{{url('public/frontend/favicon/favicon-16x16.png')}}" type="text/css" media="all" />
+    <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
     <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js" />
     <script id="dsq-count-scr" src="//veagn.disqus.com/count.js" async></script>
 
@@ -219,7 +220,7 @@
         @yield('content')
         @include('frontend.footer')
   </body>
-   <script type='text/javascript' src="{{url('public/frontend/js/jquery-1.12.2.min.js')}}"></script>
+   
     <!--script src="js/bootstrap.min.js"></script-->
     <script type='text/javascript' src="{{url('public/frontend/js/bootstrap.min.js')}}"></script>
     <!-- Revolution Slider Tools-->
