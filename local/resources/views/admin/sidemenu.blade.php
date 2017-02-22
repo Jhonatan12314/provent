@@ -93,6 +93,16 @@
                         </a>
                     </li>    
 
+                    @if($route=="servicios")
+                    <li class="active">
+                    @else
+                    <li>
+                    @endif
+                        <a href="{{url('admin/servicios')}}">
+                            <i class="material-icons">star</i>
+                            <p>Servicios</p>
+                        </a>
+                    </li>  
 
                     @if($route=="sliders")
                     <li class="active">
@@ -112,7 +122,7 @@
                     <li>
                     @endif
                         <a  href="{{url('admin/configuracion')}}">
-                        <i class="material-icons">settings_applications</i>
+                        <i class="material-icons">settings</i>
                             <p>Configuración</p>
                         </a>
                     </li>
@@ -123,7 +133,7 @@
                     <li>
                     @endif
                         <a  href="{{url('admin/popup')}}">
-                        <i class="material-icons">settings_applications</i>
+                        <i class="material-icons">settings</i>
                             <p>PopUp</p>
                         </a>
                     </li>

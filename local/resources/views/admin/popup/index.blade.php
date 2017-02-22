@@ -21,7 +21,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Slider </a>
+                        <a class="navbar-brand" href="#"> Popup </a>
                     </div>
                 </div>
             </nav>

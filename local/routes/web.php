@@ -24,6 +24,7 @@ Route::get('projects','FrontendController@getProjects');
 Route::get('news','FrontendController@getNews');
 Route::get('shop','FrontendController@getShop');
 Route::get('contact','FrontendController@getContact');
+Route::get('servicios','FrontendController@getServicios');
 //Frontend/submenu
 Route::get('team','FrontendController@getTeam');
 Route::get('testimonials','FrontendController@getTestimonials');
@@ -38,6 +39,7 @@ Route::get('categorias/{id}','FrontendController@Categoria');
 
 
 Route::get('Noticia/{id}','FrontendController@detalleNoticia');
+Route::get('Servicio/{id}','FrontendController@detalleServicio');
 
 Route::get('Mejores','FrontendController@getMejores');
 //Route::get('product','FrontendController@getProduct');
@@ -106,6 +108,13 @@ Route::get('noticias/update/{id}','NoticiasController@getUpdate');
 Route::post('noticias/update','NoticiasController@update');
 Route::get('noticias/delete/{id}','NoticiasController@delete');
 
+//servicios
+Route::get('servicios','ServiciosController@getIndex');
+Route::get('servicios/create','ServiciosController@getCreate');
+Route::post('servicios/create','ServiciosController@create');
+Route::get('servicios/update/{id}','ServiciosController@getUpdate');
+Route::post('servicios/update','ServiciosController@update');
+Route::get('servicios/delete/{id}','ServiciosController@delete');
 
 //slider
 Route::get('sliders','SliderController@getIndex');
@@ -118,6 +127,7 @@ Route::get('sliders/delete/{id}','SliderController@delete');
 //configuracion
 Route::get('configuracion','ConfiguracionController@getIndex');
 Route::post('configuracion/create','ConfiguracionController@create');
+
 
 
 //popup

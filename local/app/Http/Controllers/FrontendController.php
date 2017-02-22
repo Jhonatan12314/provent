@@ -11,6 +11,7 @@ use App\Producto;
 use App\Noticia;
 use App\Slider;
 use App\Cliente;
+use App\Servicios;
 
 
 class FrontendController extends Controller
@@ -74,6 +75,12 @@ class FrontendController extends Controller
                         $categorias=Categoria::where('deleted','=',0)->get();
                         return view('frontend/testimonials')->with('configuracion',$configuracion)->with('categorias',$categorias);
                     }
+                     public function getServicios(){
+                        $configuracion=Configuracion::first();
+                        $categorias=Categoria::where('deleted','=',0)->get();
+                        $servicios=Servicios::where('deleted','=',0)->get();
+                        return view('frontend/servicios')->with('configuracion',$configuracion)->with('servicios',$servicios)->with('categorias',$categorias);
+                    }                   
 
                     public function detalleProducto($id){
                     	$producto=Producto::where('deleted','=',0)->where('id','=',$id)->first();
@@ -97,6 +104,12 @@ class FrontendController extends Controller
                         $categorias=Categoria::where('deleted','=',0)->get();
                         return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticia',$noticia);
                     }
+                    public function detalleServicio($id){
+                        $servicio=Servicios::find($id);
+                        $configuracion=Configuracion::first();
+                        $categorias=Categoria::where('deleted','=',0)->get();
+                        return view('frontend/detalleServicio')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicio',$servicio);
+                    }                    
 
                     public function postContact(Request $request){
                      $cliente=new Cliente;

@@ -1,6 +1,6 @@
 @extends('frontend/layout')
 
-@section('title', 'Inicio')
+@section('title', 'Detalle')
 
 @section('content')
     <!-- Inner Header-->
