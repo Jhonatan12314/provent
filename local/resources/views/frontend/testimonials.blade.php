@@ -56,7 +56,7 @@
 
 
           @if($contador==3)
-           <div class="clearfix visible-xs-block"></div>
+           <div class="clearfix"></div>
            <?php $contador=0;?>
           @endif
         @endforeach
