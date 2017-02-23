@@ -35,6 +35,7 @@ class ServiciosController extends Controller
         $servicio->descripcion=$request->descripcion;
 
         $file = $request->file('imagen');
+        $servicio->deleted=0;
 
        if($file)
         {
