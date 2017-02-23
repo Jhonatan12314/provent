@@ -29,8 +29,13 @@
     <!-- Testimonials clients-->
         <section class="diff-offer-wrapper">
       <div class="container">
-        <div class="row diff-offer">
-         
+      <div class="row diff-offer">
+          <ul>
+            
+            <li class="we-offer-cont2">
+              <p>Para Veagn los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de nuestra continuidad. Por este motivo, les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria, un apoyo que ha permitido que seamos una empresa consolidada y con gran proyección de futuro.</p>
+            </li>
+          </ul>
         </div>
         <div class="row">
 
