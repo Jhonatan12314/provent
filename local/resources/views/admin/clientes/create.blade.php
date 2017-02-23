@@ -35,7 +35,7 @@
                                  @if(isset($cliente))
                                     <h4 class="card-title">Editar clientes</h4>
 
-                                    <form action="{{url('admin/clientes/update')}}" method="post">
+                                    <form action="{{url('admin/clientes/update')}}" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="{{$cliente->id}}">
                                     {{ csrf_field() }}
                                         <div class="form-group label-floating is-empty">
@@ -53,14 +53,31 @@
                                         <div class="form-group label-floating is-empty">
                                             <label>Email</label>
                                             <input type="email" name="email" value="{{$cliente->email}}" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                
+                                        <span class="material-input"></span></div>       
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>  
+
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/clientes')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>
                                     @else
 
                                      <h4 class="card-title">Agregar clientes</h4>
-                                    <form action="{{url('admin/clientes/create')}}" method="post">
+                                    <form action="{{url('admin/clientes/create')}}" method="post" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Nombre del clente</label>
@@ -77,7 +94,24 @@
                                         <div class="form-group label-floating is-empty">
                                             <label class="control-label">Email</label>
                                             <input type="email" name="email" class="form-control">
-                                        <span class="material-input"></span></div>                                                                                
+                                        <span class="material-input"></span></div>           
+                                        <div class="form-group label-floating">
+                                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                <div class="fileinput-new thumbnail">
+                                                    <img src="{{url('public/backend/img/image_placeholder.jpg')}}" alt="...">
+                                                </div>
+                                                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                <div>
+                                                    <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="imagen" />
+                                                    </span>
+                                                    <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                                </div>
+                                            </div>   
+                                            </div>  
+
                                         <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
                                          <a href="{{url('admin/clientes')}}" class="btn btn-fill btn-blue">Cancelar</a>
                                     </form>

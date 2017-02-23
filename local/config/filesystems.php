@@ -79,6 +79,9 @@ return [
             'servicios' => [
                 'driver' => 'local',
                 'root' => 'public/upload/servicios',
+            ],'clientes' => [
+                'driver' => 'local',
+                'root' => 'public/upload/clientes',
             ],            
 
         's3' => [

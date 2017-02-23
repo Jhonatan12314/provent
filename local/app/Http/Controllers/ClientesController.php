@@ -35,6 +35,21 @@ class ClientesController extends Controller
         $cliente->estado=$request->estado;
         $cliente->telefono=$request->telefono;
         $cliente->email=$request->email;
+
+        $file = $request->file('imagen');
+
+       if($file)
+        {
+            $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+            Storage::disk('clientes')->put($imageName ,File::get($file));
+            $cliente->imagen="public/upload/clientes/".$imageName;
+        }else
+        {
+            $cliente->imagen="";
+        }
+
+
+
         $cliente->save();
         return redirect('admin/clientes');
 
@@ -54,6 +69,18 @@ class ClientesController extends Controller
         $cliente->estado=$request->estado;
         $cliente->telefono=$request->telefono;
         $cliente->email=$request->email;
+
+         $file = $request->file('imagen');
+            
+            if($file)
+                {
+                    $imageName=$this->NewGuid().".".$file->getClientOriginalExtension();
+                    Storage::disk('clientes')->put($imageName ,File::get($file));
+                    File::Delete($cliente->imagen);
+                    $cliente->imagen="public/upload/clientes/".$imageName;
+
+                }
+
         $cliente->save();
         return redirect('admin/clientes');
     }
@@ -70,6 +97,17 @@ class ClientesController extends Controller
             return redirect('admin/clientes');
         }
         
+    }
+
+    public function NewGuid() { 
+    $s = strtoupper(md5(uniqid(rand(),true))); 
+    $guidText = 
+        substr($s,0,8) . '-' . 
+        substr($s,8,4) . '-' . 
+        substr($s,12,4). '-' . 
+        substr($s,16,4). '-' . 
+        substr($s,20); 
+        return $guidText;
     }
 
 

@@ -27,12 +27,26 @@
       </div>
     </section>
     <!-- Testimonials clients-->
-    <section class="testimonial-parea">
-      <div class="container clearfix">
+        <section class="diff-offer-wrapper">
+      <div class="container">
+        <div class="row diff-offer">
+         
+        </div>
         <div class="row">
-          <div class="col-lg-12 testimonial-col-p">
-          <img src="{{url('public/frontend/images/CLIENTES.png')}}" width="100%">
+
+        @foreach($clientes as $cliente)
+        <div class="col-sm-4 service-info">
+            <div class="item">
+            <a href="#" class="post-image view image_hover">     
+            <img src="{{url($cliente->imagen)}}" alt="" class="img-responsive zoom_img_effect">
+            <h4>{{$cliente->nombre}}</h4>
+            <br><br>
+            </a>
+            
+                
+            </div>
           </div>
+        @endforeach
         </div>
       </div>
     </section>
