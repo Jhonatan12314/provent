@@ -93,27 +93,27 @@
                                     <h4 class="card-title">Información Nosotros</h4>
                                      <div class="form-group label-floating is-empty">
                                             <label class="">Historia</label>
-                                            <input type="text" name="historia" value="{{$configuracion->historia}}" class="form-control" id="historia">
+                                            <textarea id="textarea5" name="historia">{{$configuracion->historia}}</textarea>
                                         <span class="material-input"></span></div>
 
 
                                      <div class="form-group label-floating is-empty">
                                             <label class="">Misión</label>
-                                            <input type="text" name="mision" value="{{$configuracion->mision}}" class="form-control" id="mision">
+                                            <textarea id="textarea1" name="mision">{{$configuracion->mision}}</textarea>
                                         <span class="material-input"></span></div>
                            
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Visión</label>
-                                            <input type="text" name="vision" value="{{$configuracion->vision}}" class="form-control" id="vision">
+                                            <textarea id="textarea2" name="vision">{{$configuracion->vision}}</textarea>
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Valores</label>
-                                            <input type="text" name="valores" value="{{$configuracion->valores}}" class="form-control" id="valores">
+                                            <textarea id="textarea3" name="valores">{{$configuracion->valores}}</textarea>
                                         <span class="material-input"></span></div>
                                        
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Objetivos</label>
-                                            <input type="text" name="objetivos" value="{{$configuracion->objetivos}}" class="form-control" id="objetivos">
+                                            <textarea id="textarea4" name="objetivos">{{$configuracion->objetivos}}</textarea>
                                         <span class="material-input"></span></div>
                                         <div class="form-group label-floating is-empty">
                                             <label class="">Imagen</label>

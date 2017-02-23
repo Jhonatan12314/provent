@@ -114,7 +114,19 @@
         $('.card .material-datatables label').addClass('form-group');
 
         CKEDITOR.replace( 'textarea1', {
-    language: 'en'
+    language: 'es'
+} );
+        CKEDITOR.replace( 'textarea2', {
+    language: 'es'
+} );
+        CKEDITOR.replace( 'textarea3', {
+    language: 'es'
+} );
+        CKEDITOR.replace( 'textarea4', {
+    language: 'es'
+} );
+        CKEDITOR.replace( 'textarea5', {
+    language: 'es'
 } );
     });
 </script>

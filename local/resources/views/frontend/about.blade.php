@@ -36,28 +36,28 @@
             <div class="tab-content-box tab-content about-tab">
             <div id="history" class="single-tab-content tab-pane fade  in active">
                 <h2>Nuestra Historia</h2>
-               <p align="justify">{{$configuracion->historia}}</p>
+               <p align="justify">{!!html_entity_decode($configuracion->historia)!!}</p>
                 
               </div>
               <div id="vision" class="single-tab-content tab-pane fade">
                 <h2>Nuestra VISION</h2>
-                <p align="justify">{{$configuracion->vision}}</p>
+                <p align="justify">{!!html_entity_decode($configuracion->vision)!!}</p>
                 
               </div>
               <div id="mision" class="single-tab-content tab-pane fade">
                 <h2>Nuestra MISION</h2>
-               <p align="justify">{{$configuracion->mision}}</p>
+               <p align="justify">{!!html_entity_decode($configuracion->mision)!!}</p>
                 
               </div>
               <div id="valores" class="single-tab-content tab-pane fade ">
                 <h2>Nuestros VALORES</h2>
-                <p align="justify">{{$configuracion->valores}}</p>
+                <p align="justify">{!!html_entity_decode($configuracion->valores)!!}</p>
                 
               </div>
               
               <div id="objetivo" class="single-tab-content tab-pane fade">
                 <h2>Nuestro OBJETIVO</h2>
-               <p align="justify">{{$configuracion->objetivos}}</p>
+               <p align="justify">{!!html_entity_decode($configuracion->objetivos)!!}</p>
                 
               </div>              
             </div>
