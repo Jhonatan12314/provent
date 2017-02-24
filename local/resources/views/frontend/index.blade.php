@@ -50,10 +50,9 @@
         <div class="row diff-offer">
           <ul>
             <li class="we-offer-cont">
-              <h2>Ofrecemos <span>diferentes productos</span></h2>
             </li>
             <li class="we-offer-cont2">
-              <p>Empresa que ofrece productos y servicios de desarrollo de ingeniería a los Organismos Operadores del Agua Potable, diseñando herramientas eficaces para acompañar la estrategia de cobranza y recuperación activa de la cartera de usuarios morosos. <br><br>
+              <p style="text-align: justify;">Empresa que ofrece productos y servicios de desarrollo de ingeniería a los Organismos Operadores del Agua Potable, diseñando herramientas eficaces para acompañar la estrategia de cobranza y recuperación activa de la cartera de usuarios morosos. <br><br>
 
 La efectividad y la alta calidad en el diseño innovador de nuestros productos pronto nos han dado un lugar en el mercado, debido a la alta confiabilidad, cultura de servicio y buena estrategia de comunicación.</p>
             </li>
