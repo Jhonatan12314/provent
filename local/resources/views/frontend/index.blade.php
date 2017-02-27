@@ -98,14 +98,14 @@ La efectividad y la alta calidad en el diseño innovador de nuestros productos p
                    
                   </div>
                 </div>
-                <div class="content clearfix">
+                <div class="content clearfix" style="text-align: justify;">
                   <p>El ideal motivo principal para arrancar la empresa de esta línea hidráulicos domésticos, fue bastante la mala experiencia general a la que todos los usuarios de productos hidráulicos de casa estamos expuestos por las necesidades diarias, principalmente de higiene, debido al uso de la tecnología muy antigua, ocho décadas de antigüedad por lo menos  y de tecnología de materiales también.</p><br>
                 </div>
               </div>
               <div class="item">
                 <div class="name-content clearfix">
                   <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}" alt=""></div>
-                  <div class="client-name">
+                  <div class="client-name"  style="text-align: justify;">
                     <p>Caleb Salvador Aguirre Soto<br> 
                    Lic En Administración de Empresas <br>
                     (Gerente Comercial)
@@ -113,7 +113,7 @@ La efectividad y la alta calidad en el diseño innovador de nuestros productos p
                    
                   </div>
                 </div>
-                <div class="content clearfix">
+                <div class="content clearfix"  style="text-align: justify;">
                   <p>Cuando funde junto con mi padre y mi hermana, hacia inicios del año 2008, lo que sería nuestra primera sociedad, lo hicimos con los sueños propios de juventud, pero con el convencimiento que podíamos armar una empresa familiar que fuera capaz de trascender a sus integrantes.<br>
 
 Por eso les pido, permítanme mostrarles lo que a mi juicio es “una empresa familiar” de segunda generación.</p>
