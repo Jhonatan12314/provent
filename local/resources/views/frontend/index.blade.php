@@ -114,7 +114,9 @@ La efectividad y la alta calidad en el diseño innovador de nuestros productos p
                   </div>
                 </div>
                 <div class="content clearfix">
-                  <p>Testimonio</p>
+                  <p>Cuando funde junto con mi padre y mi hermana, hacia inicios del año 2008, lo que sería nuestra primera sociedad, lo hicimos con los sueños propios de juventud, pero con el convencimiento que podíamos armar una empresa familiar que fuera capaz de trascender a sus integrantes.<br>
+
+Por eso les pido, permítanme mostrarles lo que a mi juicio es “una empresa familiar” de segunda generación.</p>
                 </div>
               </div>
               <div class="item">
