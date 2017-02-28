@@ -121,7 +121,7 @@ Por eso les pido, permítanme mostrarles lo que a mi juicio es “una empresa fa
               </div>
               <div class="item">
                 <div class="name-content clearfix">
-                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}"  alt=""></div>
+                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img3.png')}}"  alt=""></div>
                   <div class="client-name">
                     <p>Alma Sarai Aguirre Soto<br>
 Lic. En Ciencias y TC<br>
@@ -130,7 +130,9 @@ Lic. En Ciencias y TC<br>
                   </div>
                 </div>
                 <div class="content clearfix">
-                  <p>Testimonio</p>
+                  <p>El deseo y las ganas de lograr una empresa exitosa y posicionada a nivel nacional e internacional es una meta que se esta haciendo realidad y desde que empezamos a trabajar en este proyecto no hemos dejado nunca de visualizar como nuestro principal objetivo.<br>
+
+Nuestro prinicipal apoyo es nuestro personal que siempre esta dispuesto a dar mas de lo que se les pide y trabajar con calidad y entusiasmo.</p>
                 </div>
               </div>
             </div>
