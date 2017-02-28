@@ -129,7 +129,7 @@ Lic. En Ciencias y TC<br>
 </p>
                   </div>
                 </div>
-                <div class="content clearfix">
+                <div class="content clearfix"  style="text-align: justify;">
                   <p>El deseo y las ganas de lograr una empresa exitosa y posicionada a nivel nacional e internacional es una meta que se esta haciendo realidad y desde que empezamos a trabajar en este proyecto no hemos dejado nunca de visualizar como nuestro principal objetivo.<br>
 
 Nuestro prinicipal apoyo es nuestro personal que siempre esta dispuesto a dar mas de lo que se les pide y trabajar con calidad y entusiasmo.</p>
