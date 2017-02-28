@@ -18,7 +18,7 @@ class ClientesController extends Controller
      */
    public function getIndex()
     {
-        $clientes=Cliente::where('deleted','=',0)->get();
+        $clientes=Cliente::where('deleted','=',0)->whereNotNull('imagen')->get();
         return view('admin/clientes/index')->with('clientes',$clientes)->with('route','clientes');
     }
 

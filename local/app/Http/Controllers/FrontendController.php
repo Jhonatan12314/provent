@@ -71,7 +71,7 @@ class FrontendController extends Controller
                     }
 
                     public function getTestimonials(){
-                        $clientes=Cliente::where('deleted','=',0)->get();
+                        $clientes=Cliente::where('deleted','=',0)->whereNotNull('imagen')->get();
                         $configuracion=Configuracion::first();
                         $categorias=Categoria::where('deleted','=',0)->get();
                         return view('frontend/testimonials')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('clientes',$clientes);
