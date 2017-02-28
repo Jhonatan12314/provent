@@ -251,7 +251,6 @@
     <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
     <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
-    <script type="text/javascript" data-conekta-public-key="key_EsKzpbpsDUTK8myGzswpD2Q" src="https://conektaapi.s3.amazonaws.com/v0.5.0/js/conekta.js"></script>
 
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -292,34 +291,9 @@ function socialbar(){
 </script>
 <script type="text/javascript">
   
-  function pago(){
-    event.preventDefault();
 
-    var successHandler = function(token) {
-  /* token keys: id, livemode, used, object */
-  console.log(token);
-};
-
-var errorHandler = function(err) {
-  /* err keys: object, type, message, message_to_purchaser, param, code */
-  console.log(err);
-};
-    Conekta.Token.create($('#card-form'), successHandler, errorHandler);
-    return false;
-  }
   jQuery(document).ready(function($){
 
-    var successHandler = function(token) {
-  /* token keys: id, livemode, used, object */
-  console.log(token);
-};
-
-var errorHandler = function(err) {
-  /* err keys: object, type, message, message_to_purchaser, param, code */
-  console.log(err);
-};
-
-Conekta.Token.create($('#card-form'), successHandler, errorHandler);
   // browser window scroll (in pixels) after which the "back to top" link is shown
   var offset = 300,
     //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
