@@ -6,6 +6,155 @@
 @section('content')
 
 
+<script type="text/javascript">
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'veagn.myshopify.com',
+      apiKey: '9dfb9ba56ca1807aac4cf145b35ce518',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [8288275339],
+        node: document.getElementById('product-component-05cfb487fb6'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Añadir al carrito"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        "padding-left": "10px",
+        "padding-right": "10px",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        }
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        "padding-left": "10px",
+        "padding-right": "10px",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+})();
+</script>
+
+
 
 
     <!-- Inner Header-->
@@ -60,6 +209,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
              <div class="req-button text-right">
               <a href="#"  data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i> Descargar Ficha Técnica</a>
+              <div id='product-component-05cfb487fb6'></div>
               </div>
             </div>
           </div>
