@@ -9,14 +9,14 @@
 <script type="text/javascript">
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'veagn.myshopify.com',
-      apiKey: '9dfb9ba56ca1807aac4cf145b35ce518',
+      domain: 'veagn1.myshopify.com',
+      apiKey: '853d1b6f6f4466dfcf2bada0f51ae178',
       appId: '6',
     });
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: [8288275339],
+        id: [8288878155],
         node: document.getElementById('product-component-05cfb487fb6'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
