@@ -200,6 +200,12 @@
 </div>
 
  <div id="contact-buttons-bar">
+  <div id="my-cart-11269193"></div>
+<div>
+<script type="text/javascript" src="https://app.ecwid.com/script.js?11269193&data_platform=code&data_date=2017-03-13" charset="utf-8"></script>
+<!-- remove layout parameter if you want to position minicart yourself -->
+<script type="text/javascript"> xMinicart("layout=attachToCategories", "id=my-cart-11269193"); </script>
+</div>
       <a href="{{$configuracion->facebook}}" class="contact-button-link cb-ancor" style="background-color: #3b5999;"><span class="fa fa-facebook"></span></a>
       <a href="{{$configuracion->youtube}}" class="contact-button-link cb-ancor" style="background-color: #cd201f;"><span class="fa fa-youtube"></span></a>
       <a href="{{$configuracion->twitter}}" class="contact-button-link cb-ancor" style="background-color: #55acee;"><span class="fa fa-twitter"></span></a>

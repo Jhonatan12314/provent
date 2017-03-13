@@ -39,7 +39,7 @@
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li>                   
 
                     <li class="item item-phone">
                       <div class="media">

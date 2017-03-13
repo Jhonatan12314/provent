@@ -36,6 +36,12 @@
                   </form>
                 </div>
               </div>
+
+              <style type="text/css">
+                .ecwid-ProductBrowser-auth-anonim{
+                  display: none;
+                }
+              </style>
               <div class="single-sidebar-widget">
                 <div class="sec-title">
                   <h2><span>Categorias</span></h2>
