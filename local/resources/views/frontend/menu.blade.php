@@ -83,8 +83,7 @@
                         </ul>
                       </li>
                       
-                      <li ><a href="{{url('news')}}">Noticias</a></li>
-                      <li ><a href="{{url('testimonials')}}">Clientes</a></li>
+                      
 
                       <li class="has-t-submenu"><a href="{{url('servicios')}}">Servicios</a>
                      
@@ -94,7 +93,9 @@
                         @endforeach
                         </ul>
                       </li>
-
+                      <li ><a href="{{url('news')}}">Noticias</a></li>
+                      <li ><a href="{{url('testimonials')}}">Clientes</a></li>
+                      <li ><a href="{{url('Empresas')}}">Empresas</a></li>
                       <li><a href="{{url('contact')}}">contactanos</a></li>
                     </ul>
                   </div>

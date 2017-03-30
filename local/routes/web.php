@@ -25,6 +25,7 @@ Route::get('news','FrontendController@getNews');
 Route::get('shop','FrontendController@getShop');
 Route::get('contact','FrontendController@getContact');
 Route::get('servicios','FrontendController@getServicios');
+Route::get('Empresas','FrontendController@getEmpresas');
 //Frontend/submenu
 Route::get('team','FrontendController@getTeam');
 Route::get('testimonials','FrontendController@getTestimonials');
@@ -32,6 +33,8 @@ Route::get('faq','FrontendController@getFaq');
 Route::get('classic','FrontendController@getClassic');
 Route::get('fullscreen','FrontendController@getFullscreen');
 Route::get('lightbox','FrontendController@getLightbox');
+
+
 
 
 Route::get('Producto/{id}','FrontendController@detalleProducto');

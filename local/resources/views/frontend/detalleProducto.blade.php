@@ -208,9 +208,9 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
              <div class="req-button text-right">
+             @if($producto->fichatecnica!="")
               <a href="#"  data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i> Descargar Ficha Técnica</a>
-              <div id='product-component-05cfb487fb6'></div>
-              </div>
+              @endif
             </div>
           </div>
         </div>

@@ -34,6 +34,16 @@ class FrontendController extends Controller
                        return view('frontend/contact')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
                     }
 
+                    public function getEmpresas(){
+
+                        $servicios=Servicios::where('deleted','=',0)->get();
+                       $configuracion=Configuracion::first();
+                       $categorias=Categoria::where('deleted','=',0)->get();
+
+                       return view('frontend/empresas')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
+
+                    }
+
 
                    public function getShop(){
                     $servicios=Servicios::where('deleted','=',0)->get();
