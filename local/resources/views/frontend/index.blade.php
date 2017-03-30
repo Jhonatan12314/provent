@@ -44,32 +44,33 @@
       <!-- Controls--><a href="#minimal-bootstrap-carousel" role="button" data-slide="prev" class="left carousel-control"><i class="fa fa-angle-left"></i><span class="sr-only">Previous</span></a><a href="#minimal-bootstrap-carousel" role="button" data-slide="next" class="right carousel-control"><i class="fa fa-angle-right"></i><span class="sr-only">Next</span></a>
     </div>
 
-    <div class="row">
-        <div class="col-sm-4">
-        <img src="{{url('public/img/1.png')}}">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{url('public/img/2.png')}}">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{url('public/img/3.png')}}">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{url('public/img/4.png')}}">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{url('public/img/5.png')}}">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{url('public/img/6.png')}}">
-        </div>
-    </div>
+    
 
 
     <!-- =========home banner end============-->
     <!-- We offer Different Services-->
     <section class="diff-offer-wrapper">
       <div class="container">
+      <div class="row" style="margin-top:150px;">
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/1.png')}}">
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/2.png')}}">
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/3.png')}}">
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/4.png')}}">
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/5.png')}}">
+        </div>
+        <div class="col-sm-4" style="margin-bottom: 40px;">
+        <img src="{{url('public/img/6.png')}}">
+        </div>
+    </div>
         <div class="row diff-offer">
           <ul>
             <li class="we-offer-cont">
