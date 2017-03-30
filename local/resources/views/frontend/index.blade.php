@@ -26,7 +26,9 @@
             <div class="thm-container">
               <div class="box valign-top">
                 <div class="content text-left pull-right" >
+                @if($slider->descripcion!="")
                   <h1 data-animation="animated fadeInLeft" style="margin-top: 300px;background:rgba(0,0,0,0.5);" class="bnrfnt40">{{str_limit(strip_tags($slider->descripcion), 150)}}</h1>
+                @endif
          
                 </div>
               </div>
@@ -62,9 +64,20 @@ La efectividad y la alta calidad en el diseño innovador de nuestros productos p
 
         @foreach($categorias as $categoria)
         <div class="col-sm-4 service-info">
-            <div class="item"><a href="{{url('categorias')}}/{{$categoria->id}}" class="post-image view image_hover">     <img src="{{url($categoria->imagen)}}" alt="" class="img-responsive zoom_img_effect"></a><a href="{{url('categorias')}}/{{$categoria->id}}">
+            <div class="item"><a href="{{url('categorias')}}/{{$categoria->id}}" class="post-image view image_hover"> 
+
+            @if($categoria->imagen!="")
+            <img src="{{url($categoria->imagen)}}" alt="" class="img-responsive zoom_img_effect">
+            @endif    
+
+            </a>
+            <a href="{{url('categorias')}}/{{$categoria->id}}">
                 <h4>{{$categoria->nombre}}</h4></a>
+                @if($categoria->descripcion!="")
               <p align="justify">{{str_limit(strip_tags($categoria->descripcion), 100)}}...</p>
+              @else
+                <p align="justify">Descripción no disponible</p>
+              @endif
               <h6><a href="{{url('categorias')}}/{{$categoria->id}}">Leer m&aacute;s</a></h6>
             </div>
           </div>
@@ -211,6 +224,10 @@ Nuestro prinicipal apoyo es nuestro personal que siempre esta dispuesto a dar ma
     <script type="text/javascript">
     $(document).ready(function () {
         $('#popup').modal('show');
+
+        $('#popup').on('hidden.bs.modal', function () {
+          $('.modal-body').html('');
+        });
     });
     </script>
     @endif
@@ -232,6 +249,8 @@ margin-top: -250px;
 
     </style>
 
+    @if($configuracion->popup!="")
+
     <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -245,6 +264,7 @@ margin-top: -250px;
     </div>
   </div>
 </div>
+@endif
 
     <!-- our clients & Get in touch-->
 @endsection

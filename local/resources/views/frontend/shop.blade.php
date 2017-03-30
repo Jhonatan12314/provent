@@ -36,22 +36,16 @@
                   </form>
                 </div>
               </div>
-
-              <style type="text/css">
-                .ecwid-ProductBrowser-auth-anonim{
-                  display: none;
-                }
-              </style>
               <div class="single-sidebar-widget">
                 <div class="sec-title">
                   <h2><span>Categorias</span></h2>
                 </div>
                 <div class="categories">
-                  <div id="my-vCategories-11246176"></div>
-<div>
-<script type="text/javascript" src="https://app.ecwid.com/script.js?11246176&data_platform=code&data_date=2017-03-08" charset="utf-8"></script>
-<script type="text/javascript"> xVCategories("id=my-vCategories-11246176"); </script>
-</div>
+                  <ul>
+                     @foreach($categorias as $categoria)
+                        <li><a href="{{url('categorias')}}/{{$categoria->id}}">{{$categoria->nombre}}</a></li>
+                      @endforeach
+                  </ul>
                 </div>
               </div>
             </div>
@@ -71,11 +65,41 @@
          
             <?php $c=1;?>
             <div class="row shop-item-wrapper">
-            <div id="my-store-11246176"></div>
-<div>
-<script type="text/javascript" src="https://app.ecwid.com/script.js?11246176&data_platform=code&data_date=2017-03-08" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-11246176");</script>
-</div>
 
+            @foreach($productos as $producto)
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-shop-item">
+                <a href="{{url('Producto')}}/{{$producto->id}}">
+                @if($producto->imagen!="")
+                 <div class="img-box"><img src="{{url($producto->imagen)}}" height="200" alt="Awesome Image"></div>
+                @else
+                 <div class="img-box"><img src="{{url('public/frontend/images/sinimagen.png')}}" width="100%" alt="Awesome Image"></div>
+                @endif
+                 
+                  <div class="content">
+                      <h3>{{$producto->nombre}}</h3></a>
+                      <span>{{str_limit(strip_tags($producto->descripcion), 80)}}...</span>
+                  </div>
+                </div>
+              </div>
+              
+
+              <?php
+              if($c==3)
+              {
+                echo '<div class="clearfix visible-xs"></div>';
+                $c=0;
+                echo "</div>";
+                echo '<div class="row shop-item-wrapper">';
+              }
+              $c++;
+              ?>
+
+              @endforeach
+
+              @if(count($productos)==0)
+              <h2>No se encontraron productos</h2>
+              @endif
 
 
             </div>
