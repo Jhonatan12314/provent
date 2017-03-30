@@ -135,6 +135,17 @@ Route::post('configuracion/create','ConfiguracionController@create');
 Route::get('popup','ConfiguracionController@popup');
 Route::post('popup/create','ConfiguracionController@postPopUp');
 
+
+//Testimonios
+Route::get('testimonios','TestimoniosController@getIndex');
+Route::get('testimonios/create','TestimoniosController@getCreate');
+Route::post('testimonios/create','TestimoniosController@create');
+Route::get('testimonios/update/{id}','TestimoniosController@getUpdate');
+Route::post('testimonios/update','TestimoniosController@update');
+Route::get('testimonios/delete/{id}','TestimoniosController@delete');
+
+
+
 Route::get('logout','UserController@logout');
 
 }); 

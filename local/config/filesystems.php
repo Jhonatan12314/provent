@@ -82,7 +82,10 @@ return [
             ],'clientes' => [
                 'driver' => 'local',
                 'root' => 'public/upload/clientes',
-            ],            
+            ],'testimonios' => [
+                'driver' => 'local',
+                'root' => 'public/upload/testimonios',
+            ],             
 
         's3' => [
             'driver' => 's3',

@@ -3,7 +3,7 @@
       <div class="container clearfix">
         <div class="row">
           <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="{{url('public/frontend/images//header/logo.png')}}" alt=""></a>
-            <p>{{$configuracion->mision}}.</p>
+            <p>{!!html_entity_decode($configuracion->mision)!!}.</p>
             <a href="about">Leer m&aacute;s <i class="fa fa-angle-double-right"></i></a>
           </div>
           <!--div class="widget widget-links col-md-3 col-sm-6">
@@ -110,7 +110,8 @@
       <div class="container clearfix">
         <div class="pull-left fo-txt">
           <p>Copyright © 2017 Veagn. Derechos Reservados.<br>
-Una Empresa Manufacturas e Importaciones Multicierre A.G. S.A. de C.V.</p>
+Una Empresa de Manufacturas e Importaciones Multicierre A.G. S.A. de C.V.
+</p>
         </div>
         <div class="pull-right fo-txt">
           <p>Created by: <a href="http://indexceed.com">Indexceed</a></p>

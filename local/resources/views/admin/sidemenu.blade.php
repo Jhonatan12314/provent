@@ -138,6 +138,17 @@
                         </a>
                     </li>
 
+                    @if($route=="testimonios")
+                    <li class="active">
+                    @else
+                    <li>
+                    @endif
+                        <a  href="{{url('admin/testimonios')}}">
+                        <i class="material-icons">edit</i>
+                            <p>Testimonios</p>
+                        </a>
+                    </li>
+
 
                 </ul>
             </div>

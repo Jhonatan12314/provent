@@ -101,53 +101,48 @@ La efectividad y la alta calidad en el diseño innovador de nuestros productos p
           <div class="test-quote-sec"><img src="public/frontend/images/testimonial/quote-n.png" alt=""></div>
           <div class="testimonial-t-sec">
             <div class="testimonialn-slider">
+           
+            @foreach($testimonios as $testimonio)
               <div class="item">
                 <div class="name-content clearfix">
-                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img2.png')}}" alt=""></div>
+                  <div class="tst-img">
+                  @if($testimonio->imagen!="")
+                  <img src="{{url($testimonio->imagen)}}" alt="">
+                  @else
+
+                  @endif
+                  </div>
+                  
                   <div class="client-name">
-                    <p>Salvador  Osorio<br>
-                    Ing. Comunicaciones Eléctricas<br>
-                    Fundador (Desarrollador Tecnológico)</p>
+                    <p>{{$testimonio->nombre}}</p>
                    
                   </div>
                 </div>
                 <div class="content clearfix" style="text-align: justify;">
-                  <p>El ideal motivo principal para arrancar la empresa de esta línea hidráulicos domésticos, fue bastante la mala experiencia general a la que todos los usuarios de productos hidráulicos de casa estamos expuestos por las necesidades diarias, principalmente de higiene, debido al uso de la tecnología muy antigua, ocho décadas de antigüedad por lo menos  y de tecnología de materiales también.</p><br>
+                  <p> {!!html_entity_decode($testimonio->descripcion)!!}</p><br>
                 </div>
               </div>
-              <div class="item">
+              @endforeach
+              
+              @if(count($testimonios)<=1)
+               <div class="item">
                 <div class="name-content clearfix">
-                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img1.png')}}" alt=""></div>
-                  <div class="client-name"  style="text-align: justify;">
-                    <p>Caleb Salvador Aguirre Soto<br> 
-                   Lic En Administración de Empresas <br>
-                    (Gerente Comercial)
-                    </p>
+                  <div class="tst-img">
+                 
+                  </div>
+                  
+                  <div class="client-name">
+                    <p></p>
                    
                   </div>
                 </div>
-                <div class="content clearfix"  style="text-align: justify;">
-                  <p>Cuando funde junto con mi padre y mi hermana, hacia inicios del año 2008, lo que sería nuestra primera sociedad, lo hicimos con los sueños propios de juventud, pero con el convencimiento que podíamos armar una empresa familiar que fuera capaz de trascender a sus integrantes.<br>
-
-Por eso les pido, permítanme mostrarles lo que a mi juicio es “una empresa familiar” de segunda generación.</p>
+                <div class="content clearfix" style="text-align: justify;">
+                  <p> </p><br>
                 </div>
               </div>
-              <div class="item">
-                <div class="name-content clearfix">
-                  <div class="tst-img"><img src="{{url('public/frontend/images/testimonial/img3.png')}}"  alt=""></div>
-                  <div class="client-name">
-                    <p>Alma Sarai Aguirre Soto<br>
-Lic. En Ciencias y TC<br>
-(Gerente Operativo)<br>
-</p>
-                  </div>
-                </div>
-                <div class="content clearfix"  style="text-align: justify;">
-                  <p>El deseo y las ganas de lograr una empresa exitosa y posicionada a nivel nacional e internacional es una meta que se esta haciendo realidad y desde que empezamos a trabajar en este proyecto no hemos dejado nunca de visualizar como nuestro principal objetivo.<br>
+              @endif
 
-Nuestro prinicipal apoyo es nuestro personal que siempre esta dispuesto a dar mas de lo que se les pide y trabajar con calidad y entusiasmo.</p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

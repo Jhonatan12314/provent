@@ -85,7 +85,16 @@
                       
                       <li ><a href="{{url('news')}}">Noticias</a></li>
                       <li ><a href="{{url('testimonials')}}">Clientes</a></li>
-                      <li ><a href="{{url('servicios')}}">Servicios</a></li>
+
+                      <li class="has-t-submenu"><a href="{{url('servicios')}}">Servicios</a>
+                     
+                        <ul class="submenu">
+                        @foreach($servicios as $servicio)
+                        <li><a href="{{url('Servicio')}}/{{$servicio->id}}">{!!html_entity_decode($servicio->descripcion)!!}</a></li>
+                        @endforeach
+                        </ul>
+                      </li>
+
                       <li><a href="{{url('contact')}}">contactanos</a></li>
                     </ul>
                   </div>
