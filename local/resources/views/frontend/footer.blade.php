@@ -3,7 +3,7 @@
       <div class="container clearfix">
         <div class="row">
           <div class="widget about-us-widget col-md-3 col-sm-6"><a href="#"><img src="{{url('public/frontend/images//header/logo.png')}}" alt=""></a>
-            <p>{!!html_entity_decode($configuracion->mision)!!}.</p>
+            <p>Somos una empresa Jalisciense que Actualmente fabricamos nuestros productos con los estándares más altos de calidad, incorporando materiales 100 % reciclables al fin de su vida útil, así como con los índices más bajos de material nocivo para el consumo humano.</p>
             <a href="about">Leer m&aacute;s <i class="fa fa-angle-double-right"></i></a>
           </div>
           <!--div class="widget widget-links col-md-3 col-sm-6">
