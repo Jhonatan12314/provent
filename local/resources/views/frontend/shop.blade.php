@@ -60,7 +60,8 @@
             @else
             <h2>Todos los productos</h2>
             @endif
-              
+
+  
             </div>
          
             <?php $c=1;?>
@@ -78,7 +79,10 @@
                  
                   <div class="content">
                       <h3>{{$producto->nombre}}</h3></a>
-                      <span>{{str_limit(strip_tags($producto->descripcion), 80)}}...</span>
+                      <span>{{str_limit(strip_tags($producto->descripcion), 80)}}...
+                      </span>
+                      <center><a href="{{url('agregarCarrito')}}?id={{$producto->id}}" class="btn">Comprar</a></center>
+                      
                   </div>
                 </div>
               </div>

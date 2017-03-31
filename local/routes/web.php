@@ -26,6 +26,10 @@ Route::get('shop','FrontendController@getShop');
 Route::get('contact','FrontendController@getContact');
 Route::get('servicios','FrontendController@getServicios');
 Route::get('Empresas','FrontendController@getEmpresas');
+
+Route::get('agregarCarrito','FrontendController@agregarCarrito');
+Route::get('eliminarCarrito','FrontendController@eliminarCarrito');
+Route::get('carrito','FrontendController@getCarrito');
 //Frontend/submenu
 Route::get('team','FrontendController@getTeam');
 Route::get('testimonials','FrontendController@getTestimonials');

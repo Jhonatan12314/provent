@@ -97,6 +97,18 @@
                       <li ><a href="{{url('testimonials')}}">Clientes</a></li>
                       <li ><a href="{{url('Empresas')}}">Empresas</a></li>
                       <li><a href="{{url('contact')}}">contactanos</a></li>
+                      <?php
+                      $totalp=0;
+                      if(isset($_SESSION["cart_item"]))
+                      {
+                      
+                      foreach ($_SESSION["cart_item"] as $item){
+                        $totalp+=$item["cantidad"];
+                      }
+                    }
+                      ?>
+
+                      <li><a href="{{url('carrito')}}"><i class="fa fa-shopping-cart"></i> {{$totalp}}</a></li>
                     </ul>
                   </div>
                 </div>

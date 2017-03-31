@@ -251,6 +251,7 @@
     <script type='text/javascript' src="{{url('public/frontend/js/imagelightbox.min.js')}}"></script>
     <!--script src="js/theme.js"></script-->
     <script type='text/javascript' src="{{url('public/frontend/js/theme.js')}}"></script>
+     
 
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

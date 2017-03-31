@@ -17,7 +17,57 @@ use App\Testimonio;
 
 class FrontendController extends Controller
 {
+
+    public function eliminarCarrito(){
+        session_start();
+        if(!empty($_SESSION["cart_item"])) {
+            foreach($_SESSION["cart_item"] as $k => $v) {
+                    if($_GET["id"] == $k)
+                        unset($_SESSION["cart_item"][$k]);              
+                    if(empty($_SESSION["cart_item"]))
+                        unset($_SESSION["cart_item"]);
+            }
+        }
+        return redirect()->back();
+    }
+
+    public function getCarrito(){
+        session_start();
+        $servicios=Servicios::where('deleted','=',0)->get();
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('frontend/carrito')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
+                    
+    }
+    public function agregarCarrito(){
+        session_start();
+        $id=$_REQUEST['id'];
+        $producto=Producto::find($id);
+
+        $itemArray = array($producto->id=>array('id'=>$producto->id,'nombre'=>$producto->nombre,'cantidad'=>1, 'precio'=>$producto->precio));
+
+        if(!empty($_SESSION["cart_item"])) {
+                if(in_array($producto->id,array_keys($_SESSION["cart_item"]))) {
+                    foreach($_SESSION["cart_item"] as $k => $v) {
+                            if($producto->id == $k) {
+                                if(empty($_SESSION["cart_item"][$k]["cantidad"])) {
+                                    $_SESSION["cart_item"][$k]["cantidad"] = 0;
+                                }
+                                $_SESSION["cart_item"][$k]["cantidad"]+=1;
+                            }
+                    }
+                } else {
+                    $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
+                }
+            } else {
+                $_SESSION["cart_item"] = $itemArray;
+            }
+             return redirect()->back();
+
+
+    }
                     public function getIndex(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $noticias=Noticia::where('deleted','=',0)->orderBy('created_at')->take(3)->get();
                         $configuracion=Configuracion::first();
@@ -27,6 +77,7 @@ class FrontendController extends Controller
                         return view('frontend/index')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('sliders',$slider)->with('noticias',$noticias)->with('testimonios',$testimonios)->with('servicios',$servicios);
                     }
                     public function getContact(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                        $configuracion=Configuracion::first();
                        $categorias=Categoria::where('deleted','=',0)->get();
@@ -35,6 +86,7 @@ class FrontendController extends Controller
                     }
 
                     public function getEmpresas(){
+                        session_start();
 
                         $servicios=Servicios::where('deleted','=',0)->get();
                        $configuracion=Configuracion::first();
@@ -46,6 +98,7 @@ class FrontendController extends Controller
 
 
                    public function getShop(){
+                    session_start();
                     $servicios=Servicios::where('deleted','=',0)->get();
                     $configuracion=Configuracion::first();
                     $categorias=Categoria::where('deleted','=',0)->get();
@@ -53,18 +106,21 @@ class FrontendController extends Controller
                     }
 
                     public function getMejores(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $configuracion=Configuracion::first();
                         $categorias=Categoria::where('deleted','=',0)->get();
                         return view('frontend/mejores')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
                     }
                     public function getAbout(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $configuracion=Configuracion::first();
                         $categorias=Categoria::where('deleted','=',0)->get();
                         return view('frontend/about')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
                     }
                     public function getNews(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $configuracion=Configuracion::first();
                         $categorias=Categoria::where('deleted','=',0)->get();
@@ -72,6 +128,7 @@ class FrontendController extends Controller
                         return view('frontend/news')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticias',$noticias)->with('servicios',$servicios);
                     }
                     public function getSolutions(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
 
                       $configuracion=Configuracion::first();
@@ -90,6 +147,7 @@ class FrontendController extends Controller
                     }
 
                     public function getTestimonials(){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $clientes=Cliente::where('deleted','=',0)->whereNotNull('imagen')->get();
                         $configuracion=Configuracion::first();
@@ -97,6 +155,7 @@ class FrontendController extends Controller
                         return view('frontend/testimonials')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('clientes',$clientes)->with('servicios',$servicios);
                     }
                      public function getServicios(){
+                        session_start();
                         $configuracion=Configuracion::first();
                         $categorias=Categoria::where('deleted','=',0)->get();
                         $servicios=Servicios::where('deleted','=',0)->get();
@@ -104,6 +163,7 @@ class FrontendController extends Controller
                     }                   
 
                     public function detalleProducto($id){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                     	$producto=Producto::where('deleted','=',0)->where('id','=',$id)->first();
                         $configuracion=Configuracion::first();
@@ -112,6 +172,7 @@ class FrontendController extends Controller
 
                     }
                     public function Categoria($id){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $productos=Producto::where('idcategoria','=',$id)->where('deleted','=',0)->get();
                         $categorias=Categoria::where('deleted','=',0)->get();
@@ -122,6 +183,7 @@ class FrontendController extends Controller
 
                     }
                     public function detalleNoticia($id){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $noticia=Noticia::find($id);
                         $configuracion=Configuracion::first();
@@ -129,6 +191,7 @@ class FrontendController extends Controller
                         return view('frontend/detalleNoticia')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('noticia',$noticia)->with('servicios',$servicios);
                     }
                     public function detalleServicio($id){
+                        session_start();
                         $servicios=Servicios::where('deleted','=',0)->get();
                         $servicio=Servicios::find($id);
                         $configuracion=Configuracion::first();
