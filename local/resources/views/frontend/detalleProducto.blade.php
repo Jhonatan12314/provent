@@ -4,159 +4,6 @@
 @section('title', 'Detalle')
 
 @section('content')
-
-
-<script type="text/javascript">
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'veagn1.myshopify.com',
-      apiKey: '853d1b6f6f4466dfcf2bada0f51ae178',
-      appId: '6',
-    });
-
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: [8288878155],
-        node: document.getElementById('product-component-05cfb487fb6'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-                options: {
-  "product": {
-    "variantId": "all",
-    "width": "240px",
-    "contents": {
-      "img": false,
-      "title": false,
-      "variantTitle": false,
-      "price": false,
-      "description": false,
-      "buttonWithQuantity": true,
-      "button": false,
-      "quantity": false
-    },
-    "text": {
-      "button": "Añadir al carrito"
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "background-color": "#000000",
-        "padding-left": "10px",
-        "padding-right": "10px",
-        ":hover": {
-          "background-color": "#000000"
-        },
-        ":focus": {
-          "background-color": "#000000"
-        }
-      },
-      "title": {
-        "font-size": "26px"
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15px"
-      }
-    }
-  },
-  "cart": {
-    "contents": {
-      "button": true
-    },
-    "styles": {
-      "button": {
-        "background-color": "#000000",
-        ":hover": {
-          "background-color": "#000000"
-        },
-        ":focus": {
-          "background-color": "#000000"
-        }
-      },
-      "footer": {
-        "background-color": "#ffffff"
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "variantTitle": false,
-      "buttonWithQuantity": true,
-      "button": false,
-      "quantity": false
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "background-color": "#000000",
-        "padding-left": "10px",
-        "padding-right": "10px",
-        ":hover": {
-          "background-color": "#000000"
-        },
-        ":focus": {
-          "background-color": "#000000"
-        }
-      }
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#000000",
-        ":hover": {
-          "background-color": "#000000"
-        },
-        ":focus": {
-          "background-color": "#000000"
-        }
-      }
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  }
-}
-      });
-    });
-  }
-
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
-
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-})();
-</script>
-
-
-
-
     <!-- Inner Header-->
     <section class="inner-banner2 clearfix">
       <div class="container clearfix">
@@ -200,13 +47,18 @@
         </div>
         <div class="projects_hours clearfix">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <p>Precio<span>{{str_limit(strip_tags($producto->precio), 150)}}</span></p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <p>Categoría<span>{{$producto->getCategoria->nombre}}</span></p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <a href="{{url('agregarCarrito')}}?id={{$producto->id}}" class="btn">Comprar</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+            
              <div class="req-button text-right">
              @if($producto->fichatecnica!="")
               <a href="#"  data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i> Descargar Ficha Técnica</a>
