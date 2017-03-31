@@ -49,6 +49,16 @@ class FrontendController extends Controller
                     
     }
 
+    public function getPagoCompletado(){
+        session_start();
+        session_destroy();
+        $servicios=Servicios::where('deleted','=',0)->get();
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('frontend/carrito')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios)->with('completado','completado');
+                    
+    }
+
 
     public function agregarCarrito(){
         session_start();

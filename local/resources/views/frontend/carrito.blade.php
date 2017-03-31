@@ -29,6 +29,20 @@
           <h3 style="color:red;">El pago no pudo ser concretado, por favor inténtelo de nuevo</h3><br><br>
           @endif
 
+           @if(isset($completado))
+         <h3> Gracias por hacer sus compras con nosotros</h3>
+Su pedido ha sido presentado y se procesará tan pronto como se confirme el pago.<br>
+
+Si necesita ayuda o tiene preguntas, siempre nos complace poder ayudarle. <br>
+Comuníquese con nosotros enviándonos un correo electrónico a contacto@veagn.com. <br>
+Nos complace poder ayudarlo.<br><br>
+
+
+Atentamente,<br>
+<b>El equipo de VEAGN</b>
+
+          @endif
+
 
          <?php
         
@@ -82,7 +96,7 @@ if(isset($_SESSION["cart_item"])){
     <input name = "handling_cart" value = "0" type = "hidden">
     <input name = "currency_code" value = "MXN" type = "hidden">
     <input name = "lc" value = "MX" type = "hidden">
-    <input name = "return" value = "http://indexceed.com/provent/pagoCorrecto" type = "hidden">
+    <input name = "return" value = "http://indexceed.com/provent/pagoCompletado" type = "hidden">
     <input name = "cbt" value = "Return to My Site" type = "hidden">
     <input name = "cancel_return" value = "http://indexceed.com/provent/pagoCancelado" type = "hidden">
     <input name = "custom" value = "" type = "hidden">
@@ -116,6 +130,7 @@ $contador=1;
 </table>    
   <?php
 }else{
+  if(!isset($completado))
   echo "<h2>Su carrito está vacío</h2>";
 }
 ?>
