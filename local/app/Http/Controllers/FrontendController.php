@@ -39,6 +39,17 @@ class FrontendController extends Controller
         return view('frontend/carrito')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios);
                     
     }
+
+    public function getPagoCancelado(){
+        session_start();
+        $servicios=Servicios::where('deleted','=',0)->get();
+        $configuracion=Configuracion::first();
+        $categorias=Categoria::where('deleted','=',0)->get();
+        return view('frontend/carrito')->with('configuracion',$configuracion)->with('categorias',$categorias)->with('servicios',$servicios)->with('cancelado','cancelado');
+                    
+    }
+
+
     public function agregarCarrito(){
         session_start();
         $id=$_REQUEST['id'];

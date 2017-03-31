@@ -27,17 +27,17 @@
             <div class="col-md-4 text-center">
             <img src="{{url('public/img/veagn.png')}}">
             <h3>Veagn</h3>
-            <h5>www.veagn.com / .com.mx</h5>
+            <h5><a href="http://www.veagn.com">www.veagn.com / .com.mx</a></h5>
             </div>
             <div class="col-md-4 text-center">
             <img src="{{url('public/img/hidrica.png')}}">
              <h3>Hidrica</h3>
-            <h5>www.consultoreshidrica.com</h5>
+            <h5><a href="http://www.consultoreshidrica.com">www.consultoreshidrica.com</a></h5>
             </div>
             <div class="col-md-4 text-center">
             <img src="{{url('public/img/opcionescapital.png')}}">
              <h3>Opciones de capital</h3>
-            <h5>www.opcionesdecapital.com</h5>
+            <h5><a href="http://www.opcionesdecapital.com">www.opcionesdecapital.com</a></h5>
             </div>
           </div>
         </div>

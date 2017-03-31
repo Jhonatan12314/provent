@@ -38,6 +38,7 @@ Route::get('classic','FrontendController@getClassic');
 Route::get('fullscreen','FrontendController@getFullscreen');
 Route::get('lightbox','FrontendController@getLightbox');
 
+Route::get('pagoCancelado','FrontendController@getPagoCancelado');
 
 
 

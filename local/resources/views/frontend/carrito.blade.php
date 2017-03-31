@@ -25,6 +25,10 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 pull-right">
 
+          @if(isset($cancelado))
+          <h3 style="color:red;">El pago no pudo ser concretado, por favor inténtelo de nuevo</h3><br><br>
+          @endif
+
 
          <?php
         
@@ -60,7 +64,53 @@ if(isset($_SESSION["cart_item"])){
 <td colspan="5" align=right><h3><strong>Total:</strong> <?php echo "$".$item_total; ?></h3></td>
 </tr>
 <tr>
-<td colspan="5" align=right><a href="{{url('PagarProductos')}}" class="btn">Pagar</a></td>
+
+<td colspan="5" align=right>
+
+
+
+
+<form id = "paypal_checkout" action = "https://www.paypal.com/cgi-bin/webscr" method = "post">
+    <input name = "cmd" value = "_cart" type = "hidden">
+    <input name = "upload" value = "1" type = "hidden">
+    <input name = "no_note" value = "0" type = "hidden">
+    <input name = "bn" value = "PP-BuyNowBF" type = "hidden">
+    <input name = "tax" value = "0" type = "hidden">
+    <input name = "rm" value = "2" type = "hidden">
+ 
+    <input name = "business" value = "contacto@veagn.com" type = "hidden">
+    <input name = "handling_cart" value = "0" type = "hidden">
+    <input name = "currency_code" value = "MXN" type = "hidden">
+    <input name = "lc" value = "MX" type = "hidden">
+    <input name = "return" value = "http://indexceed.com/provent/pagoCorrecto" type = "hidden">
+    <input name = "cbt" value = "Return to My Site" type = "hidden">
+    <input name = "cancel_return" value = "http://indexceed.com/provent/pagoCancelado" type = "hidden">
+    <input name = "custom" value = "" type = "hidden">
+
+    <?php   
+$contador=1;
+    foreach ($_SESSION["cart_item"] as $item){
+    ?>
+     <input name = "item_name_{{$contador}}" value = "{{$item["nombre"]}}" type = "hidden">
+        <input name = "quantity_{{$contador}}" value = "{{$item["cantidad"]}}" type = "hidden">
+        <input name = "amount_{{$contador}}" value = "{{$item["precio"]}}" type = "hidden">
+        <input name = "shipping_{{$contador}}" value = "0" type = "hidden">
+        <?php
+        $contador++;
+    }
+    ?>
+ 
+    <input id = "ppcheckoutbtn" value = "Pagar" class = "btn" type = "submit">
+</form>
+
+
+
+
+
+
+
+
+</td>
 </tr>
 </tbody>
 </table>    
